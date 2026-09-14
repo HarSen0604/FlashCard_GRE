@@ -3,3 +3,6 @@
 @media(min-width:801px){body.studying .topbar{height:70px}body.studying main{padding-top:16px}body.studying .tabs{margin-bottom:14px}body.studying .progress-label{margin-top:10px}body.studying .progress-track{margin-bottom:18px}}
 @media(min-width:801px) and (max-height:850px){body.studying .flashcard{width:min(100%,700px);min-height:420px;max-height:calc(100vh - 280px);padding:32px 45px}body.studying #front{min-height:354px}body.studying #word{font-size:48px}body.studying #pronunciation{margin-bottom:18px}body.studying .recall-prompt{margin-top:18px}}
 .hole{left:calc(3.94% - 8px);top:calc(13.12% - 8px)}.flashcard.is-back .hole{left:auto;right:calc(3.94% - 8px)}
+/* Reserve space for the saved-schedule message without pushing Reveal off a laptop screen. */
+@media(min-width:801px) and (max-height:850px){body.studying:has(#notice:not([hidden])) .flashcard{min-height:340px;max-height:calc(100vh - 360px)}body.studying:has(#notice:not([hidden])) #front{min-height:274px}}
+.library-heading{flex-wrap:wrap}.library-heading>div{flex:1;min-width:240px}

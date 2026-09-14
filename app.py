@@ -7,7 +7,7 @@ from fsrs import Scheduler,Card,Rating
 
 ROOT=Path(__file__).resolve().parent
 RATINGS={'again':Rating.Again,'good':Rating.Good,'easy':Rating.Easy}
-PROGRESS=('batches','members','schedules','events','presentation')
+PROGRESS=('batches','members','schedules','events','presentation','review_queue')
 
 def connect(path):
     db=sqlite3.connect(path,timeout=15)
@@ -39,7 +39,9 @@ def create_app(database=None,clock=None):
         card=dict(db.execute('SELECT * FROM cards WHERE id=?',(p['card_id'],)).fetchone())
         card['content']=json.loads(card['content'])
         member=db.execute('SELECT streak,ready FROM members WHERE card_id=?',(p['card_id'],)).fetchone()
-        return dict(card=card,token=p['token'],revealed=bool(p['revealed']),mode=p['mode'],streak=member['streak'] if member else 0,status=state(db))
+        schedule=db.execute('SELECT due FROM schedules WHERE card_id=?',(p['card_id'],)).fetchone()
+        queue=dict(db.execute('SELECT count(*) total,coalesce(sum(completed),0) completed FROM review_queue').fetchone())
+        return dict(due=schedule['due'] if schedule else None,review_queue=queue,card=card,token=p['token'],revealed=bool(p['revealed']),mode=p['mode'],streak=member['streak'] if member else 0,status=state(db))
     def snapshot(db):return json.dumps({t:[dict(r) for r in db.execute('SELECT * FROM '+t)] for t in PROGRESS})
     def fail(msg,code=400):return jsonify(error=msg),code
     @app.before_request
@@ -74,10 +76,21 @@ def create_app(database=None,clock=None):
             db.executemany('INSERT INTO members(batch_id,card_id,position,due_turn) VALUES(?,?,?,?)',[(bid,c,i,i) for i,c in enumerate(ids)])
             db.execute('DELETE FROM presentation');db.execute('UPDATE actions SET undone=1')
             return jsonify(state(db))
+    @app.post('/api/review-all')
+    def review_all():
+        with connect(app.config['DATABASE']) as db:
+            db.execute('BEGIN IMMEDIATE')
+            if not db.execute('SELECT 1 FROM review_queue WHERE completed=0').fetchone():
+                db.execute('DELETE FROM review_queue')
+                ids=[r[0] for r in db.execute('SELECT card_id FROM schedules ORDER BY due,card_id')]
+                db.executemany('INSERT INTO review_queue(card_id,position) VALUES(?,?)',[(c,i) for i,c in enumerate(ids)])
+                db.execute('UPDATE actions SET undone=1')
+            db.execute('DELETE FROM presentation')
+            return jsonify(ok=True)
     @app.post('/api/next')
     def next_card():
         data=request.get_json(silent=True) or {};mode=data.get('mode','learn');chosen=data.get('card_id')
-        if mode not in ('learn','review'):return fail('Unknown study mode.')
+        if mode not in ('learn','review','review-all'):return fail('Unknown study mode.')
         with connect(app.config['DATABASE']) as db:
             db.execute('BEGIN IMMEDIATE')
             old=db.execute('SELECT * FROM presentation').fetchone()
@@ -93,6 +106,9 @@ def create_app(database=None,clock=None):
                     remaining=30-(now()-(batch['last_at'] or 0))
                     if remaining>0:return jsonify(wait_seconds=int(remaining)+1,status=state(db))
                     card_id=pending[0]['card_id']
+            elif mode=='review-all':
+                row=db.execute('SELECT card_id FROM review_queue WHERE completed=0 ORDER BY position LIMIT 1').fetchone()
+                if row:card_id=row[0]
             elif chosen is not None:
                 if type(chosen)!=int:return fail('Invalid card.')
                 if not db.execute('SELECT 1 FROM schedules WHERE card_id=?',(chosen,)).fetchone():return fail('This word has not completed initial learning.',409)
@@ -143,12 +159,14 @@ def create_app(database=None,clock=None):
                 card,review=scheduler.review_card(Card.from_json(row['state']),RATINGS[rating],dt)
                 log=review.to_json()
                 db.execute('UPDATE schedules SET state=?,due=?,last_rating=?,reviews=reviews+1 WHERE card_id=?',(card.to_json(),card.due.timestamp(),rating,p['card_id']))
-            db.execute('INSERT INTO events(card_id,mode,rating,created_at,early,fsrs_log) VALUES(?,?,?,?,?,?)',(p['card_id'],p['mode'],rating,timestamp,early,log))
+            if p['mode']=='review-all':db.execute('UPDATE review_queue SET completed=1 WHERE card_id=?',(p['card_id'],))
+            updated=db.execute('SELECT due FROM schedules WHERE card_id=?',(p['card_id'],)).fetchone()
+            db.execute('INSERT INTO events(card_id,mode,rating,created_at,early,fsrs_log) VALUES(?,?,?,?,?,?)',(p['card_id'],'learn' if p['mode']=='learn' else 'review',rating,timestamp,early,log))
             db.execute('INSERT INTO actions(token,snapshot) VALUES(?,?)',(token,before))
             # One-step undo only; avoid accumulating copies of all history.
             db.execute('DELETE FROM actions WHERE id NOT IN (SELECT max(id) FROM actions)')
             db.execute('DELETE FROM presentation')
-            return jsonify(graduated=graduated,status=state(db))
+            return jsonify(graduated=graduated,next_due=updated['due'] if updated else None,status=state(db))
     @app.post('/api/undo')
     def undo():
         with connect(app.config['DATABASE']) as db:
@@ -158,7 +176,7 @@ def create_app(database=None,clock=None):
             saved=json.loads(action['snapshot'])
             for table in reversed(PROGRESS):db.execute('DELETE FROM '+table)
             for table in PROGRESS:
-                for row in saved[table]:db.execute('INSERT INTO '+table+' ('+','.join(row)+') VALUES ('+','.join('?' for _ in row)+')',tuple(row.values()))
+                for row in saved.get(table,[]):db.execute('INSERT INTO '+table+' ('+','.join(row)+') VALUES ('+','.join('?' for _ in row)+')',tuple(row.values()))
             # Fresh token allows a corrected rating while rejecting the old request.
             db.execute('UPDATE presentation SET token=?',(secrets.token_urlsafe(24),))
             db.execute('UPDATE actions SET undone=1 WHERE id=?',(action['id'],))

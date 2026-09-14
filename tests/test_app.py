@@ -181,3 +181,42 @@ def test_replace_presentation_rejects_other_tabs_token(env):
     word=c.get('/api/library').json[0]['id'];other=next_card(c,'review',word)
     assert post(c,'flip',{'token':p['token']}).status_code==409
     assert rate(c,other).status_code==200
+
+def test_review_all_order_once_resume_undo_and_dates(env):
+    app,c,t=env;graduate(c,t,3)
+    with connect(app.config['DATABASE']) as db:
+        ids=[r[0] for r in db.execute('SELECT card_id FROM schedules ORDER BY card_id')]
+        for card_id,offset in zip(ids,[86400,-100,3600]):db.execute('UPDATE schedules SET due=? WHERE card_id=?',(t[0]+offset,card_id))
+    expected=[ids[1],ids[2],ids[0]]
+    assert post(c,'review-all').status_code==200
+    first=next_card(c,'review-all');assert first['card']['id']==expected[0]
+    assert first['due']==t[0]-100
+    result=rate(c,first,'again').json
+    assert result['next_due']==t[0]+600
+    with connect(app.config['DATABASE']) as db:
+        assert db.execute('SELECT due FROM schedules WHERE card_id=?',(expected[0],)).fetchone()[0]==result['next_due']
+    undone=post(c,'undo').json
+    assert undone['due']==t[0]-100 and undone['review_queue']['completed']==0
+    assert undone['mode']=='review-all'
+    rate(c,undone,'good')
+    fresh=create_app(app.config['DATABASE'],lambda:t[0]).test_client()
+    post(fresh,'review-all')
+    for position,card_id in enumerate(expected[1:],1):
+        card=next_card(fresh,'review-all')
+        assert card['card']['id']==card_id
+        assert card['review_queue']=={'total':3,'completed':position}
+        assert next_card(fresh,'review-all')['token']==card['token']
+        assert rate(fresh,card,'easy').status_code==200
+    assert next_card(fresh,'review-all')['done']
+    assert c.get('/api/status').json['revision_attempts']==3
+    post(c,'review-all');assert next_card(c,'review-all')['review_queue']['completed']==0
+
+def test_review_all_empty_and_mode_switch(env):
+    _,c,t=env;post(c,'review-all');assert next_card(c,'review-all')['done']
+    graduate(c,t,2);post(c,'review-all');p=next_card(c,'review-all')
+    other=next_card(c,'review',p['card']['id'])
+    assert post(c,'flip',{'token':p['token']}).status_code==409
+    rate(c,other)
+    post(c,'review-all');resumed=next_card(c,'review-all')
+    assert resumed['card']['id']==p['card']['id']
+    assert resumed['review_queue']['completed']==0

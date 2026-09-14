@@ -38,3 +38,10 @@ Representative desktop, laptop, and narrow-screen screenshots are saved alongsid
 ## Scope
 
 This verifies behavior and layout in the installed Google Chrome on macOS. It is not an exhaustive guarantee for every browser, operating system, or future database edit. Semantic grouping includes model-assisted and editorial review; automated coverage confirms that source definitions remain represented, rather than certifying dictionary accuracy by a numerical similarity score. The original archive remains available for comparison.
+
+## Continuous revision update — 2026-09-14
+
+- 43 automated tests pass, including earliest-due ordering across overdue/future cards, one review per pass, restart/resume, undo restoring queue position and due date, empty libraries, and mode switching.
+- Real Chrome journey verifies review-all, automatic advancement, reload/resume, undo, completion, and immediate confirmation matching the newly stored due timestamp.
+- All 995 card fronts/backs pass layout checks at 1440×1000, 1280×800, 768×1024, and 390×844. Laptop layout reserves space for the schedule confirmation.
+- No JavaScript errors or external requests. Tests use temporary databases initialized from the clean seed; existing personal study progress is not reset or edited.

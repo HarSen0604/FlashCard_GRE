@@ -44,6 +44,10 @@ Learning is not a guarantee of long-term mastery. Use the subsequent spaced revi
 
 “Already gone through” lists only words from completed batches. Filter by due status or your latest revision rating, search by word, review due cards, or revise any word early.
 
+**Review all words / resume** starts a saved pass through every learned word, ordered by earliest due timestamp (overdue first, future dates last). Each word appears once in that pass; ratings advance automatically. Returning to the overview or restarting does not lose the pass. Click the same button to resume. Newly graduated words join the next pass. Undo restores both the schedule and the queue position. Early reviews update FSRS just like individual reviews.
+
+The study header shows the current card’s due date and time. After each rating, a confirmation shows that word’s freshly scheduled next review, even when the next card appears.
+
 Revision uses the maintained `fsrs` Python package, at a 90% desired retention target. The three buttons map to Again, Good, and Easy. The scheduler stores each word's difficulty, stability, due time, and actual review history. Forgotten review words enter a 10-minute relearning step. They remain learned words rather than re-entering the new-word pool.
 
 When a batch graduates, each word receives a conservative **Good initialization** at the graduation time. This seeds the first due date and is not counted as a revision attempt. Initial batch repetitions have their own history and do not inflate the FSRS revision count. Subsequent ratings—including early revision—update the schedule using the actual timestamp. Default FSRS weights are used; this version does not train personalized global weights from your history.

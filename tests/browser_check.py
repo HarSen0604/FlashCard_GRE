@@ -42,6 +42,25 @@ def run():
                 assert page.request.get(f'http://127.0.0.1:{port}/api/status').json()['revision_attempts']==1
                 page.locator('#tab-library').click();page.locator('#filter').select_option('again');page.wait_for_function("() => document.querySelectorAll('.library-row').length===1")
                 page.screenshot(path=str(ROOT/'reports/library-desktop.png'),full_page=True)
+                # Continuous revision, live due timestamps, undo, reload, and completion.
+                ordered=page.request.get(f'http://127.0.0.1:{port}/api/library').json()
+                page.locator('#review-all').click();page.wait_for_function('() => !busy')
+                assert page.locator('#word').inner_text()==ordered[0]['word']
+                assert page.locator('#streak-text').inner_text().startswith('Due ')
+                page.locator('#flip').click();page.locator('[data-rating=again]').click();page.wait_for_function('() => !busy')
+                updated=next(r for r in page.request.get(f'http://127.0.0.1:{port}/api/library').json() if r['id']==ordered[0]['id'])
+                expected_date=page.evaluate('(due) => new Date(due*1000).toLocaleString()',updated['due'])
+                assert expected_date in page.locator('#notice').inner_text()
+                page.locator('#undo').click();page.wait_for_function('() => !busy')
+                assert page.locator('#word').inner_text()==ordered[0]['word']
+                for i,row in enumerate(ordered):
+                    assert page.locator('#word').inner_text()==row['word']
+                    page.locator('#flip').click();page.locator('[data-rating=easy]').click();page.wait_for_function('() => !busy')
+                    if i==0:
+                        page.reload();page.locator('#tab-library').click();page.locator('#review-all').click();page.wait_for_function('() => !busy')
+                page.get_by_role('heading',name='Revision pass complete.').wait_for()
+                assert page.request.get(f'http://127.0.0.1:{port}/api/status').json()['revision_attempts']==4
+                page.screenshot(path=str(ROOT/'reports/continuous-revision.png'),full_page=True)
                 # Audit every front/back using real rendering functions and database content.
                 with sqlite3.connect(dbpath) as db:
                     db.row_factory=sqlite3.Row;cards=[dict(r) for r in db.execute('SELECT * FROM cards')]
