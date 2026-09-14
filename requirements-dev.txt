@@ -1,0 +1,6 @@
+-r requirements.txt
+beautifulsoup4==4.15.0
+lemminflect==0.2.3
+sentence-transformers==6.0.1
+pytest==9.1.1
+playwright==1.62.0

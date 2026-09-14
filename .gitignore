@@ -216,3 +216,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local study state and generated artifacts
+data/model-cache/
+data/flashcards.sqlite3*
+data/*-journal
+data/*-wal
+data/*-shm
+reports/*.png
+reports/*.log
+.DS_Store

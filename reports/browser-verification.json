@@ -1,0 +1,44 @@
+{
+  "journey": "passed",
+  "all_card_layout_checks": [
+    {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "problems": [],
+      "scrollCards": 41,
+      "cards": 995
+    },
+    {
+      "viewport": [
+        1280,
+        800
+      ],
+      "problems": [],
+      "scrollCards": 188,
+      "cards": 995
+    },
+    {
+      "viewport": [
+        768,
+        1024
+      ],
+      "problems": [],
+      "scrollCards": 88,
+      "cards": 995
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "problems": [],
+      "scrollCards": 675,
+      "cards": 995
+    }
+  ],
+  "javascript_errors": [],
+  "external_requests": [],
+  "production_progress_untouched": true
+}

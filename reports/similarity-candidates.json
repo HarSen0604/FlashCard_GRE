@@ -1,0 +1,5370 @@
+[
+  {
+    "word": "abate",
+    "a": 1,
+    "b": 2,
+    "score": 0.879,
+    "first": "to become less strong",
+    "second": "to become less strong, or to make something less strong"
+  },
+  {
+    "word": "abate",
+    "a": 1,
+    "b": 4,
+    "score": 0.752,
+    "first": "to become less strong",
+    "second": "to become or make something become weaker, lower, less serious, etc."
+  },
+  {
+    "word": "abate",
+    "a": 2,
+    "b": 4,
+    "score": 0.828,
+    "first": "to become less strong, or to make something less strong",
+    "second": "to become or make something become weaker, lower, less serious, etc."
+  },
+  {
+    "word": "abrasive",
+    "a": 1,
+    "b": 5,
+    "score": 0.874,
+    "first": "(PERSON) rude and unfriendly",
+    "second": "(UNPLEASANT) rude and unkind"
+  },
+  {
+    "word": "abscond",
+    "a": 2,
+    "b": 3,
+    "score": 0.758,
+    "first": "(STEAL) to go away suddenly and secretly because you have stolen something, usually money",
+    "second": "to escape and hide somewhere, esp. because you have stolen something"
+  },
+  {
+    "word": "acumen",
+    "a": 1,
+    "b": 2,
+    "score": 0.77,
+    "first": "skill in making correct decisions and judgments in a particular subject, such as business or politics",
+    "second": "the ability to make correct judgments"
+  },
+  {
+    "word": "acumen",
+    "a": 1,
+    "b": 3,
+    "score": 0.923,
+    "first": "skill in making correct decisions and judgments in a particular subject, such as business or politics",
+    "second": "skill in making correct decisions and judgments in business or in a particular area of business"
+  },
+  {
+    "word": "adhere",
+    "a": 1,
+    "b": 2,
+    "score": 0.767,
+    "first": "to stick firmly",
+    "second": "to stick or be attached firmly to a surface"
+  },
+  {
+    "word": "advocate",
+    "a": 2,
+    "b": 6,
+    "score": 0.804,
+    "first": "a lawyer who speaks for or defends someone in a court of law: someone who speaks for, supports, or represents a person or group of people who may need extra help or protection: someone who publicly supports or recommends an idea, a policy, etc.",
+    "second": "a lawyer who defends someone in a court"
+  },
+  {
+    "word": "aesthetic",
+    "a": 1,
+    "b": 3,
+    "score": 0.846,
+    "first": "relating to the enjoyment or study of beauty: An aesthetic object or a work of art is one that shows great beauty: intended to improve someone's appearance",
+    "second": "relating to the enjoyment or study of beauty, or showing great beauty"
+  },
+  {
+    "word": "affable",
+    "a": 1,
+    "b": 2,
+    "score": 0.824,
+    "first": "friendly and easy to talk to",
+    "second": "friendly, kind, relaxed, and easy to talk to"
+  },
+  {
+    "word": "affectation",
+    "a": 1,
+    "b": 2,
+    "score": 0.865,
+    "first": "behaviour or speech that is not sincere",
+    "second": "speech or behavior that is not natural or sincere and is used to produce a certain effect"
+  },
+  {
+    "word": "aggregate",
+    "a": 2,
+    "b": 9,
+    "score": 1.0,
+    "first": "(BUILDING STONES) small stones used in building",
+    "second": "small stones used in building"
+  },
+  {
+    "word": "aggregate",
+    "a": 5,
+    "b": 11,
+    "score": 0.797,
+    "first": "formed by adding together several amounts or things; total",
+    "second": "added together to make a total amount, price, etc."
+  },
+  {
+    "word": "aggregate",
+    "a": 7,
+    "b": 10,
+    "score": 0.764,
+    "first": "a total that is calculated by adding together different prices, amounts, etc.",
+    "second": "in total, after different prices, amounts, etc. have been added together"
+  },
+  {
+    "word": "aggregate",
+    "a": 7,
+    "b": 11,
+    "score": 0.798,
+    "first": "a total that is calculated by adding together different prices, amounts, etc.",
+    "second": "added together to make a total amount, price, etc."
+  },
+  {
+    "word": "aggregate",
+    "a": 7,
+    "b": 12,
+    "score": 0.861,
+    "first": "a total that is calculated by adding together different prices, amounts, etc.",
+    "second": "to add different prices, amounts, etc. in order to get a total"
+  },
+  {
+    "word": "aggregate",
+    "a": 10,
+    "b": 11,
+    "score": 0.838,
+    "first": "in total, after different prices, amounts, etc. have been added together",
+    "second": "added together to make a total amount, price, etc."
+  },
+  {
+    "word": "aggregate",
+    "a": 10,
+    "b": 12,
+    "score": 0.784,
+    "first": "in total, after different prices, amounts, etc. have been added together",
+    "second": "to add different prices, amounts, etc. in order to get a total"
+  },
+  {
+    "word": "aggregate",
+    "a": 11,
+    "b": 12,
+    "score": 0.805,
+    "first": "added together to make a total amount, price, etc.",
+    "second": "to add different prices, amounts, etc. in order to get a total"
+  },
+  {
+    "word": "alleviate",
+    "a": 1,
+    "b": 2,
+    "score": 0.901,
+    "first": "to make something bad such as pain or problems less severe",
+    "second": "to make pain or problems less severe"
+  },
+  {
+    "word": "amalgamate",
+    "a": 1,
+    "b": 3,
+    "score": 1.0,
+    "first": "to join or unite to form a larger organization or group, or to make separate organizations do this",
+    "second": "to join or unite to form a larger organization or group, or to make separate organizations do this"
+  },
+  {
+    "word": "ambiguous",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "having or expressing more than one possible meaning, sometimes intentionally",
+    "second": "having or expressing more than one possible meaning, sometimes intentionally"
+  },
+  {
+    "word": "ambiguous",
+    "a": 1,
+    "b": 3,
+    "score": 0.799,
+    "first": "having or expressing more than one possible meaning, sometimes intentionally",
+    "second": "having more than one possible meaning, and therefore likely to cause confusion"
+  },
+  {
+    "word": "ambiguous",
+    "a": 2,
+    "b": 3,
+    "score": 0.799,
+    "first": "having or expressing more than one possible meaning, sometimes intentionally",
+    "second": "having more than one possible meaning, and therefore likely to cause confusion"
+  },
+  {
+    "word": "ambivalent",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "having two opposing feelings at the same time, or being uncertain about how you feel",
+    "second": "having two opposing feelings at the same time, or being uncertain about how you feel"
+  },
+  {
+    "word": "amortize",
+    "a": 1,
+    "b": 3,
+    "score": 0.815,
+    "first": "to reduce a debt or cost by paying small regular amounts: to take a cost, for example the cost of something bought for a business, away from the amount of tax that is paid, in small amounts over a period of time",
+    "second": "to reduce a debt by paying small regular amounts"
+  },
+  {
+    "word": "anarchy",
+    "a": 1,
+    "b": 2,
+    "score": 0.826,
+    "first": "a situation in which there is no organization and control, especially in society, because there is no effective government",
+    "second": "a lack of organization and control in a society or group, esp. because either there is no government or it has no power"
+  },
+  {
+    "word": "annul",
+    "a": 1,
+    "b": 2,
+    "score": 0.928,
+    "first": "to officially announce that something such as a law, agreement, or marriage no longer exists",
+    "second": "to announce officially a law, marriage, or other contract as no longer existing"
+  },
+  {
+    "word": "annul",
+    "a": 1,
+    "b": 3,
+    "score": 0.905,
+    "first": "to officially announce that something such as a law, agreement, or marriage no longer exists",
+    "second": "to state officially that something such as a law, agreement, or marriage no longer exists"
+  },
+  {
+    "word": "annul",
+    "a": 2,
+    "b": 3,
+    "score": 0.824,
+    "first": "to announce officially a law, marriage, or other contract as no longer existing",
+    "second": "to state officially that something such as a law, agreement, or marriage no longer exists"
+  },
+  {
+    "word": "antagonize",
+    "a": 1,
+    "b": 2,
+    "score": 0.752,
+    "first": "to make someone dislike you or feel opposed to you",
+    "second": "to anger someone enough to dislike and oppose you"
+  },
+  {
+    "word": "apprise",
+    "a": 1,
+    "b": 2,
+    "score": 0.927,
+    "first": "to tell someone about something",
+    "second": "to tell or inform someone about something"
+  },
+  {
+    "word": "approbation",
+    "a": 1,
+    "b": 2,
+    "score": 0.873,
+    "first": "approval or agreement, often given by an official group",
+    "second": "approval or agreement, often given by an official group; praise"
+  },
+  {
+    "word": "appropriate",
+    "a": 1,
+    "b": 4,
+    "score": 0.885,
+    "first": "suitable or right for a particular situation or occasion",
+    "second": "(CORRECT) correct or right for a particular situation or occasion"
+  },
+  {
+    "word": "archaic",
+    "a": 1,
+    "b": 2,
+    "score": 0.801,
+    "first": "of or belonging to an ancient period in history: extremely old-fashioned",
+    "second": "of or belonging to the past; from an ancient period in history"
+  },
+  {
+    "word": "ardent",
+    "a": 1,
+    "b": 2,
+    "score": 0.854,
+    "first": "showing strong feelings",
+    "second": "showing strong feelings; eager"
+  },
+  {
+    "word": "arduous",
+    "a": 1,
+    "b": 2,
+    "score": 0.752,
+    "first": "difficult, needing a lot of effort and energy",
+    "second": "difficult and tiring, or needing a great deal of effort"
+  },
+  {
+    "word": "articulate",
+    "a": 1,
+    "b": 5,
+    "score": 0.762,
+    "first": "able to express thoughts and feelings easily and clearly, or showing this quality",
+    "second": "expressing or able to express things easily and clearly"
+  },
+  {
+    "word": "ascertain",
+    "a": 1,
+    "b": 2,
+    "score": 0.847,
+    "first": "to discover something: to make certain of something",
+    "second": "to discover a fact; to make certain"
+  },
+  {
+    "word": "assail",
+    "a": 1,
+    "b": 2,
+    "score": 0.812,
+    "first": "to attack someone violently or criticize someone strongly: to cause someone to experience a lot of unpleasant things",
+    "second": "to criticize something or someone strongly, or to cause someone to experience unpleasant thoughts or feelings"
+  },
+  {
+    "word": "audacious",
+    "a": 1,
+    "b": 2,
+    "score": 0.779,
+    "first": "showing a willingness to take risks or offend people",
+    "second": "showing an unusual willingness to take risks"
+  },
+  {
+    "word": "august",
+    "a": 1,
+    "b": 4,
+    "score": 1.0,
+    "first": "the eighth month of the year, after July and before September",
+    "second": "the eighth month of the year, after July and before September"
+  },
+  {
+    "word": "august",
+    "a": 2,
+    "b": 3,
+    "score": 0.757,
+    "first": "having great importance and especially of the highest social class",
+    "second": "having great importance and respect in society"
+  },
+  {
+    "word": "avarice",
+    "a": 1,
+    "b": 2,
+    "score": 0.834,
+    "first": "an extremely strong wish to get or keep money or possessions",
+    "second": "an extremely strong desire to obtain or keep wealth"
+  },
+  {
+    "word": "avid",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "extremely eager or interested",
+    "second": "extremely eager or interested"
+  },
+  {
+    "word": "axiom",
+    "a": 1,
+    "b": 2,
+    "score": 0.857,
+    "first": "a statement or principle that is generally accepted to be true, but need not be so: a formal statement or principle in mathematics, science, etc., from which other statements can be obtained",
+    "second": "a statement or principle that is generally accepted to be true"
+  },
+  {
+    "word": "balk",
+    "a": 1,
+    "b": 5,
+    "score": 0.95,
+    "first": "(BE UNWILLING) to be unwilling to do something or to allow something to happen",
+    "second": "to be unwilling to do something or let something happen"
+  },
+  {
+    "word": "balk",
+    "a": 2,
+    "b": 4,
+    "score": 0.926,
+    "first": "(BASEBALL) in baseball, to stop in the act of throwing the ball to the batter, in a way that is against the rules",
+    "second": "(BASEBALL) in baseball, an act of stopping in the middle of throwing the ball to the batter, which is against the rules"
+  },
+  {
+    "word": "balloon",
+    "a": 1,
+    "b": 4,
+    "score": 0.899,
+    "first": "a small, thin rubber bag that you blow air into or fill with a light gas until it is round in shape, used for decoration, as a children's toy, or for other purposes such as medical treatment or scientific research : a very large balloon that is filled with hot air or gas and can carry people in a basket (= open container ) hanging under it: a round shape drawn next to the head of a character in a cartoon, inside which the character's words or thoughts are written",
+    "second": "a small, thin, rubber bag that you can fill with air or another gas until it is round in shape, often used for decoration at parties or as a child’s toyA balloon is also a very large, round container filled with a gas that can rise in the air and carry people riding under it in an attached box."
+  },
+  {
+    "word": "base",
+    "a": 2,
+    "b": 19,
+    "score": 0.827,
+    "first": "(MAIN PLACE) the main place where a person lives and works, or a place that a company does business from",
+    "second": "to establish a place as the place from which a business operates or a person works"
+  },
+  {
+    "word": "base",
+    "a": 2,
+    "b": 20,
+    "score": 0.834,
+    "first": "(MAIN PLACE) the main place where a person lives and works, or a place that a company does business from",
+    "second": "the place where a company does its main business from"
+  },
+  {
+    "word": "base",
+    "a": 4,
+    "b": 18,
+    "score": 0.84,
+    "first": "(IN BASEBALL) one of the four positions on a square that a player must reach to score a point in the game of baseball",
+    "second": "(BASEBALL) (in the game of baseball) one of the four angles of a square, all of which a player must touch in order to score"
+  },
+  {
+    "word": "base",
+    "a": 6,
+    "b": 16,
+    "score": 0.859,
+    "first": "(MAIN PART) the main part of something",
+    "second": "(MAIN PART) the main part of something, or the people or activities that form the main part of something"
+  },
+  {
+    "word": "base",
+    "a": 10,
+    "b": 24,
+    "score": 0.873,
+    "first": "to have a particular town or area, etc. as the main place that you live and work in, or where you do business from",
+    "second": "to have a particular country, city, etc. as the main place that you do business from"
+  },
+  {
+    "word": "bent",
+    "a": 1,
+    "b": 6,
+    "score": 1.0,
+    "first": "past simple and past participle of bend",
+    "second": "(BEND) past simple and past participle of bend"
+  },
+  {
+    "word": "besiege",
+    "a": 1,
+    "b": 2,
+    "score": 0.905,
+    "first": "to surround a place, especially with an army, to prevent people or supplies getting in or out: When someone is besieged, a lot of people surround them: to make many requests or complaints about something",
+    "second": "to surround a place, esp. with an army, to prevent people or supplies from getting in or out: A person who is besieged is surrounded"
+  },
+  {
+    "word": "bolster",
+    "a": 1,
+    "b": 3,
+    "score": 0.901,
+    "first": "to support or improve something or make it stronger",
+    "second": "(SUPPORT) to support something, or make something stronger"
+  },
+  {
+    "word": "boor",
+    "a": 1,
+    "b": 2,
+    "score": 0.824,
+    "first": "a person who is rude and does not consider other people's feelings",
+    "second": "a person who behaves rudely"
+  },
+  {
+    "word": "brandish",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "to wave something in the air in a threatening or excited way",
+    "second": "to wave something in the air in a threatening or excited way"
+  },
+  {
+    "word": "brook",
+    "a": 1,
+    "b": 3,
+    "score": 1.0,
+    "first": "a small stream",
+    "second": "(STREAM) a small stream"
+  },
+  {
+    "word": "brook",
+    "a": 2,
+    "b": 4,
+    "score": 0.896,
+    "first": "to not allow or accept something, especially a difference of opinion or intention",
+    "second": "(ALLOW) to allow or accept something, esp. a difference of opinion or intention"
+  },
+  {
+    "word": "buffer",
+    "a": 4,
+    "b": 6,
+    "score": 0.786,
+    "first": "(PROVIDE PROTECTION) to provide protection against harm",
+    "second": "something that helps protect from harm"
+  },
+  {
+    "word": "buffer",
+    "a": 4,
+    "b": 9,
+    "score": 0.812,
+    "first": "(PROVIDE PROTECTION) to provide protection against harm",
+    "second": "to provide protection against difficult situations, problems, angry people, etc."
+  },
+  {
+    "word": "buffer",
+    "a": 5,
+    "b": 8,
+    "score": 0.783,
+    "first": "(STORE INFORMATION) When a computer buffers information or buffers, it stores information temporarily in its memory while dealing with it or sending it.",
+    "second": "the part of a computer's memory that temporarily stores information before exchanging it with another piece of equipment such as a printer, keyboard, or external drive"
+  },
+  {
+    "word": "buffer",
+    "a": 7,
+    "b": 9,
+    "score": 0.76,
+    "first": "someone or something that provides protection against difficult situations, problems, angry people, etc.",
+    "second": "to provide protection against difficult situations, problems, angry people, etc."
+  },
+  {
+    "word": "bureaucracy",
+    "a": 1,
+    "b": 3,
+    "score": 0.971,
+    "first": "a system for controlling or managing a country, company, or organization that is operated by a large number of officials employed to follow rules carefully",
+    "second": "a system for controlling or managing a country, company, or organization that is operated by officials who are employed to follow rules carefully"
+  },
+  {
+    "word": "burgeon",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "to develop or grow quickly",
+    "second": "to develop or grow quickly"
+  },
+  {
+    "word": "buttress",
+    "a": 1,
+    "b": 4,
+    "score": 1.0,
+    "first": "a structure made of stone or brick that sticks out from and supports a wall of a building",
+    "second": "a structure made of stone or brick that sticks out from and supports a wall of a building"
+  },
+  {
+    "word": "bygone",
+    "a": 1,
+    "b": 3,
+    "score": 1.0,
+    "first": "belonging to or happening in a past time",
+    "second": "belonging to or happening in a past time"
+  },
+  {
+    "word": "cardinal",
+    "a": 1,
+    "b": 5,
+    "score": 0.991,
+    "first": "(PRIEST) a priest of very high rank in the Roman Catholic Church",
+    "second": "(PRIEST) a priest of high rank in the Roman Catholic Church"
+  },
+  {
+    "word": "cardinal",
+    "a": 3,
+    "b": 6,
+    "score": 0.953,
+    "first": "(BIRD) a North American bird, the male of which has bright red feathers",
+    "second": "(BIRD) a North American bird, the male of which has bright red feathers and a black face"
+  },
+  {
+    "word": "cardinal",
+    "a": 4,
+    "b": 7,
+    "score": 0.789,
+    "first": "of great importance",
+    "second": "(IMPORTANT) of great importance; main"
+  },
+  {
+    "word": "cartography",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "the science or art of making or drawing maps",
+    "second": "the science or art of making or drawing maps"
+  },
+  {
+    "word": "castigate",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "to criticize someone or something severely",
+    "second": "to criticize someone or something severely"
+  },
+  {
+    "word": "catalyst",
+    "a": 1,
+    "b": 2,
+    "score": 0.753,
+    "first": "something that makes a chemical reaction happen more quickly without itself being changedan event or person that causes great change",
+    "second": "a condition, event, or person that is the cause of an important changeA catalyst is also a substance that causes or speeds a chemical reaction without itself being changed."
+  },
+  {
+    "word": "catholic",
+    "a": 2,
+    "b": 3,
+    "score": 1.0,
+    "first": "Roman Catholic",
+    "second": "Roman Catholic"
+  },
+  {
+    "word": "censure",
+    "a": 1,
+    "b": 2,
+    "score": 0.904,
+    "first": "strong criticism or disapproval",
+    "second": "to express strong criticism or disapproval"
+  },
+  {
+    "word": "censure",
+    "a": 1,
+    "b": 4,
+    "score": 1.0,
+    "first": "strong criticism or disapproval",
+    "second": "strong criticism or disapproval"
+  },
+  {
+    "word": "censure",
+    "a": 2,
+    "b": 4,
+    "score": 0.904,
+    "first": "to express strong criticism or disapproval",
+    "second": "strong criticism or disapproval"
+  },
+  {
+    "word": "chauvinism",
+    "a": 1,
+    "b": 2,
+    "score": 0.805,
+    "first": "the strong and unreasonable belief that your own country or race is the best or most important: the belief that women are naturally less important, intelligent, or able than men",
+    "second": "the strong and unreasonable belief that your own country, sex, or group is the best or most important"
+  },
+  {
+    "word": "chicanery",
+    "a": 1,
+    "b": 2,
+    "score": 0.829,
+    "first": "clever, dishonest talk or behaviour that is used to deceive people",
+    "second": "dishonest but attractive talk or behavior that is used to deceive people"
+  },
+  {
+    "word": "clamber",
+    "a": 1,
+    "b": 2,
+    "score": 0.831,
+    "first": "to climb up, across, or into somewhere with difficulty, using the hands and the feet",
+    "second": "a climb up, across, or into somewhere that is difficult, so that you have to use your hands to help you"
+  },
+  {
+    "word": "clamber",
+    "a": 1,
+    "b": 3,
+    "score": 0.874,
+    "first": "to climb up, across, or into somewhere with difficulty, using the hands and the feet",
+    "second": "to climb somewhere with difficulty, often needing to use both hands and feet"
+  },
+  {
+    "word": "coffer",
+    "a": 1,
+    "b": 3,
+    "score": 0.847,
+    "first": "(BOX) a large, strong box in which money or valuable objects are keptthe money that an organization has in its bank accounts and available to spend",
+    "second": "a large strong box in which money or valuable objects are kept"
+  },
+  {
+    "word": "compendium",
+    "a": 1,
+    "b": 2,
+    "score": 0.969,
+    "first": "a short but complete account of a particular subject, especially in the form of a book",
+    "second": "a short but complete account of a particular subject, esp. in the form of a book"
+  },
+  {
+    "word": "complementary",
+    "a": 1,
+    "b": 3,
+    "score": 0.787,
+    "first": "(GOOD TOGETHER) useful or attractive together",
+    "second": "different but useful or attractive when used together"
+  },
+  {
+    "word": "concede",
+    "a": 1,
+    "b": 4,
+    "score": 0.901,
+    "first": "(ADMIT) to admit, often unwillingly, that something is true: to admit that you have lost in a competition",
+    "second": "to admit that something is true, or to allow something: If you concede in a competition, you admit that you have lost"
+  },
+  {
+    "word": "concede",
+    "a": 2,
+    "b": 6,
+    "score": 0.773,
+    "first": "(GIVE AWAY) to allow someone to have something, even if you do not want to",
+    "second": "to give something to someone, or allow them to have it, especially when you are unwilling to do so"
+  },
+  {
+    "word": "concur",
+    "a": 2,
+    "b": 3,
+    "score": 0.766,
+    "first": "to agree or have the same opinion as someone else",
+    "second": "to agree with someone or something"
+  },
+  {
+    "word": "condone",
+    "a": 1,
+    "b": 2,
+    "score": 0.798,
+    "first": "to accept or allow behaviour that is wrong",
+    "second": "to ignore or accept behavior that some people consider wrong"
+  },
+  {
+    "word": "confer",
+    "a": 1,
+    "b": 3,
+    "score": 0.788,
+    "first": "(TALK) to exchange ideas on a particular subject, often in order to reach a decision on what action to take",
+    "second": "(TALK) to talk together and exchange ideas, often with the intention of reaching a decision about something"
+  },
+  {
+    "word": "confer",
+    "a": 1,
+    "b": 5,
+    "score": 0.752,
+    "first": "(TALK) to exchange ideas on a particular subject, often in order to reach a decision on what action to take",
+    "second": "to discuss something with somebody, often in order to reach a decision about what action to take"
+  },
+  {
+    "word": "confer",
+    "a": 2,
+    "b": 4,
+    "score": 0.901,
+    "first": "(GIVE) to give an official title, honour, or advantage to someone",
+    "second": "(GIVE) to give an honor, official title, or ability to someone"
+  },
+  {
+    "word": "confer",
+    "a": 3,
+    "b": 5,
+    "score": 0.778,
+    "first": "(TALK) to talk together and exchange ideas, often with the intention of reaching a decision about something",
+    "second": "to discuss something with somebody, often in order to reach a decision about what action to take"
+  },
+  {
+    "word": "connoisseur",
+    "a": 1,
+    "b": 2,
+    "score": 0.816,
+    "first": "a person who knows a lot about and enjoys one of the arts, or food, drink, etc. and can judge quality and skill in that subject",
+    "second": "a person who has expert knowledge of something, esp. an art, food, or drink, and is qualified to judge and appreciate its quality"
+  },
+  {
+    "word": "console",
+    "a": 1,
+    "b": 4,
+    "score": 0.805,
+    "first": "to make someone who is sad or disappointed feel better, usually by giving them comfort or sympathy",
+    "second": "to make yourself feel better when you are sad or disappointed"
+  },
+  {
+    "word": "console",
+    "a": 1,
+    "b": 5,
+    "score": 0.925,
+    "first": "to make someone who is sad or disappointed feel better, usually by giving them comfort or sympathy",
+    "second": "(COMFORT) to give comfort and sympathy to someone who is sad or disappointed"
+  },
+  {
+    "word": "console",
+    "a": 4,
+    "b": 5,
+    "score": 0.753,
+    "first": "to make yourself feel better when you are sad or disappointed",
+    "second": "(COMFORT) to give comfort and sympathy to someone who is sad or disappointed"
+  },
+  {
+    "word": "constrict",
+    "a": 1,
+    "b": 3,
+    "score": 0.947,
+    "first": "(BECOME TIGHTER) to become tighter and narrower, or to make something become tighter and narrower",
+    "second": "to make or become tighter and narrower"
+  },
+  {
+    "word": "contentious",
+    "a": 1,
+    "b": 2,
+    "score": 0.85,
+    "first": "causing , involving, or likely to cause disagreement and argument",
+    "second": "causing or likely to cause disagreement"
+  },
+  {
+    "word": "contrary",
+    "a": 3,
+    "b": 6,
+    "score": 0.801,
+    "first": "(NOT REASONABLE) A contrary person wants to disagree with and annoy other people",
+    "second": "(of a person) intentionally wanting to disagree with and annoy other people"
+  },
+  {
+    "word": "contrite",
+    "a": 1,
+    "b": 2,
+    "score": 0.822,
+    "first": "feeling very sorry and guilty for something bad that you have done",
+    "second": "feeling regret and guilt for something bad that you have done"
+  },
+  {
+    "word": "copious",
+    "a": 1,
+    "b": 2,
+    "score": 0.961,
+    "first": "in large amounts, or more than enough",
+    "second": "in large amounts; more than enough"
+  },
+  {
+    "word": "cosmopolitan",
+    "a": 1,
+    "b": 4,
+    "score": 0.948,
+    "first": "containing or having experience of people and things from many different parts of the world",
+    "second": "containing people and things from many different parts of the world, or having experience of many different places and things"
+  },
+  {
+    "word": "countenance",
+    "a": 1,
+    "b": 4,
+    "score": 0.998,
+    "first": "(FACE) the appearance or expression of someone's face",
+    "second": "(FACE) the appearance or expression of someone’s face"
+  },
+  {
+    "word": "countenance",
+    "a": 3,
+    "b": 5,
+    "score": 0.803,
+    "first": "to approve of or give support to something",
+    "second": "(APPROVE OF) to find an activity acceptable; to approve of or give support to something"
+  },
+  {
+    "word": "counterproductive",
+    "a": 1,
+    "b": 2,
+    "score": 0.845,
+    "first": "having an effect that is opposite to the one intended or wanted",
+    "second": "having an effect that is the opposite of what you intend or desire"
+  },
+  {
+    "word": "counterproductive",
+    "a": 1,
+    "b": 3,
+    "score": 0.825,
+    "first": "having an effect that is opposite to the one intended or wanted",
+    "second": "having an opposite effect to the one that was wanted, and therefore harmful"
+  },
+  {
+    "word": "covert",
+    "a": 1,
+    "b": 3,
+    "score": 1.0,
+    "first": "hidden or secret",
+    "second": "hidden or secret"
+  },
+  {
+    "word": "crescendo",
+    "a": 1,
+    "b": 2,
+    "score": 0.918,
+    "first": "a gradual increase in loudness, or the moment when a noise or piece of music is at its loudest: an increase in excitement, danger, or action, or the moment when it reaches its highest point",
+    "second": "a gradual increase in loudness, or the moment when a noise or piece of music is at its loudest"
+  },
+  {
+    "word": "daunt",
+    "a": 1,
+    "b": 2,
+    "score": 0.936,
+    "first": "to make someone feel slightly frightened or worried about their ability to achieve something",
+    "second": "to make someone feel slightly frightened or worried about his or her ability to achieve something; to discourage"
+  },
+  {
+    "word": "deem",
+    "a": 1,
+    "b": 2,
+    "score": 0.813,
+    "first": "to consider or judge something in a particular way",
+    "second": "to consider or judge"
+  },
+  {
+    "word": "deface",
+    "a": 1,
+    "b": 2,
+    "score": 0.786,
+    "first": "to damage and spoil the appearance of something by writing or drawing on it",
+    "second": "to intentionally spoil the appearance of something by writing on or marking it"
+  },
+  {
+    "word": "default",
+    "a": 1,
+    "b": 4,
+    "score": 0.936,
+    "first": "(FAIL) to fail to do something, such as pay a debt, that you legally have to do",
+    "second": "(FAILURE) a failure to do something, such as pay a debt, that you legally have to do"
+  },
+  {
+    "word": "default",
+    "a": 1,
+    "b": 6,
+    "score": 1.0,
+    "first": "(FAIL) to fail to do something, such as pay a debt, that you legally have to do",
+    "second": "to fail to do something, such as pay a debt, that you legally have to do"
+  },
+  {
+    "word": "default",
+    "a": 4,
+    "b": 6,
+    "score": 0.936,
+    "first": "(FAILURE) a failure to do something, such as pay a debt, that you legally have to do",
+    "second": "to fail to do something, such as pay a debt, that you legally have to do"
+  },
+  {
+    "word": "default",
+    "a": 5,
+    "b": 7,
+    "score": 0.779,
+    "first": "happening or existing unless some action is taken: If you win or lose something by default, especially in sport, you win or lose because someone else has failed to do something, for example did not play or complete the game, or because they broke the rules",
+    "second": "(FAILURE TO DO) a failure to do something that you legally have to do, such as pay a debt: In sports, to win or lose by default is to win or lose because one side did not compete"
+  },
+  {
+    "word": "default",
+    "a": 10,
+    "b": 14,
+    "score": 0.833,
+    "first": "the fact of not keeping to an agreement or contract",
+    "second": "to fail to keep to an agreement or contract"
+  },
+  {
+    "word": "demagogue",
+    "a": 1,
+    "b": 2,
+    "score": 0.881,
+    "first": "a person, especially a political leader, who wins support by exciting the emotions of ordinary people rather than by having good or morally right ideas",
+    "second": "a person, esp. a political leader, who wins support by exciting people’s emotions rather than giving them reasons"
+  },
+  {
+    "word": "demur",
+    "a": 1,
+    "b": 2,
+    "score": 0.925,
+    "first": "to express disagreement or refuse to do something",
+    "second": "the act of expressing disagreement or of refusing to do something"
+  },
+  {
+    "word": "demur",
+    "a": 1,
+    "b": 3,
+    "score": 0.965,
+    "first": "to express disagreement or refuse to do something",
+    "second": "to express disagreement or refusal to do something"
+  },
+  {
+    "word": "demur",
+    "a": 2,
+    "b": 3,
+    "score": 0.914,
+    "first": "the act of expressing disagreement or of refusing to do something",
+    "second": "to express disagreement or refusal to do something"
+  },
+  {
+    "word": "denigrate",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "to say that someone or something is not good or important",
+    "second": "to say that someone or something is not good or important"
+  },
+  {
+    "word": "denote",
+    "a": 1,
+    "b": 2,
+    "score": 0.891,
+    "first": "to represent something",
+    "second": "to represent or mean something"
+  },
+  {
+    "word": "derivative",
+    "a": 3,
+    "b": 7,
+    "score": 0.988,
+    "first": "(FINANCIAL PRODUCT) a financial product such as an option (= the right to buy or sell something in the future) that has a value based on the value of another product, such as shares or bonds",
+    "second": "a financial product such as an option (= the right to buy or sell something in the future) that has a value based on the value of another asset, such as shares, or bonds"
+  },
+  {
+    "word": "didactic",
+    "a": 1,
+    "b": 2,
+    "score": 0.784,
+    "first": "intended to teach, especially in a way that is too determined or eager, and often fixed and unwilling to change: intended to teach people a moral lesson",
+    "second": "intended to teach, or to improve morals by teaching"
+  },
+  {
+    "word": "digress",
+    "a": 1,
+    "b": 2,
+    "score": 0.879,
+    "first": "to move away from the main subject you are writing or talking about and to write or talk about something else",
+    "second": "(in speech or writing) to move away from the main subject and discuss something else"
+  },
+  {
+    "word": "dilettante",
+    "a": 1,
+    "b": 2,
+    "score": 0.873,
+    "first": "a person who is or seems to be interested in a subject, but whose understanding of it is not very deep or serious",
+    "second": "a person who is or seems to be interested in a subject, but who is not involved with it in a serious and determined way"
+  },
+  {
+    "word": "din",
+    "a": 1,
+    "b": 2,
+    "score": 0.813,
+    "first": "a loud, unpleasant confused noise that lasts for a long time",
+    "second": "a loud and unpleasant noise or mixture of noises, esp. one that continues for some time"
+  },
+  {
+    "word": "disingenuous",
+    "a": 1,
+    "b": 2,
+    "score": 0.816,
+    "first": "(of a person or their behaviour) slightly dishonest, or not speaking the complete truth",
+    "second": "slightly dishonest; not speaking the complete truth"
+  },
+  {
+    "word": "disinterested",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "having no personal involvement or receiving no personal advantage, and therefore free to act fairly",
+    "second": "(NOT INVOLVED) having no personal involvement or receiving no personal advantage, and therefore free to act fairly"
+  },
+  {
+    "word": "disjointed",
+    "a": 1,
+    "b": 2,
+    "score": 0.871,
+    "first": "(especially of words or ideas) not well connected or well ordered",
+    "second": "(esp. of words or ideas) not well connected or well ordered, and therefore often confusing"
+  },
+  {
+    "word": "dismiss",
+    "a": 1,
+    "b": 4,
+    "score": 1.0,
+    "first": "(NOT TAKE SERIOUSLY) to decide that something or someone is not important and not worth considering",
+    "second": "(NOT CONSIDER) to decide that something or someone is not important and not worth considering"
+  },
+  {
+    "word": "dismiss",
+    "a": 1,
+    "b": 8,
+    "score": 1.0,
+    "first": "(NOT TAKE SERIOUSLY) to decide that something or someone is not important and not worth considering",
+    "second": "to decide that something or someone is not important and not worth considering"
+  },
+  {
+    "word": "dismiss",
+    "a": 2,
+    "b": 6,
+    "score": 1.0,
+    "first": "(END JOB) to remove someone from their job, especially because they have done something wrong",
+    "second": "to remove someone from their job, especially because they have done something wrong"
+  },
+  {
+    "word": "dismiss",
+    "a": 3,
+    "b": 7,
+    "score": 0.785,
+    "first": "(SEND AWAY) to formally ask or order someone to leave: When a judge dismisses a court case, he or she formally stops the trial, often because there is not enough proof that someone is guilty",
+    "second": "to formally stop a trial in a court of law, often because there is not enough proof that someone is guilty"
+  },
+  {
+    "word": "dismiss",
+    "a": 4,
+    "b": 8,
+    "score": 1.0,
+    "first": "(NOT CONSIDER) to decide that something or someone is not important and not worth considering",
+    "second": "to decide that something or someone is not important and not worth considering"
+  },
+  {
+    "word": "disparage",
+    "a": 1,
+    "b": 2,
+    "score": 0.903,
+    "first": "to criticize someone or something in a way that shows you do not respect or value him, her, or it",
+    "second": "to criticize someone or something in a way that shows a lack of respect"
+  },
+  {
+    "word": "disparate",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "different in every way",
+    "second": "different in every way"
+  },
+  {
+    "word": "dispassionate",
+    "a": 1,
+    "b": 2,
+    "score": 0.988,
+    "first": "able to think clearly or make good decisions because of not being influenced by emotions",
+    "second": "able to think clearly or make good decisions because not influenced by emotions"
+  },
+  {
+    "word": "dispatch",
+    "a": 1,
+    "b": 4,
+    "score": 0.778,
+    "first": "(SEND) to send something, especially goods or a message, somewhere for a particular purpose",
+    "second": "to send someone or something to a place for a particular purpose"
+  },
+  {
+    "word": "dispatch",
+    "a": 1,
+    "b": 7,
+    "score": 0.893,
+    "first": "(SEND) to send something, especially goods or a message, somewhere for a particular purpose",
+    "second": "to send goods, a message, etc. to a place"
+  },
+  {
+    "word": "dispatch",
+    "a": 1,
+    "b": 8,
+    "score": 0.83,
+    "first": "(SEND) to send something, especially goods or a message, somewhere for a particular purpose",
+    "second": "the act of sending goods, a message, etc. to a place"
+  },
+  {
+    "word": "dispatch",
+    "a": 4,
+    "b": 6,
+    "score": 0.975,
+    "first": "to send someone or something to a place for a particular purpose",
+    "second": "to send someone to a place for a particular purpose"
+  },
+  {
+    "word": "dispatch",
+    "a": 4,
+    "b": 7,
+    "score": 0.768,
+    "first": "to send someone or something to a place for a particular purpose",
+    "second": "to send goods, a message, etc. to a place"
+  },
+  {
+    "word": "dispatch",
+    "a": 7,
+    "b": 8,
+    "score": 0.899,
+    "first": "to send goods, a message, etc. to a place",
+    "second": "the act of sending goods, a message, etc. to a place"
+  },
+  {
+    "word": "disperse",
+    "a": 1,
+    "b": 2,
+    "score": 0.785,
+    "first": "to spread across or move away over a large area, or to make something do this",
+    "second": "to scatter or move away over a large area, or to cause this to happen"
+  },
+  {
+    "word": "disseminate",
+    "a": 1,
+    "b": 2,
+    "score": 0.972,
+    "first": "to spread or give out something, especially news, information, ideas, etc., to a lot of people",
+    "second": "to spread or give out news, information, ideas, etc. to many people"
+  },
+  {
+    "word": "disseminate",
+    "a": 1,
+    "b": 3,
+    "score": 0.977,
+    "first": "to spread or give out something, especially news, information, ideas, etc., to a lot of people",
+    "second": "to spread or give out news, information, ideas, etc., to a lot of people"
+  },
+  {
+    "word": "disseminate",
+    "a": 2,
+    "b": 3,
+    "score": 0.992,
+    "first": "to spread or give out news, information, ideas, etc. to many people",
+    "second": "to spread or give out news, information, ideas, etc., to a lot of people"
+  },
+  {
+    "word": "dissolution",
+    "a": 1,
+    "b": 3,
+    "score": 1.0,
+    "first": "the act or process of ending an official organization or legal agreement",
+    "second": "the act or process of ending an official organization or legal agreement"
+  },
+  {
+    "word": "diverge",
+    "a": 1,
+    "b": 2,
+    "score": 0.862,
+    "first": "to follow a different direction, or to be or become different",
+    "second": "to go in different directions from the same point, or to become different"
+  },
+  {
+    "word": "divest",
+    "a": 1,
+    "b": 3,
+    "score": 0.764,
+    "first": "to sell something, especially a business or a part of a business",
+    "second": "to sell an asset, a business, or part of a business, or to reduce the amount of investment in something"
+  },
+  {
+    "word": "divine",
+    "a": 1,
+    "b": 5,
+    "score": 0.965,
+    "first": "(GOD-LIKE) connected with a god, or like a god",
+    "second": "(GODLIKE) connected with or like God or a god"
+  },
+  {
+    "word": "divine",
+    "a": 2,
+    "b": 6,
+    "score": 0.843,
+    "first": "(SPLENDID) extremely good, pleasant, or enjoyable",
+    "second": "(VERY GOOD) extremely good or pleasing"
+  },
+  {
+    "word": "document",
+    "a": 1,
+    "b": 3,
+    "score": 0.79,
+    "first": "a paper or set of papers with written or printed information, especially of an official type: a text that is written and stored on a computer",
+    "second": "a paper or set of papers with written or printed information, esp. of an official type: A document is also a file on a computer in which text is stored."
+  },
+  {
+    "word": "document",
+    "a": 4,
+    "b": 7,
+    "score": 0.934,
+    "first": "to record information about something by writing about it or taking photographs of it",
+    "second": "to record information about something important by writing about it or photographing it"
+  },
+  {
+    "word": "dogma",
+    "a": 1,
+    "b": 2,
+    "score": 0.961,
+    "first": "a fixed, especially religious, belief or set of beliefs that people are expected to accept without any doubts",
+    "second": "a fixed belief or set of beliefs that people are expected to accept without any doubts"
+  },
+  {
+    "word": "dormant",
+    "a": 2,
+    "b": 3,
+    "score": 0.823,
+    "first": "(of things) not active or growing, but having the ability to be active at a later time",
+    "second": "not active or growing now, but having the ability to become active in the future"
+  },
+  {
+    "word": "dovetail",
+    "a": 2,
+    "b": 3,
+    "score": 0.86,
+    "first": "to cause something to fit exactly together",
+    "second": "to fit together well, or to cause something to fit together well with something else"
+  },
+  {
+    "word": "droll",
+    "a": 1,
+    "b": 2,
+    "score": 0.871,
+    "first": "humorous, especially in an unusual way",
+    "second": "amusing in an unusual way"
+  },
+  {
+    "word": "dupe",
+    "a": 1,
+    "b": 4,
+    "score": 0.754,
+    "first": "to deceive someone, usually by making that person do something that they did not intend to do",
+    "second": "to cheat someone by telling lies or by deceiving the person"
+  },
+  {
+    "word": "dupe",
+    "a": 2,
+    "b": 5,
+    "score": 1.0,
+    "first": "(PERSON) someone who has been tricked",
+    "second": "someone who has been tricked"
+  },
+  {
+    "word": "e",
+    "a": 1,
+    "b": 9,
+    "score": 1.0,
+    "first": "(LETTER) the fifth letter of the English alphabet",
+    "second": "(LETTER) the fifth letter of the English alphabet"
+  },
+  {
+    "word": "e",
+    "a": 4,
+    "b": 6,
+    "score": 0.961,
+    "first": "(EAST) written abbreviation for east",
+    "second": "(EAST) written abbreviation for east or eastern"
+  },
+  {
+    "word": "e",
+    "a": 4,
+    "b": 11,
+    "score": 0.916,
+    "first": "(EAST) written abbreviation for east",
+    "second": "abbreviation for east or eastern"
+  },
+  {
+    "word": "e",
+    "a": 4,
+    "b": 13,
+    "score": 0.961,
+    "first": "(EAST) written abbreviation for east",
+    "second": "written abbreviation for east or eastern"
+  },
+  {
+    "word": "e",
+    "a": 6,
+    "b": 11,
+    "score": 0.971,
+    "first": "(EAST) written abbreviation for east or eastern",
+    "second": "abbreviation for east or eastern"
+  },
+  {
+    "word": "e",
+    "a": 6,
+    "b": 13,
+    "score": 1.0,
+    "first": "(EAST) written abbreviation for east or eastern",
+    "second": "written abbreviation for east or eastern"
+  },
+  {
+    "word": "e",
+    "a": 7,
+    "b": 8,
+    "score": 1.0,
+    "first": "abbreviation for electronic",
+    "second": "abbreviation for electronic"
+  },
+  {
+    "word": "e",
+    "a": 7,
+    "b": 12,
+    "score": 1.0,
+    "first": "abbreviation for electronic",
+    "second": "abbreviation for electronic"
+  },
+  {
+    "word": "e",
+    "a": 8,
+    "b": 12,
+    "score": 1.0,
+    "first": "abbreviation for electronic",
+    "second": "abbreviation for electronic"
+  },
+  {
+    "word": "e",
+    "a": 11,
+    "b": 13,
+    "score": 0.971,
+    "first": "abbreviation for east or eastern",
+    "second": "written abbreviation for east or eastern"
+  },
+  {
+    "word": "eccentric",
+    "a": 1,
+    "b": 4,
+    "score": 0.984,
+    "first": "(STRANGE) strange or unusual, sometimes in a humorous way",
+    "second": "strange or unusual, sometimes in an amusing way"
+  },
+  {
+    "word": "egalitarian",
+    "a": 1,
+    "b": 3,
+    "score": 0.822,
+    "first": "believing that all people are equally important and should have the same rights and opportunities in life",
+    "second": "based on the idea that people are equally important and should have the same rights and opportunities"
+  },
+  {
+    "word": "elated",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "extremely happy and excited, often because something has happened or been achieved",
+    "second": "extremely happy and excited, often because something has happened or been achieved"
+  },
+  {
+    "word": "elegy",
+    "a": 1,
+    "b": 2,
+    "score": 0.992,
+    "first": "a sad poem or song, especially remembering someone who has died or something in the past",
+    "second": "a sad poem or song, esp. remembering someone who has died or something in the past"
+  },
+  {
+    "word": "elevate",
+    "a": 1,
+    "b": 3,
+    "score": 0.799,
+    "first": "to raise something or lift something up: to make someone or something more important or to improve something: to be given a higher rank or social position",
+    "second": "(RAISE) to raise or lift up"
+  },
+  {
+    "word": "emaciated",
+    "a": 1,
+    "b": 2,
+    "score": 0.864,
+    "first": "very thin and weak, usually because of illness or extreme hunger",
+    "second": "(esp. of people and animals) very thin and weak, usually because of illness or not eating enough"
+  },
+  {
+    "word": "embellish",
+    "a": 1,
+    "b": 2,
+    "score": 0.875,
+    "first": "to make something more beautiful by adding something to it: to add or change some details of a story, usually to make it more interesting or exciting",
+    "second": "to make something more beautiful or interesting by additions or details: If you embellish a story or statement, you add details that are not completely true in order to make it more interesting"
+  },
+  {
+    "word": "eminent",
+    "a": 1,
+    "b": 2,
+    "score": 0.792,
+    "first": "famous, respected, or important",
+    "second": "(FAMOUS) famous and important"
+  },
+  {
+    "word": "empirical",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "based on what is experienced or seen rather than on theory",
+    "second": "based on what is experienced or seen rather than on theory"
+  },
+  {
+    "word": "empirical",
+    "a": 1,
+    "b": 3,
+    "score": 1.0,
+    "first": "based on what is experienced or seen rather than on theory",
+    "second": "based on what is experienced or seen rather than on theory"
+  },
+  {
+    "word": "empirical",
+    "a": 2,
+    "b": 3,
+    "score": 1.0,
+    "first": "based on what is experienced or seen rather than on theory",
+    "second": "based on what is experienced or seen rather than on theory"
+  },
+  {
+    "word": "endemic",
+    "a": 1,
+    "b": 2,
+    "score": 0.811,
+    "first": "especially of a disease or a condition, regularly found and very common among a particular group or in a particular area",
+    "second": "(esp. of a disease or social condition) found particularly in a specific area or group"
+  },
+  {
+    "word": "enhance",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "to improve the quality, amount, or strength of something",
+    "second": "to improve the quality, amount, or strength of something"
+  },
+  {
+    "word": "enhance",
+    "a": 1,
+    "b": 3,
+    "score": 0.893,
+    "first": "to improve the quality, amount, or strength of something",
+    "second": "to improve the quality, amount, or value of something"
+  },
+  {
+    "word": "enhance",
+    "a": 2,
+    "b": 3,
+    "score": 0.893,
+    "first": "to improve the quality, amount, or strength of something",
+    "second": "to improve the quality, amount, or value of something"
+  },
+  {
+    "word": "enigma",
+    "a": 1,
+    "b": 2,
+    "score": 0.848,
+    "first": "something that is mysterious and seems impossible to understand completely",
+    "second": "someone or something that is mysterious and impossible to understand"
+  },
+  {
+    "word": "entitlement",
+    "a": 1,
+    "b": 4,
+    "score": 0.788,
+    "first": "something that you have a right to do or have, or the right to do or have something: the feeling that you have the right to do or have what you want without having to work for it or deserve it, just because of who you are",
+    "second": "something that you have the right to do or have"
+  },
+  {
+    "word": "entitlement",
+    "a": 3,
+    "b": 4,
+    "score": 0.834,
+    "first": "a situation in which you have the right to do or have something",
+    "second": "something that you have the right to do or have"
+  },
+  {
+    "word": "enumerate",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "to name things separately, one by one",
+    "second": "to name things separately, one by one"
+  },
+  {
+    "word": "ephemeral",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "lasting for only a short time",
+    "second": "lasting for only a short time"
+  },
+  {
+    "word": "equanimity",
+    "a": 1,
+    "b": 2,
+    "score": 0.776,
+    "first": "a calm mental state, especially after a shock or disappointment or in a difficult situation",
+    "second": "the state of being calm and in control of your emotions, esp. in a difficult situation"
+  },
+  {
+    "word": "equitable",
+    "a": 1,
+    "b": 2,
+    "score": 0.876,
+    "first": "treating everyone fairly and in the same way",
+    "second": "treating everyone equally; fair"
+  },
+  {
+    "word": "eschew",
+    "a": 1,
+    "b": 2,
+    "score": 0.991,
+    "first": "to avoid something intentionally, or to give something up",
+    "second": "to avoid something intentionally, or to give up something"
+  },
+  {
+    "word": "esoteric",
+    "a": 1,
+    "b": 2,
+    "score": 0.754,
+    "first": "very unusual and understood or liked by only a small number of people, especially those with special knowledge",
+    "second": "intended for or understood by only a few people who have special knowledge"
+  },
+  {
+    "word": "ethos",
+    "a": 1,
+    "b": 2,
+    "score": 0.77,
+    "first": "the set of beliefs, ideas, etc. about the social behaviour and relationships of a person or group",
+    "second": "the set of moral beliefs, attitudes, habits, etc., that are characteristic of a person or group"
+  },
+  {
+    "word": "ethos",
+    "a": 1,
+    "b": 3,
+    "score": 0.967,
+    "first": "the set of beliefs, ideas, etc. about the social behaviour and relationships of a person or group",
+    "second": "the set of beliefs, ideas, etc. about the behaviour and relationships of a person or group"
+  },
+  {
+    "word": "ethos",
+    "a": 2,
+    "b": 3,
+    "score": 0.796,
+    "first": "the set of moral beliefs, attitudes, habits, etc., that are characteristic of a person or group",
+    "second": "the set of beliefs, ideas, etc. about the behaviour and relationships of a person or group"
+  },
+  {
+    "word": "eulogy",
+    "a": 1,
+    "b": 2,
+    "score": 0.92,
+    "first": "a speech, piece of writing, poem, etc. containing great praise, especially for someone who recently died or retired from work",
+    "second": "a speech or piece of writing containing great praise, esp. for someone who has recently died"
+  },
+  {
+    "word": "euphemism",
+    "a": 1,
+    "b": 2,
+    "score": 0.904,
+    "first": "a word or phrase used to avoid saying an unpleasant or offensive word",
+    "second": "the use of a word or phrase to avoid saying another word or phrase that may be unpleasant or offensive, or the word or phrase used"
+  },
+  {
+    "word": "exacerbate",
+    "a": 1,
+    "b": 2,
+    "score": 0.987,
+    "first": "to make something that is already bad even worse",
+    "second": "to make something that is already bad worse"
+  },
+  {
+    "word": "exacting",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "demanding a lot of effort, care, or attention",
+    "second": "demanding a lot of effort, care, or attention"
+  },
+  {
+    "word": "exonerate",
+    "a": 1,
+    "b": 3,
+    "score": 0.956,
+    "first": "to show or state that someone or something is not guilty of something",
+    "second": "to show or say officially that someone or something is not guilty of something"
+  },
+  {
+    "word": "expedient",
+    "a": 1,
+    "b": 3,
+    "score": 0.803,
+    "first": "helpful or useful in a particular situation, but sometimes not morally acceptable",
+    "second": "helpful or useful in a particular situation, and without considering any moral question that might influence your decision"
+  },
+  {
+    "word": "expedient",
+    "a": 1,
+    "b": 4,
+    "score": 0.83,
+    "first": "helpful or useful in a particular situation, but sometimes not morally acceptable",
+    "second": "helpful or useful in the situation that now exists, although perhaps not the right thing to do morally or for the future"
+  },
+  {
+    "word": "expedient",
+    "a": 2,
+    "b": 5,
+    "score": 1.0,
+    "first": "an action that is expedient",
+    "second": "an action that is expedient"
+  },
+  {
+    "word": "expedient",
+    "a": 3,
+    "b": 4,
+    "score": 0.788,
+    "first": "helpful or useful in a particular situation, and without considering any moral question that might influence your decision",
+    "second": "helpful or useful in the situation that now exists, although perhaps not the right thing to do morally or for the future"
+  },
+  {
+    "word": "exponent",
+    "a": 1,
+    "b": 3,
+    "score": 0.774,
+    "first": "(PERSON) a person who supports an idea or belief or performs an activity",
+    "second": "someone who supports an idea, plan, or position"
+  },
+  {
+    "word": "exponent",
+    "a": 1,
+    "b": 5,
+    "score": 0.931,
+    "first": "(PERSON) a person who supports an idea or belief or performs an activity",
+    "second": "a person who supports an idea or belief"
+  },
+  {
+    "word": "exponent",
+    "a": 2,
+    "b": 4,
+    "score": 1.0,
+    "first": "(NUMBER) a number or sign that shows how many times another number is to be multiplied by itself",
+    "second": "a number or sign that shows how many times another number is to be multiplied by itself"
+  },
+  {
+    "word": "exponent",
+    "a": 2,
+    "b": 7,
+    "score": 0.999,
+    "first": "(NUMBER) a number or sign that shows how many times another number is to be multiplied by itself",
+    "second": "a number or sign which shows how many times another number is to be multiplied by itself"
+  },
+  {
+    "word": "exponent",
+    "a": 3,
+    "b": 5,
+    "score": 0.81,
+    "first": "someone who supports an idea, plan, or position",
+    "second": "a person who supports an idea or belief"
+  },
+  {
+    "word": "exponent",
+    "a": 4,
+    "b": 7,
+    "score": 0.999,
+    "first": "a number or sign that shows how many times another number is to be multiplied by itself",
+    "second": "a number or sign which shows how many times another number is to be multiplied by itself"
+  },
+  {
+    "word": "extemporaneous",
+    "a": 1,
+    "b": 2,
+    "score": 0.921,
+    "first": "done or said without any preparation or thought",
+    "second": "done or said without preparation"
+  },
+  {
+    "word": "extraneous",
+    "a": 1,
+    "b": 2,
+    "score": 0.819,
+    "first": "not directly connected with or related to something",
+    "second": "not directly connected or related to a matter being considered"
+  },
+  {
+    "word": "extrapolate",
+    "a": 1,
+    "b": 2,
+    "score": 0.757,
+    "first": "to guess or think about what might happen using information that is already known",
+    "second": "to use existing information to discover what is likely to happen or be true in the future"
+  },
+  {
+    "word": "facilitate",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "to make something possible or easier",
+    "second": "to make something possible or easier"
+  },
+  {
+    "word": "faction",
+    "a": 1,
+    "b": 2,
+    "score": 0.981,
+    "first": "a group within a larger group, especially one with slightly different ideas from the main group",
+    "second": "a group within a larger group, esp. one with slightly different ideas than the main group"
+  },
+  {
+    "word": "fallow",
+    "a": 1,
+    "b": 3,
+    "score": 0.85,
+    "first": "(LAND) Fallow land is not planted with crops, in order to improve the quality of the soil",
+    "second": "fallow land is land that a farmer does not grow crops on for a period of time, usually a year, so that the soil quality can improve"
+  },
+  {
+    "word": "fathom",
+    "a": 1,
+    "b": 3,
+    "score": 0.963,
+    "first": "a unit for measuring the depth of water, equal to 1.8 metres or 6 feet",
+    "second": "(MEASUREMENT) a unit of measurement of the depth of water equal to 6 feet or 1.8 meters"
+  },
+  {
+    "word": "fathom",
+    "a": 2,
+    "b": 4,
+    "score": 0.798,
+    "first": "to discover the meaning of something: to understand someone or why someone acts as they do",
+    "second": "(UNDERSTAND) to discover the meaning of something"
+  },
+  {
+    "word": "fawn",
+    "a": 1,
+    "b": 4,
+    "score": 1.0,
+    "first": "(ANIMAL) a young deer",
+    "second": "(DEER) a young deer"
+  },
+  {
+    "word": "fawn",
+    "a": 2,
+    "b": 3,
+    "score": 0.918,
+    "first": "(COLOUR) a pale yellowish-brown colour",
+    "second": "having a pale yellowish-brown colour"
+  },
+  {
+    "word": "fidelity",
+    "a": 2,
+    "b": 4,
+    "score": 0.777,
+    "first": "(EXACT COPY) the degree to which the detail and quality of an original, such as a picture, sound, or story, is copied exactly",
+    "second": "(ACCURACY) the degree to which a copy of something shows the true character of the original"
+  },
+  {
+    "word": "finesse",
+    "a": 1,
+    "b": 3,
+    "score": 1.0,
+    "first": "great skill or style",
+    "second": "great skill or style"
+  },
+  {
+    "word": "flag",
+    "a": 1,
+    "b": 15,
+    "score": 0.774,
+    "first": "(SYMBOL) a piece of cloth, usually rectangular and attached to a pole at one edge, that has a pattern that shows it represents a country or a group, or has a particular meaning: in American football, a yellow piece of cloth thrown on to the playing area by one of the officials when a player has broken the rules",
+    "second": "a piece of cloth, usually rectangular and fixed to a pole at one edge, that has a pattern that shows it represents a country or a group, or has a particular meaning"
+  },
+  {
+    "word": "flag",
+    "a": 5,
+    "b": 10,
+    "score": 0.791,
+    "first": "(MARK) to put a mark on something so it can be found easily among other similar things: to mark computer information with one of two possible values so that you can deal with it later",
+    "second": "(MARK) to mark something so it can be found easily among other similar things"
+  },
+  {
+    "word": "flag",
+    "a": 5,
+    "b": 12,
+    "score": 0.778,
+    "first": "(MARK) to put a mark on something so it can be found easily among other similar things: to mark computer information with one of two possible values so that you can deal with it later",
+    "second": "to put a mark on something or against something so it can be found easily among other similar things"
+  },
+  {
+    "word": "flag",
+    "a": 5,
+    "b": 13,
+    "score": 0.756,
+    "first": "(MARK) to put a mark on something so it can be found easily among other similar things: to mark computer information with one of two possible values so that you can deal with it later",
+    "second": "to mark computer information with one of two possible values so that you can process it later"
+  },
+  {
+    "word": "flag",
+    "a": 7,
+    "b": 11,
+    "score": 0.912,
+    "first": "(BECOME TIRED) to become tired, weaker, or less effective",
+    "second": "(BECOME TIRED) to become tired or less strong"
+  },
+  {
+    "word": "flag",
+    "a": 7,
+    "b": 14,
+    "score": 1.0,
+    "first": "(BECOME TIRED) to become tired, weaker, or less effective",
+    "second": "to become tired, weaker, or less effective"
+  },
+  {
+    "word": "flag",
+    "a": 9,
+    "b": 15,
+    "score": 0.771,
+    "first": "(SYMBOL) a piece of cloth with a special color and pattern, used as a symbol esp. to represent a particular country or group",
+    "second": "a piece of cloth, usually rectangular and fixed to a pole at one edge, that has a pattern that shows it represents a country or a group, or has a particular meaning"
+  },
+  {
+    "word": "flag",
+    "a": 10,
+    "b": 12,
+    "score": 0.89,
+    "first": "(MARK) to mark something so it can be found easily among other similar things",
+    "second": "to put a mark on something or against something so it can be found easily among other similar things"
+  },
+  {
+    "word": "flag",
+    "a": 11,
+    "b": 14,
+    "score": 0.912,
+    "first": "(BECOME TIRED) to become tired or less strong",
+    "second": "to become tired, weaker, or less effective"
+  },
+  {
+    "word": "flag",
+    "a": 12,
+    "b": 16,
+    "score": 0.799,
+    "first": "to put a mark on something or against something so it can be found easily among other similar things",
+    "second": "a mark that you put on or against something to show that it is important"
+  },
+  {
+    "word": "fledgling",
+    "a": 2,
+    "b": 3,
+    "score": 0.837,
+    "first": "new and without experience",
+    "second": "new and not experienced"
+  },
+  {
+    "word": "fleeting",
+    "a": 1,
+    "b": 2,
+    "score": 0.842,
+    "first": "short or quick",
+    "second": "brief or quick"
+  },
+  {
+    "word": "florid",
+    "a": 1,
+    "b": 4,
+    "score": 1.0,
+    "first": "(DECORATED) with too much decoration or detail",
+    "second": "(DECORATED) with too much decoration or detail"
+  },
+  {
+    "word": "florid",
+    "a": 2,
+    "b": 3,
+    "score": 0.75,
+    "first": "(RED) (of a person's face) too red, especially in a way that is unhealthy",
+    "second": "(RED) too red, esp. in a way that is unhealthy"
+  },
+  {
+    "word": "flout",
+    "a": 1,
+    "b": 2,
+    "score": 0.847,
+    "first": "to intentionally not obey a rule, law, or custom",
+    "second": "to intentionally disobey a rule or law, or to intentionally avoid behavior that is usual or expected"
+  },
+  {
+    "word": "fluke",
+    "a": 1,
+    "b": 4,
+    "score": 0.86,
+    "first": "(LUCK) something that happens, usually something good, that is the result of chance instead of skill or planning: an unusual chance event, or something produced by this",
+    "second": "something, usually a good thing, that has happened as result of chance instead of skill or planning"
+  },
+  {
+    "word": "foment",
+    "a": 1,
+    "b": 2,
+    "score": 0.761,
+    "first": "to cause trouble to develop",
+    "second": "to cause something bad or illegal to develop"
+  },
+  {
+    "word": "forage",
+    "a": 1,
+    "b": 3,
+    "score": 0.758,
+    "first": "to go from place to place searching for things that you can eat or use",
+    "second": "to go searching, esp. for food"
+  },
+  {
+    "word": "ford",
+    "a": 1,
+    "b": 2,
+    "score": 0.81,
+    "first": "an area in a river or stream that is not deep and can be crossed on foot or in a vehicle",
+    "second": "to cross a river, where it is not deep, on foot or in a vehicle"
+  },
+  {
+    "word": "ford",
+    "a": 1,
+    "b": 3,
+    "score": 0.792,
+    "first": "an area in a river or stream that is not deep and can be crossed on foot or in a vehicle",
+    "second": "a place in a river where the water is not deep, making it possible to get across"
+  },
+  {
+    "word": "ford",
+    "a": 2,
+    "b": 3,
+    "score": 0.752,
+    "first": "to cross a river, where it is not deep, on foot or in a vehicle",
+    "second": "a place in a river where the water is not deep, making it possible to get across"
+  },
+  {
+    "word": "forestall",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "to prevent something from happening by acting first",
+    "second": "to prevent something from happening by acting first"
+  },
+  {
+    "word": "forfeit",
+    "a": 1,
+    "b": 3,
+    "score": 0.829,
+    "first": "(LOSE) to lose the right to do or have something because you have broken a rule",
+    "second": "something that you have lost the right to do or have because you have broken a rule: the action of losing the right to do or have something because you have broken a rule: to give up something, especially in a game"
+  },
+  {
+    "word": "forfeit",
+    "a": 1,
+    "b": 6,
+    "score": 0.841,
+    "first": "(LOSE) to lose the right to do or have something because you have broken a rule",
+    "second": "to lose the right to have or do something because you have not obeyed a rule or law"
+  },
+  {
+    "word": "forfeit",
+    "a": 1,
+    "b": 8,
+    "score": 0.801,
+    "first": "(LOSE) to lose the right to do or have something because you have broken a rule",
+    "second": "something that you lose the right to have or do because you have failed to obey a rule or law"
+  },
+  {
+    "word": "forfeit",
+    "a": 3,
+    "b": 8,
+    "score": 0.773,
+    "first": "something that you have lost the right to do or have because you have broken a rule: the action of losing the right to do or have something because you have broken a rule: to give up something, especially in a game",
+    "second": "something that you lose the right to have or do because you have failed to obey a rule or law"
+  },
+  {
+    "word": "forfeit",
+    "a": 6,
+    "b": 8,
+    "score": 0.882,
+    "first": "to lose the right to have or do something because you have not obeyed a rule or law",
+    "second": "something that you lose the right to have or do because you have failed to obey a rule or law"
+  },
+  {
+    "word": "fortuitous",
+    "a": 1,
+    "b": 2,
+    "score": 0.779,
+    "first": "(of something that is to your advantage) not planned, happening by chance",
+    "second": "(esp. of something to your advantage) happening by chance"
+  },
+  {
+    "word": "fracas",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "a noisy argument or fight",
+    "second": "a noisy argument or fight"
+  },
+  {
+    "word": "frenetic",
+    "a": 1,
+    "b": 2,
+    "score": 0.825,
+    "first": "involving a lot of excited movement or activity",
+    "second": "involving a lot of movement or activity; extremely active, excited, or uncontrollable"
+  },
+  {
+    "word": "fringe",
+    "a": 3,
+    "b": 8,
+    "score": 0.959,
+    "first": "(DECORATION) a decorative edge of hanging narrow strips of material or threads on a piece of clothing or material",
+    "second": "(DECORATION) a decorative edge of narrow strips of material or threads on a piece of clothing or material"
+  },
+  {
+    "word": "fringe",
+    "a": 6,
+    "b": 9,
+    "score": 0.771,
+    "first": "If a place is fringed with something, that thing forms a border along the edge",
+    "second": "(FORM EDGE) to form a border around the edge of something"
+  },
+  {
+    "word": "fringe",
+    "a": 7,
+    "b": 10,
+    "score": 1.0,
+    "first": "(EDGE) the outer or less important part of an area, group, or activity",
+    "second": "the outer or less important part of an area, group, or activity"
+  },
+  {
+    "word": "garrulous",
+    "a": 1,
+    "b": 2,
+    "score": 0.893,
+    "first": "having the habit of talking a lot, especially about things that are not important",
+    "second": "having the habit of talking a lot, esp. about unimportant things"
+  },
+  {
+    "word": "gestation",
+    "a": 1,
+    "b": 3,
+    "score": 0.896,
+    "first": "(BABY) (the period of) the development of a child or young animal while it is still inside its mother's body",
+    "second": "(the period of) the development of a child or young animal inside its mother’s uterus"
+  },
+  {
+    "word": "gist",
+    "a": 1,
+    "b": 2,
+    "score": 0.782,
+    "first": "the most important pieces of information about something, or general information without details",
+    "second": "the main subject, without details, of a piece of information"
+  },
+  {
+    "word": "glower",
+    "a": 1,
+    "b": 2,
+    "score": 0.923,
+    "first": "to look very angry, annoyed, or threatening",
+    "second": "an angry, annoyed, or threatening look"
+  },
+  {
+    "word": "glower",
+    "a": 1,
+    "b": 3,
+    "score": 0.936,
+    "first": "to look very angry, annoyed, or threatening",
+    "second": "to look angry or annoyed"
+  },
+  {
+    "word": "glower",
+    "a": 2,
+    "b": 3,
+    "score": 0.854,
+    "first": "an angry, annoyed, or threatening look",
+    "second": "to look angry or annoyed"
+  },
+  {
+    "word": "gouge",
+    "a": 2,
+    "b": 5,
+    "score": 0.875,
+    "first": "(CHARGE) to charge someone too much money for something, in a way that is dishonest or unfair",
+    "second": "(CHEAT) to charge someone far too much money for something done or something sold"
+  },
+  {
+    "word": "gradation",
+    "a": 1,
+    "b": 3,
+    "score": 0.906,
+    "first": "(CHANGE) a gradual change, or a stage in the process of change",
+    "second": "a gradual change, or one stage in a series of changes"
+  },
+  {
+    "word": "graft",
+    "a": 1,
+    "b": 7,
+    "score": 0.816,
+    "first": "(PIECE) a piece of healthy skin or bone cut from one part of a person's body and used to repair another damaged part, or a piece cut from one living plant and attached to another plant so that it grows there",
+    "second": "(TISSUE) a piece of healthy skin or bone cut usually from a person’s own body and used to repair a damaged part on that personA graft is also a piece cut from a living plant and fixed to another plant so that it grows there."
+  },
+  {
+    "word": "graft",
+    "a": 3,
+    "b": 6,
+    "score": 0.944,
+    "first": "(INFLUENCE) the act of getting money or advantage through the dishonest use of political power and influence",
+    "second": "(INFLUENCE) (esp. in politics) the obtaining of money or advantage through the dishonest use of power and influence"
+  },
+  {
+    "word": "graft",
+    "a": 5,
+    "b": 10,
+    "score": 1.0,
+    "first": "(WORK) to work hard",
+    "second": "to work hard"
+  },
+  {
+    "word": "grandstand",
+    "a": 1,
+    "b": 2,
+    "score": 0.939,
+    "first": "a set of seats arranged in rising rows, sometimes covered by a roof, from which people can easily watch sports or other events",
+    "second": "a large area containing many seats arranged in rising rows, sometimes covered by a roof, from which people can watch sports or other events"
+  },
+  {
+    "word": "grievous",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "having very serious effects or causing great pain",
+    "second": "having very serious effects or causing great pain"
+  },
+  {
+    "word": "grouse",
+    "a": 3,
+    "b": 5,
+    "score": 0.899,
+    "first": "to complain angrily",
+    "second": "(COMPLAIN) to complain"
+  },
+  {
+    "word": "hallmark",
+    "a": 1,
+    "b": 4,
+    "score": 1.0,
+    "first": "(CHARACTERISTIC) a typical characteristic or feature of a person or thing",
+    "second": "a typical characteristic or feature of a person or thing"
+  },
+  {
+    "word": "hallmark",
+    "a": 2,
+    "b": 3,
+    "score": 0.771,
+    "first": "(MARK) in the UK, an official mark put on objects made of gold or silver that shows their place and year of origin and how pure the metal is that is used to make them",
+    "second": "to put an official mark on an object made of gold or silver"
+  },
+  {
+    "word": "hand",
+    "a": 1,
+    "b": 12,
+    "score": 0.951,
+    "first": "(BODY PART) the part of the body at the end of the arm that is used for holding, moving, touching, and feeling things",
+    "second": "(BODY PART) the part of the body at the end of the arm that includes the fingers and is used for holding, moving, touching, and feeling things"
+  },
+  {
+    "word": "hand",
+    "a": 2,
+    "b": 13,
+    "score": 0.776,
+    "first": "(CLOCK/WATCH) one of the long, thin pieces that point to the numbers on a clock or watch",
+    "second": "(CLOCK) one of the two long narrow parts on a clock or watch that move to show the time"
+  },
+  {
+    "word": "hand",
+    "a": 3,
+    "b": 14,
+    "score": 0.836,
+    "first": "(CARDS) a game of cards or one single part of it, or the set of cards that a player has in a game",
+    "second": "(CARDS) the set of cards that a player is given in a game"
+  },
+  {
+    "word": "hand",
+    "a": 4,
+    "b": 24,
+    "score": 0.84,
+    "first": "(ABILITY) If you have good hands, you have the ability to use your hands to do something well",
+    "second": "able to make or do things well with your hands"
+  },
+  {
+    "word": "hand",
+    "a": 8,
+    "b": 17,
+    "score": 0.782,
+    "first": "(CLAP) clapping for a performer",
+    "second": "(CLAPPING) a period of clapping to show enjoyment of a performance"
+  },
+  {
+    "word": "harangue",
+    "a": 1,
+    "b": 3,
+    "score": 0.946,
+    "first": "to speak to someone or a group of people, often for a long time, in a forceful and sometimes angry way, especially to persuade them",
+    "second": "to speak to someone or a group of people, often for a long time, in a forceful and sometimes angry way, esp. to persuade them or to express disapproval"
+  },
+  {
+    "word": "hardy",
+    "a": 1,
+    "b": 2,
+    "score": 0.927,
+    "first": "strong enough to bear extreme conditions or difficult situations: Hardy plants can live through the winter without protection from the weather",
+    "second": "able to bear difficult or extreme conditions; strong and healthy: A hardy plant can live through the winter without protection from the weather."
+  },
+  {
+    "word": "harrow",
+    "a": 1,
+    "b": 2,
+    "score": 0.948,
+    "first": "a large piece of equipment that is pulled behind a tractor (= a farm vehicle) to break the earth into small pieces ready for planting",
+    "second": "to use a large piece of equipment that is pulled behind a tractor (= a farm vehicle) to break the earth into small pieces ready for planting"
+  },
+  {
+    "word": "haven",
+    "a": 1,
+    "b": 3,
+    "score": 1.0,
+    "first": "(SAFE PLACE) a safe or peaceful place",
+    "second": "a safe or peaceful place"
+  },
+  {
+    "word": "hedge",
+    "a": 1,
+    "b": 5,
+    "score": 0.964,
+    "first": "(BUSHES) a line of bushes or small trees planted very close together, especially along the edge of a garden, field, or road",
+    "second": "(BUSHES) a line of bushes or small trees planted close together, esp. along the edge of a yard or road"
+  },
+  {
+    "word": "hedge",
+    "a": 2,
+    "b": 6,
+    "score": 0.834,
+    "first": "(PROTECTION) a way of protecting, controlling, or limiting something",
+    "second": "(PROTECTION) a means of protection, control, or limitation"
+  },
+  {
+    "word": "hedge",
+    "a": 8,
+    "b": 9,
+    "score": 0.827,
+    "first": "an investment made in order to reduce the risk of losing money on shares, bonds, etc. that you own, for example, by buying futures (= agreements to sell shares for a particular price at a date in the future) or options (= the rights to buy or sell shares for a particular price within a particular time period)",
+    "second": "to reduce the risk of losing money on shares, bonds, etc. that you own, for example by buying futures (= agreements to sell shares for a particular price at a date in the future) or options (= the rights to buy or sell shares for a particular price within a particular time period)"
+  },
+  {
+    "word": "heterogeneous",
+    "a": 1,
+    "b": 2,
+    "score": 0.833,
+    "first": "consisting of parts or things that are very different from each other",
+    "second": "consisting of different parts or types"
+  },
+  {
+    "word": "hierarchy",
+    "a": 1,
+    "b": 3,
+    "score": 0.834,
+    "first": "a system in which people or things are arranged according to their importance: the people in the upper levels of an organization who control it",
+    "second": "a system in which the people within a company or organization are organized into levels according to the authority they have"
+  },
+  {
+    "word": "hierarchy",
+    "a": 1,
+    "b": 4,
+    "score": 0.774,
+    "first": "a system in which people or things are arranged according to their importance: the people in the upper levels of an organization who control it",
+    "second": "the people in the upper levels of a company or organization who control it"
+  },
+  {
+    "word": "hierarchy",
+    "a": 3,
+    "b": 4,
+    "score": 0.797,
+    "first": "a system in which the people within a company or organization are organized into levels according to the authority they have",
+    "second": "the people in the upper levels of a company or organization who control it"
+  },
+  {
+    "word": "hodgepodge",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "a confused mixture of different things",
+    "second": "a confused mixture of different things"
+  },
+  {
+    "word": "homogeneous",
+    "a": 1,
+    "b": 2,
+    "score": 0.776,
+    "first": "consisting of parts or people that are similar to each other or are of the same type",
+    "second": "consisting of parts or having qualities that are the same"
+  },
+  {
+    "word": "hoodwink",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "to deceive or trick someone",
+    "second": "to deceive or trick someone"
+  },
+  {
+    "word": "hotly",
+    "a": 1,
+    "b": 2,
+    "score": 0.778,
+    "first": "in an angry or excited way: closely and with determination",
+    "second": "in an angry and excited way"
+  },
+  {
+    "word": "husband",
+    "a": 1,
+    "b": 3,
+    "score": 0.752,
+    "first": "the man that you are married to",
+    "second": "the man to whom someone is married; a married man"
+  },
+  {
+    "word": "idiosyncrasy",
+    "a": 1,
+    "b": 2,
+    "score": 0.968,
+    "first": "a strange or unusual habit, way of behaving, or feature that someone or something has",
+    "second": "a strange or unusual habit, way of behaving, or feature"
+  },
+  {
+    "word": "imbue",
+    "a": 1,
+    "b": 2,
+    "score": 0.916,
+    "first": "to fill something or someone with a particular feeling, quality, or idea",
+    "second": "to fill something or someone with a quality or feeling"
+  },
+  {
+    "word": "immutable",
+    "a": 1,
+    "b": 2,
+    "score": 0.99,
+    "first": "not changing, or unable to be changed",
+    "second": "not changing or unable to be changed"
+  },
+  {
+    "word": "impecunious",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "having very little money",
+    "second": "having very little money"
+  },
+  {
+    "word": "imperturbable",
+    "a": 1,
+    "b": 2,
+    "score": 0.784,
+    "first": "always staying calm and controlled, even in difficult situations that would cause other people to worry",
+    "second": "staying calm and controlled despite problems or difficulties"
+  },
+  {
+    "word": "impugn",
+    "a": 1,
+    "b": 2,
+    "score": 0.765,
+    "first": "to cause people to doubt someone's character, qualities, or reputation by criticizing them",
+    "second": "to cause people to doubt or not trust someone’s character, honesty, or ability"
+  },
+  {
+    "word": "incendiary",
+    "a": 1,
+    "b": 3,
+    "score": 1.0,
+    "first": "(FIRE) designed to cause fires",
+    "second": "(FIRE) designed to cause fires"
+  },
+  {
+    "word": "incendiary",
+    "a": 2,
+    "b": 4,
+    "score": 1.0,
+    "first": "(CAUSING ANGER) likely to cause violence or strong feelings of anger",
+    "second": "(CAUSING ANGER) likely to cause violence or strong feelings of anger"
+  },
+  {
+    "word": "incentive",
+    "a": 1,
+    "b": 2,
+    "score": 0.826,
+    "first": "something that encourages a person to do something by offering them a reward",
+    "second": "something that encourages a person to do something"
+  },
+  {
+    "word": "incentive",
+    "a": 2,
+    "b": 3,
+    "score": 0.757,
+    "first": "something that encourages a person to do something",
+    "second": "something, especially money, that encourages a person or organization to do something"
+  },
+  {
+    "word": "incorporate",
+    "a": 2,
+    "b": 5,
+    "score": 0.855,
+    "first": "(COMPANY) to legally make a company into a corporation or part of a corporation (= a large company or group of companies that is controlled together as a single organization), or (of a company) to become a corporation",
+    "second": "to make a company or organization into a legal corporation (= a particular type of company)"
+  },
+  {
+    "word": "incorporate",
+    "a": 3,
+    "b": 6,
+    "score": 1.0,
+    "first": "(INCLUDE) to include something within something else",
+    "second": "to include something within something else"
+  },
+  {
+    "word": "incorporate",
+    "a": 4,
+    "b": 5,
+    "score": 0.765,
+    "first": "(MAKE A COMPANY) to make a business into a corporation (= business protected by specific laws)",
+    "second": "to make a company or organization into a legal corporation (= a particular type of company)"
+  },
+  {
+    "word": "inculcate",
+    "a": 1,
+    "b": 2,
+    "score": 0.813,
+    "first": "to fix beliefs or ideas in someone's mind, especially by repeating them often",
+    "second": "to cause someone to have particular beliefs or values by repeating them frequently"
+  },
+  {
+    "word": "indifferent",
+    "a": 2,
+    "b": 4,
+    "score": 0.77,
+    "first": "(NOT GOOD) not good, but not very bad",
+    "second": "(NOT GOOD OR BAD) neither very good nor very bad"
+  },
+  {
+    "word": "inexorable",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "continuing without any possibility of being stopped",
+    "second": "continuing without any possibility of being stopped"
+  },
+  {
+    "word": "infallible",
+    "a": 1,
+    "b": 2,
+    "score": 0.897,
+    "first": "never wrong, failing, or making a mistake",
+    "second": "never wrong, or never failing"
+  },
+  {
+    "word": "inform",
+    "a": 1,
+    "b": 2,
+    "score": 0.775,
+    "first": "to tell someone about particular facts",
+    "second": "to tell someone about something"
+  },
+  {
+    "word": "inform",
+    "a": 2,
+    "b": 3,
+    "score": 0.861,
+    "first": "to tell someone about something",
+    "second": "to tell someone about something, especially officially"
+  },
+  {
+    "word": "insipid",
+    "a": 1,
+    "b": 2,
+    "score": 0.769,
+    "first": "not having a strong taste or character, or having no interest or energy",
+    "second": "(of food) lacking a strong taste or character, or (of people, activities, or entertainment) lacking in interest or energy"
+  },
+  {
+    "word": "insular",
+    "a": 1,
+    "b": 2,
+    "score": 0.989,
+    "first": "interested only in your own country or group and not willing to accept different or foreign ideas",
+    "second": "interested only in your own country or group and not willing to accept different or foreign ideas or people"
+  },
+  {
+    "word": "insurrection",
+    "a": 1,
+    "b": 2,
+    "score": 0.976,
+    "first": "an organized attempt by a group of people to defeat their government and take control of their country, usually by violence",
+    "second": "an organized attempt by a group of people to defeat their government or ruler and take control of the country, usually by violence"
+  },
+  {
+    "word": "intelligible",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "(of speech and writing) clear enough to be understood",
+    "second": "(of speech and writing) clear enough to be understood"
+  },
+  {
+    "word": "inter",
+    "a": 1,
+    "b": 3,
+    "score": 0.893,
+    "first": "to bury a dead body",
+    "second": "to put a dead body in the earth; bury"
+  },
+  {
+    "word": "inter",
+    "a": 2,
+    "b": 5,
+    "score": 0.806,
+    "first": "used to form adjectives meaning \"between or among the people, things, or places mentioned\"",
+    "second": "used to form words meaning between or among groups of people, things, or places"
+  },
+  {
+    "word": "interplay",
+    "a": 1,
+    "b": 2,
+    "score": 0.827,
+    "first": "the effect that two or more things have on each other",
+    "second": "the action between two or more things or the effect they have on each other"
+  },
+  {
+    "word": "intractable",
+    "a": 1,
+    "b": 2,
+    "score": 0.912,
+    "first": "very difficult or impossible to control, manage, or solve",
+    "second": "difficult or impossible to manage or control"
+  },
+  {
+    "word": "intransigent",
+    "a": 1,
+    "b": 2,
+    "score": 0.866,
+    "first": "refusing to change your opinions or behaviour",
+    "second": "refusing to change an opinion"
+  },
+  {
+    "word": "intrepid",
+    "a": 1,
+    "b": 2,
+    "score": 0.821,
+    "first": "extremely brave and showing no fear of dangerous situations",
+    "second": "very brave and willing to risk being in dangerous situations"
+  },
+  {
+    "word": "intrinsic",
+    "a": 1,
+    "b": 3,
+    "score": 1.0,
+    "first": "being an extremely important and basic characteristic of a person or thing",
+    "second": "being an extremely important and basic characteristic of a person or thing"
+  },
+  {
+    "word": "inveigle",
+    "a": 1,
+    "b": 2,
+    "score": 0.818,
+    "first": "to persuade someone to do something in a clever and dishonest way, when they do not want to do it",
+    "second": "to persuade someone to do something the person may not want to do"
+  },
+  {
+    "word": "irascible",
+    "a": 1,
+    "b": 2,
+    "score": 0.814,
+    "first": "made angry easily",
+    "second": "(of a person) easily made angry"
+  },
+  {
+    "word": "itinerant",
+    "a": 1,
+    "b": 2,
+    "score": 0.886,
+    "first": "travelling from one place to another, usually to work for a short period",
+    "second": "a person who travels from one place to another, usually to work for a short period"
+  },
+  {
+    "word": "itinerant",
+    "a": 1,
+    "b": 3,
+    "score": 0.928,
+    "first": "travelling from one place to another, usually to work for a short period",
+    "second": "(of a person) traveling from one place to another, usually to work for a short period"
+  },
+  {
+    "word": "itinerant",
+    "a": 1,
+    "b": 4,
+    "score": 0.853,
+    "first": "travelling from one place to another, usually to work for a short period",
+    "second": "travelling from place to place, usually for work"
+  },
+  {
+    "word": "itinerant",
+    "a": 2,
+    "b": 3,
+    "score": 0.957,
+    "first": "a person who travels from one place to another, usually to work for a short period",
+    "second": "(of a person) traveling from one place to another, usually to work for a short period"
+  },
+  {
+    "word": "itinerant",
+    "a": 2,
+    "b": 4,
+    "score": 0.79,
+    "first": "a person who travels from one place to another, usually to work for a short period",
+    "second": "travelling from place to place, usually for work"
+  },
+  {
+    "word": "itinerant",
+    "a": 2,
+    "b": 5,
+    "score": 0.883,
+    "first": "a person who travels from one place to another, usually to work for a short period",
+    "second": "someone who travels from place to place, usually for work"
+  },
+  {
+    "word": "itinerant",
+    "a": 3,
+    "b": 4,
+    "score": 0.815,
+    "first": "(of a person) traveling from one place to another, usually to work for a short period",
+    "second": "travelling from place to place, usually for work"
+  },
+  {
+    "word": "itinerant",
+    "a": 3,
+    "b": 5,
+    "score": 0.797,
+    "first": "(of a person) traveling from one place to another, usually to work for a short period",
+    "second": "someone who travels from place to place, usually for work"
+  },
+  {
+    "word": "itinerant",
+    "a": 4,
+    "b": 5,
+    "score": 0.84,
+    "first": "travelling from place to place, usually for work",
+    "second": "someone who travels from place to place, usually for work"
+  },
+  {
+    "word": "itinerary",
+    "a": 1,
+    "b": 2,
+    "score": 0.918,
+    "first": "a detailed plan or route of a journey",
+    "second": "a detailed plan or route of a trip"
+  },
+  {
+    "word": "jargon",
+    "a": 1,
+    "b": 2,
+    "score": 0.837,
+    "first": "special words and phrases that are used by particular groups of people, especially in their work",
+    "second": "words and phrases used by particular groups of people, esp. in their work, that are not generally understood"
+  },
+  {
+    "word": "jargon",
+    "a": 2,
+    "b": 3,
+    "score": 0.784,
+    "first": "words and phrases used by particular groups of people, esp. in their work, that are not generally understood",
+    "second": "language used by a particular group of people, especially in their work, and which most other people do not understand"
+  },
+  {
+    "word": "jettison",
+    "a": 2,
+    "b": 3,
+    "score": 0.798,
+    "first": "to throw away or get rid of something that is not wanted or needed",
+    "second": "to get rid of something or someone that is not needed or wanted"
+  },
+  {
+    "word": "judicious",
+    "a": 1,
+    "b": 2,
+    "score": 0.932,
+    "first": "having or showing reason and good judgment in making decisions",
+    "second": "having or showing good judgment in making decisions"
+  },
+  {
+    "word": "juxtapose",
+    "a": 1,
+    "b": 2,
+    "score": 0.76,
+    "first": "to put things that are not similar next to each other",
+    "second": "to put things or people next to each other, esp. in order to compare them"
+  },
+  {
+    "word": "keen",
+    "a": 1,
+    "b": 7,
+    "score": 0.817,
+    "first": "(EAGER) very interested, eager, or wanting (to do) something very much",
+    "second": "(EAGER) eager, interested, and enthusiastic"
+  },
+  {
+    "word": "keen",
+    "a": 1,
+    "b": 10,
+    "score": 0.886,
+    "first": "(EAGER) very interested, eager, or wanting (to do) something very much",
+    "second": "very interested in something or eager to do something"
+  },
+  {
+    "word": "keen",
+    "a": 7,
+    "b": 10,
+    "score": 0.77,
+    "first": "(EAGER) eager, interested, and enthusiastic",
+    "second": "very interested in something or eager to do something"
+  },
+  {
+    "word": "kindle",
+    "a": 1,
+    "b": 3,
+    "score": 0.857,
+    "first": "(FIRE) to cause a fire to start burning by lighting paper, wood, etc.",
+    "second": "to cause a fire to start burning"
+  },
+  {
+    "word": "kinetic",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "involving or producing movement",
+    "second": "involving or producing movement"
+  },
+  {
+    "word": "kudos",
+    "a": 1,
+    "b": 2,
+    "score": 0.755,
+    "first": "the public admiration that a person receives as a result of a particular achievement or position in society",
+    "second": "praise, admiration, and fame received for an achievement"
+  },
+  {
+    "word": "laconic",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "using very few words to express what you mean",
+    "second": "using very few words to express what you mean"
+  },
+  {
+    "word": "lament",
+    "a": 1,
+    "b": 3,
+    "score": 0.852,
+    "first": "to express sadness and feeling sorry about something",
+    "second": "to express sadness and regret about something"
+  },
+  {
+    "word": "lampoon",
+    "a": 1,
+    "b": 2,
+    "score": 0.925,
+    "first": "a piece of writing, a drawing, etc. that criticizes a famous person or a public organization in a humorous way, allowing their or its bad qualities to be seen and making them or it seem stupid",
+    "second": "to criticize a famous person or a public organization in a piece of writing, a drawing, etc., in a humorous way, allowing their or its bad qualities to be seen and making them or it seem stupid"
+  },
+  {
+    "word": "landmark",
+    "a": 2,
+    "b": 4,
+    "score": 0.963,
+    "first": "(STAGE) an important stage in something's development",
+    "second": "(STAGE) an important stage in the development of something"
+  },
+  {
+    "word": "landmark",
+    "a": 2,
+    "b": 5,
+    "score": 0.963,
+    "first": "(STAGE) an important stage in something's development",
+    "second": "an important stage in the development of something"
+  },
+  {
+    "word": "landmark",
+    "a": 4,
+    "b": 5,
+    "score": 1.0,
+    "first": "(STAGE) an important stage in the development of something",
+    "second": "an important stage in the development of something"
+  },
+  {
+    "word": "larceny",
+    "a": 1,
+    "b": 3,
+    "score": 0.954,
+    "first": "stealing, especially (in the US) the crime of taking something that does not belong to you, without illegally entering a building to do so",
+    "second": "stealing, especially the crime of taking something that does not belong to you, without entering a building illegally in order to do so"
+  },
+  {
+    "word": "latent",
+    "a": 1,
+    "b": 2,
+    "score": 0.764,
+    "first": "present but needing particular conditions to become active, obvious, or completely developed",
+    "second": "present, but not yet active, developed, or obvious"
+  },
+  {
+    "word": "latent",
+    "a": 1,
+    "b": 3,
+    "score": 0.764,
+    "first": "present but needing particular conditions to become active, obvious, or completely developed",
+    "second": "present, but not yet active, developed, or obvious"
+  },
+  {
+    "word": "latent",
+    "a": 2,
+    "b": 3,
+    "score": 1.0,
+    "first": "present, but not yet active, developed, or obvious",
+    "second": "present, but not yet active, developed, or obvious"
+  },
+  {
+    "word": "lax",
+    "a": 1,
+    "b": 5,
+    "score": 0.919,
+    "first": "(NOT CAREFUL) without much care, attention, or control: not severe or strong enough",
+    "second": "lacking care, attention, or control; not severe or strong enough"
+  },
+  {
+    "word": "lethargic",
+    "a": 1,
+    "b": 2,
+    "score": 0.959,
+    "first": "having little energy; feeling unwilling and unable to do anything",
+    "second": "lacking in energy; feeling unwilling or unable to do anything"
+  },
+  {
+    "word": "levity",
+    "a": 1,
+    "b": 2,
+    "score": 0.777,
+    "first": "humour or lack of seriousness, especially during a serious occasion",
+    "second": "amusement or lack of seriousness"
+  },
+  {
+    "word": "levy",
+    "a": 1,
+    "b": 2,
+    "score": 0.85,
+    "first": "an amount of money, such as a tax, that you have to pay to a government or organization",
+    "second": "(of a government or organization) to demand an amount of money, such as a tax, from a person or organization"
+  },
+  {
+    "word": "levy",
+    "a": 1,
+    "b": 3,
+    "score": 1.0,
+    "first": "an amount of money, such as a tax, that you have to pay to a government or organization",
+    "second": "an amount of money, such as a tax, that you have to pay to a government or organization"
+  },
+  {
+    "word": "levy",
+    "a": 1,
+    "b": 4,
+    "score": 0.975,
+    "first": "an amount of money, such as a tax, that you have to pay to a government or organization",
+    "second": "an amount of money, such as a tax, that has to be paid to a government or organization"
+  },
+  {
+    "word": "levy",
+    "a": 1,
+    "b": 5,
+    "score": 0.837,
+    "first": "an amount of money, such as a tax, that you have to pay to a government or organization",
+    "second": "to officially ask for an amount of money, such as a tax, for a government or organization"
+  },
+  {
+    "word": "levy",
+    "a": 2,
+    "b": 3,
+    "score": 0.85,
+    "first": "(of a government or organization) to demand an amount of money, such as a tax, from a person or organization",
+    "second": "an amount of money, such as a tax, that you have to pay to a government or organization"
+  },
+  {
+    "word": "levy",
+    "a": 2,
+    "b": 4,
+    "score": 0.851,
+    "first": "(of a government or organization) to demand an amount of money, such as a tax, from a person or organization",
+    "second": "an amount of money, such as a tax, that has to be paid to a government or organization"
+  },
+  {
+    "word": "levy",
+    "a": 2,
+    "b": 5,
+    "score": 0.863,
+    "first": "(of a government or organization) to demand an amount of money, such as a tax, from a person or organization",
+    "second": "to officially ask for an amount of money, such as a tax, for a government or organization"
+  },
+  {
+    "word": "levy",
+    "a": 3,
+    "b": 4,
+    "score": 0.975,
+    "first": "an amount of money, such as a tax, that you have to pay to a government or organization",
+    "second": "an amount of money, such as a tax, that has to be paid to a government or organization"
+  },
+  {
+    "word": "levy",
+    "a": 3,
+    "b": 5,
+    "score": 0.837,
+    "first": "an amount of money, such as a tax, that you have to pay to a government or organization",
+    "second": "to officially ask for an amount of money, such as a tax, for a government or organization"
+  },
+  {
+    "word": "levy",
+    "a": 4,
+    "b": 5,
+    "score": 0.821,
+    "first": "an amount of money, such as a tax, that has to be paid to a government or organization",
+    "second": "to officially ask for an amount of money, such as a tax, for a government or organization"
+  },
+  {
+    "word": "liberal",
+    "a": 1,
+    "b": 7,
+    "score": 0.904,
+    "first": "(SOCIETY) respecting and allowing many different types of beliefs or behaviour",
+    "second": "(SOCIAL) allowing many different types of beliefs or behavior"
+  },
+  {
+    "word": "liberal",
+    "a": 1,
+    "b": 12,
+    "score": 1.0,
+    "first": "(SOCIETY) respecting and allowing many different types of beliefs or behaviour",
+    "second": "respecting and allowing many different types of beliefs or behaviour"
+  },
+  {
+    "word": "liberal",
+    "a": 3,
+    "b": 9,
+    "score": 1.0,
+    "first": "(GENEROUS) giving or given in a generous way",
+    "second": "(GENEROUS) giving or given in a generous way"
+  },
+  {
+    "word": "liberal",
+    "a": 3,
+    "b": 15,
+    "score": 1.0,
+    "first": "(GENEROUS) giving or given in a generous way",
+    "second": "giving or given in a generous way"
+  },
+  {
+    "word": "liberal",
+    "a": 4,
+    "b": 16,
+    "score": 0.914,
+    "first": "(NOT EXACT) not exact; without attention to or interest in detail",
+    "second": "not exact, and without attention to or interest in detail"
+  },
+  {
+    "word": "liberal",
+    "a": 5,
+    "b": 17,
+    "score": 1.0,
+    "first": "(SOCIETY) someone who respects many different types of beliefs or behaviour",
+    "second": "someone who respects many different types of beliefs or behaviour"
+  },
+  {
+    "word": "liberal",
+    "a": 6,
+    "b": 18,
+    "score": 0.84,
+    "first": "(POLITICS) someone who believes in personal freedom and that society should change gradually so that money, property, and power are shared more fairly: someone who believes businesses should have a lot of freedom to buy, sell, and make money without many rules or limits, and with low taxes",
+    "second": "someone who supports personal freedom and a fairer sharing of wealth and power in society"
+  },
+  {
+    "word": "liberal",
+    "a": 7,
+    "b": 12,
+    "score": 0.904,
+    "first": "(SOCIAL) allowing many different types of beliefs or behavior",
+    "second": "respecting and allowing many different types of beliefs or behaviour"
+  },
+  {
+    "word": "liberal",
+    "a": 8,
+    "b": 11,
+    "score": 0.776,
+    "first": "(POLITICS) tending to emphasize the need to make new laws when necessary because of changing conditions and to depend on the government to provide social services",
+    "second": "(POLITICALLY LIBERAL PERSON) a person who thinks the government needs to make new laws when necessary because of changing conditions and who believes that the government should provide social services"
+  },
+  {
+    "word": "liberal",
+    "a": 9,
+    "b": 15,
+    "score": 1.0,
+    "first": "(GENEROUS) giving or given in a generous way",
+    "second": "giving or given in a generous way"
+  },
+  {
+    "word": "livid",
+    "a": 1,
+    "b": 3,
+    "score": 1.0,
+    "first": "(ANGRY) extremely angry",
+    "second": "(ANGRY) extremely angry"
+  },
+  {
+    "word": "livid",
+    "a": 2,
+    "b": 4,
+    "score": 0.86,
+    "first": "(COLOUR) (especially of marks on the skin) of an unpleasant purple or dark blue colour",
+    "second": "(COLOR) (esp. of marks on the skin) of a purple or dark blue color, usually caused by an injury"
+  },
+  {
+    "word": "log",
+    "a": 1,
+    "b": 6,
+    "score": 0.775,
+    "first": "(WOOD) a thick piece of tree trunk or branch, especially one cut for burning on a fire",
+    "second": "(WOOD) a thick piece of tree trunk or branch"
+  },
+  {
+    "word": "log",
+    "a": 2,
+    "b": 7,
+    "score": 0.902,
+    "first": "(RECORD) a full written record of a journey, a period of time, or an event",
+    "second": "(RECORD) a full, written record of a trip, a period of time, or an event"
+  },
+  {
+    "word": "log",
+    "a": 4,
+    "b": 9,
+    "score": 0.878,
+    "first": "(CUT WOOD) to cut down trees so that you can use their wood",
+    "second": "(WOOD) to cut down trees for their wood, or to remove trees from a place by cutting them down"
+  },
+  {
+    "word": "log",
+    "a": 8,
+    "b": 10,
+    "score": 0.79,
+    "first": "(RECORD) to put information into a written record",
+    "second": "to write something down to make an official record of it"
+  },
+  {
+    "word": "log",
+    "a": 10,
+    "b": 12,
+    "score": 0.821,
+    "first": "to write something down to make an official record of it",
+    "second": "an official record of something"
+  },
+  {
+    "word": "lucid",
+    "a": 1,
+    "b": 2,
+    "score": 0.931,
+    "first": "clearly expressed and easy to understand, or (of a person) thinking or speaking clearly",
+    "second": "(of speech or writing) clearly expressed and easy to understand, or (of a person) thinking or reasoning clearly"
+  },
+  {
+    "word": "lull",
+    "a": 1,
+    "b": 3,
+    "score": 0.868,
+    "first": "to cause someone to feel calm or to feel that they want to sleep",
+    "second": "to cause someone to feel calm, sleepy, or safe"
+  },
+  {
+    "word": "lull",
+    "a": 2,
+    "b": 5,
+    "score": 1.0,
+    "first": "a short period of calm in which little happens",
+    "second": "a short period of calm in which little happens"
+  },
+  {
+    "word": "lumber",
+    "a": 1,
+    "b": 4,
+    "score": 0.885,
+    "first": "to move slowly and awkwardly",
+    "second": "(MOVE) to move in a slow, awkward, and heavy way"
+  },
+  {
+    "word": "lumber",
+    "a": 2,
+    "b": 3,
+    "score": 0.762,
+    "first": "wood that has been prepared for building",
+    "second": "(WOOD) wood that has been cut into various lengths for building"
+  },
+  {
+    "word": "luminous",
+    "a": 1,
+    "b": 4,
+    "score": 0.916,
+    "first": "(BRIGHT) producing or reflecting bright light, especially in the dark",
+    "second": "producing or reflecting light, esp. in the dark"
+  },
+  {
+    "word": "lurid",
+    "a": 1,
+    "b": 3,
+    "score": 0.857,
+    "first": "(SHOCKING) (especially of a description) shocking because involving violence, sex, or immoral activity",
+    "second": "shocking because involving violence or sex"
+  },
+  {
+    "word": "maelstrom",
+    "a": 1,
+    "b": 3,
+    "score": 0.846,
+    "first": "(SITUATION) a situation in which there is great confusion, violence, and destruction",
+    "second": "a situation in which there is great confusion, disagreement, or violence"
+  },
+  {
+    "word": "magnate",
+    "a": 1,
+    "b": 2,
+    "score": 0.925,
+    "first": "a person who is very rich and successful in business or industry",
+    "second": "a person who is very successful, powerful, and rich, esp. in a particular business"
+  },
+  {
+    "word": "magnate",
+    "a": 1,
+    "b": 3,
+    "score": 0.83,
+    "first": "a person who is very rich and successful in business or industry",
+    "second": "someone who has become very rich and successful in business or industry, especially someone who owns a large organization that they started themselves"
+  },
+  {
+    "word": "magnate",
+    "a": 2,
+    "b": 3,
+    "score": 0.838,
+    "first": "a person who is very successful, powerful, and rich, esp. in a particular business",
+    "second": "someone who has become very rich and successful in business or industry, especially someone who owns a large organization that they started themselves"
+  },
+  {
+    "word": "makeshift",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "temporary and of low quality, but used because of a sudden need",
+    "second": "temporary and of low quality, but used because of a sudden need"
+  },
+  {
+    "word": "malinger",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "to pretend to be ill in order to avoid having to work",
+    "second": "to pretend to be ill in order to avoid having to work"
+  },
+  {
+    "word": "malleable",
+    "a": 1,
+    "b": 2,
+    "score": 0.829,
+    "first": "A malleable substance is easily changed into a new shape: easily influenced, trained, or controlled",
+    "second": "easily influenced, trained, or controlled: A substance that is malleable is easily bent and shaped."
+  },
+  {
+    "word": "manifest",
+    "a": 1,
+    "b": 5,
+    "score": 0.914,
+    "first": "(SHOW OR APPEAR) to show something clearly, through signs or actions: to appear or become clear",
+    "second": "to show something clearly, through signs or actions"
+  },
+  {
+    "word": "manifest",
+    "a": 3,
+    "b": 6,
+    "score": 1.0,
+    "first": "easily noticed or obvious",
+    "second": "easily noticed or obvious"
+  },
+  {
+    "word": "manifest",
+    "a": 4,
+    "b": 7,
+    "score": 0.995,
+    "first": "a list of people and goods carried on a ship or plane",
+    "second": "a list of the people and goods carried on a ship or plane"
+  },
+  {
+    "word": "mar",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "to spoil something, making it less good or less enjoyable",
+    "second": "to spoil something, making it less good or less enjoyable"
+  },
+  {
+    "word": "maverick",
+    "a": 1,
+    "b": 3,
+    "score": 0.802,
+    "first": "(UNUSUAL PERSON) a person who thinks and acts in an independent way, often behaving differently from the expected or usual way",
+    "second": "thinking and acting in an independent way, often behaving differently from the expected or usual way"
+  },
+  {
+    "word": "maverick",
+    "a": 1,
+    "b": 4,
+    "score": 0.886,
+    "first": "(UNUSUAL PERSON) a person who thinks and acts in an independent way, often behaving differently from the expected or usual way",
+    "second": "a person who thinks and acts independently of and differently from others"
+  },
+  {
+    "word": "maverick",
+    "a": 1,
+    "b": 5,
+    "score": 0.973,
+    "first": "(UNUSUAL PERSON) a person who thinks and acts in an independent way, often behaving differently from the expected or usual way",
+    "second": "a person who thinks and acts in an independent way that is different from what is usual or expected"
+  },
+  {
+    "word": "maverick",
+    "a": 3,
+    "b": 5,
+    "score": 0.751,
+    "first": "thinking and acting in an independent way, often behaving differently from the expected or usual way",
+    "second": "a person who thinks and acts in an independent way that is different from what is usual or expected"
+  },
+  {
+    "word": "maverick",
+    "a": 4,
+    "b": 5,
+    "score": 0.895,
+    "first": "a person who thinks and acts independently of and differently from others",
+    "second": "a person who thinks and acts in an independent way that is different from what is usual or expected"
+  },
+  {
+    "word": "maxim",
+    "a": 1,
+    "b": 2,
+    "score": 0.955,
+    "first": "a short statement of a general truth, principle, or rule for behaviour",
+    "second": "a brief statement of a general truth, principle, or rule for behavior"
+  },
+  {
+    "word": "metaphysical",
+    "a": 1,
+    "b": 2,
+    "score": 0.951,
+    "first": "relating to the part of philosophy that is about understanding existence and knowledge",
+    "second": "relating to the part of philosophy that deals with existence and knowledge"
+  },
+  {
+    "word": "milieu",
+    "a": 1,
+    "b": 2,
+    "score": 0.863,
+    "first": "the people, physical, and social conditions and events that provide the environment in which someone acts or lives",
+    "second": "the people and the physical and social conditions and events that provide a background in which someone acts or lives"
+  },
+  {
+    "word": "mirth",
+    "a": 1,
+    "b": 2,
+    "score": 0.805,
+    "first": "laughter, humour, or happiness",
+    "second": "laughter or amusement"
+  },
+  {
+    "word": "mitigate",
+    "a": 1,
+    "b": 2,
+    "score": 0.843,
+    "first": "to make something less harmful, unpleasant, or bad",
+    "second": "to make something less severe or less unpleasant"
+  },
+  {
+    "word": "mitigate",
+    "a": 1,
+    "b": 3,
+    "score": 1.0,
+    "first": "to make something less harmful, unpleasant, or bad",
+    "second": "to make something less harmful, unpleasant, or bad"
+  },
+  {
+    "word": "mitigate",
+    "a": 2,
+    "b": 3,
+    "score": 0.843,
+    "first": "to make something less severe or less unpleasant",
+    "second": "to make something less harmful, unpleasant, or bad"
+  },
+  {
+    "word": "modest",
+    "a": 1,
+    "b": 4,
+    "score": 0.85,
+    "first": "(NOT LARGE) not large in size or amount, or not expensive",
+    "second": "(NOT LARGE) not large in size or amount, or not great in value"
+  },
+  {
+    "word": "modest",
+    "a": 1,
+    "b": 7,
+    "score": 1.0,
+    "first": "(NOT LARGE) not large in size or amount, or not expensive",
+    "second": "not large in size or amount, or not expensive"
+  },
+  {
+    "word": "modest",
+    "a": 2,
+    "b": 5,
+    "score": 0.831,
+    "first": "(QUIETLY SUCCESSFUL) not usually talking about or making obvious your own abilities and achievements",
+    "second": "(QUIETLY SUCCESSFUL) tending not to talk about or make obvious your own abilities and achievements"
+  },
+  {
+    "word": "modest",
+    "a": 4,
+    "b": 7,
+    "score": 0.85,
+    "first": "(NOT LARGE) not large in size or amount, or not great in value",
+    "second": "not large in size or amount, or not expensive"
+  },
+  {
+    "word": "mollify",
+    "a": 1,
+    "b": 2,
+    "score": 0.824,
+    "first": "to make someone less angry or upset",
+    "second": "to make someone less angry or upset, or to make something less severe or more gentle"
+  },
+  {
+    "word": "monotony",
+    "a": 1,
+    "b": 2,
+    "score": 0.76,
+    "first": "a situation in which something stays the same and is therefore boring",
+    "second": "boring sameness"
+  },
+  {
+    "word": "moreover",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "(used to add information) also and more importantly",
+    "second": "(used to add information) also and more importantly"
+  },
+  {
+    "word": "mores",
+    "a": 1,
+    "b": 2,
+    "score": 0.99,
+    "first": "the traditional customs and ways of behaving that are typical of a particular (part of) society",
+    "second": "the traditional customs and ways of behaving that are typical of a particular society"
+  },
+  {
+    "word": "morose",
+    "a": 1,
+    "b": 2,
+    "score": 0.933,
+    "first": "unhappy, annoyed, and unwilling to speak or smile",
+    "second": "unhappy or annoyed and unwilling to speak, smile, or be pleasant to people"
+  },
+  {
+    "word": "mundane",
+    "a": 1,
+    "b": 2,
+    "score": 0.953,
+    "first": "very ordinary and therefore not interesting",
+    "second": "ordinary and not interesting in any way"
+  },
+  {
+    "word": "neophyte",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "someone who has recently become involved in an activity and is still learning about it",
+    "second": "someone who has recently become involved in an activity and is still learning about it"
+  },
+  {
+    "word": "net",
+    "a": 7,
+    "b": 24,
+    "score": 0.878,
+    "first": "network: the part of an internet address that shows it belongs to a network or a business",
+    "second": "part of an internet address that shows that it belongs to a business, often a network that provides internet services"
+  },
+  {
+    "word": "net",
+    "a": 14,
+    "b": 17,
+    "score": 0.764,
+    "first": "the amount of profit that a business has left after tax has been paid",
+    "second": "to earn an amount of profit after tax and other costs have been paid"
+  },
+  {
+    "word": "nevertheless",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "despite what has just been said or referred to",
+    "second": "despite what has just been said or referred to"
+  },
+  {
+    "word": "nominal",
+    "a": 1,
+    "b": 4,
+    "score": 0.842,
+    "first": "(NOT REALLY) in name or thought but not in fact or not as things really are",
+    "second": "(NOT IN REALITY) in name or thought, but not in reality"
+  },
+  {
+    "word": "nominal",
+    "a": 2,
+    "b": 5,
+    "score": 0.834,
+    "first": "(SMALL) A nominal amount of money is very small compared to an expected price or value",
+    "second": "(SMALL) (of a sum of money) very small compared to an expected price or value"
+  },
+  {
+    "word": "notoriety",
+    "a": 1,
+    "b": 2,
+    "score": 0.865,
+    "first": "the state of being famous for something bad",
+    "second": "the state of being famous for doing something, esp. something immoral or bad"
+  },
+  {
+    "word": "novel",
+    "a": 1,
+    "b": 3,
+    "score": 0.995,
+    "first": "a long printed story about imaginary characters and events",
+    "second": "(BOOK) a long, printed story about imaginary characters and events"
+  },
+  {
+    "word": "objective",
+    "a": 1,
+    "b": 5,
+    "score": 0.821,
+    "first": "something that you plan to do or achieve",
+    "second": "(AIM) something that you aim to do or achieve"
+  },
+  {
+    "word": "objective",
+    "a": 1,
+    "b": 6,
+    "score": 0.945,
+    "first": "something that you plan to do or achieve",
+    "second": "something that you are planning to do or achieve"
+  },
+  {
+    "word": "objective",
+    "a": 2,
+    "b": 3,
+    "score": 0.771,
+    "first": "based on real facts and not influenced by personal beliefs or feelings",
+    "second": "(FAIR OR REAL) not influenced by personal beliefs or feelings; fair or real"
+  },
+  {
+    "word": "objective",
+    "a": 2,
+    "b": 7,
+    "score": 0.76,
+    "first": "based on real facts and not influenced by personal beliefs or feelings",
+    "second": "not influenced by personal feelings or beliefs"
+  },
+  {
+    "word": "objective",
+    "a": 3,
+    "b": 7,
+    "score": 0.839,
+    "first": "(FAIR OR REAL) not influenced by personal beliefs or feelings; fair or real",
+    "second": "not influenced by personal feelings or beliefs"
+  },
+  {
+    "word": "objective",
+    "a": 5,
+    "b": 6,
+    "score": 0.765,
+    "first": "(AIM) something that you aim to do or achieve",
+    "second": "something that you are planning to do or achieve"
+  },
+  {
+    "word": "oblique",
+    "a": 1,
+    "b": 6,
+    "score": 0.896,
+    "first": "(ANGLE) having a sloping direction, angle, or position: (of an angle) either more or less than 90°",
+    "second": "(DIAGONAL) having a sloping direction, angle, or position"
+  },
+  {
+    "word": "obsequious",
+    "a": 1,
+    "b": 2,
+    "score": 0.757,
+    "first": "too eager to praise or obey someone",
+    "second": "too eager to serve or obey someone"
+  },
+  {
+    "word": "obsolete",
+    "a": 1,
+    "b": 3,
+    "score": 0.959,
+    "first": "not in use any more, having been replaced by something newer and better or more fashionable",
+    "second": "not in general use any more, having been replaced by something newer and better or more fashionable"
+  },
+  {
+    "word": "offset",
+    "a": 2,
+    "b": 3,
+    "score": 0.797,
+    "first": "to balance one influence against an opposing influence so that no great difference results",
+    "second": "to balance one effect against an opposing effect, so that there is no great difference as a result"
+  },
+  {
+    "word": "optimum",
+    "a": 1,
+    "b": 2,
+    "score": 0.916,
+    "first": "best; most likely to bring success or advantage",
+    "second": "being the best or most likely to bring success or advantage"
+  },
+  {
+    "word": "ostensible",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "appearing or claiming to be one thing when it is really something else",
+    "second": "appearing or claiming to be one thing when it is really something else"
+  },
+  {
+    "word": "outstrip",
+    "a": 1,
+    "b": 2,
+    "score": 0.986,
+    "first": "to be or become greater in amount, degree, or success than something or someone",
+    "second": "to be or become greater than something or someone in amount, degree, or success"
+  },
+  {
+    "word": "pallid",
+    "a": 1,
+    "b": 2,
+    "score": 0.785,
+    "first": "very pale, in a way that looks unhealthy and not attractive: showing no enthusiasm or excitement",
+    "second": "pale and looking unhealthy"
+  },
+  {
+    "word": "paradigm",
+    "a": 1,
+    "b": 2,
+    "score": 0.887,
+    "first": "a model of something, or a very clear and typical example of something",
+    "second": "a very clear or typical example used as a model"
+  },
+  {
+    "word": "paradigm",
+    "a": 1,
+    "b": 4,
+    "score": 1.0,
+    "first": "a model of something, or a very clear and typical example of something",
+    "second": "a model of something, or a very clear and typical example of something"
+  },
+  {
+    "word": "paradigm",
+    "a": 2,
+    "b": 4,
+    "score": 0.887,
+    "first": "a very clear or typical example used as a model",
+    "second": "a model of something, or a very clear and typical example of something"
+  },
+  {
+    "word": "paradox",
+    "a": 1,
+    "b": 2,
+    "score": 0.981,
+    "first": "a situation or statement that seems impossible or is difficult to understand because it contains two opposite facts or characteristics",
+    "second": "a statement or situation that may be true but seems impossible or difficult to understand because it contains two opposite facts or characteristics"
+  },
+  {
+    "word": "paragon",
+    "a": 1,
+    "b": 2,
+    "score": 0.988,
+    "first": "a person or thing that is perfect or has an extremely large amount of a particular good characteristic",
+    "second": "a person or thing that is perfect or has a large amount of a particular good characteristic"
+  },
+  {
+    "word": "pare",
+    "a": 1,
+    "b": 2,
+    "score": 0.869,
+    "first": "to cut away the outer layer from something, especially a fruit or a vegetable: to reduce something, especially by a large amount",
+    "second": "to cut away the thin outer layer of something, esp. food, or to reduce the size of something"
+  },
+  {
+    "word": "pariah",
+    "a": 1,
+    "b": 2,
+    "score": 0.799,
+    "first": "a person who is not accepted by a social group, especially because they are not liked, respected, or trusted: a country or government that is not accepted by other countries, especially because it acts in a way that other countries consider to be wrong : a word used in the past for a person who belonged to a caste (= social group) in the south of India that was considered to be one of the lowest. This word is now considered offensive.",
+    "second": "a person who is avoided or not accepted by a social group, esp. because he or she is not liked, respected, or trusted; an outcast"
+  },
+  {
+    "word": "partial",
+    "a": 1,
+    "b": 5,
+    "score": 1.0,
+    "first": "(NOT COMPLETE) not complete",
+    "second": "(NOT COMPLETE) not complete"
+  },
+  {
+    "word": "partial",
+    "a": 1,
+    "b": 7,
+    "score": 1.0,
+    "first": "(NOT COMPLETE) not complete",
+    "second": "not complete"
+  },
+  {
+    "word": "partial",
+    "a": 5,
+    "b": 7,
+    "score": 1.0,
+    "first": "(NOT COMPLETE) not complete",
+    "second": "not complete"
+  },
+  {
+    "word": "partisan",
+    "a": 1,
+    "b": 3,
+    "score": 0.761,
+    "first": "strongly supporting a person, principle, or political party, often without considering or judging the matter very carefully",
+    "second": "involving loyal support of a person, principle, or political party"
+  },
+  {
+    "word": "patent",
+    "a": 1,
+    "b": 3,
+    "score": 0.848,
+    "first": "(LEGAL RIGHT) the official legal right to make or sell an invention for a particular number of years",
+    "second": "to get the official legal right to make or sell an invention"
+  },
+  {
+    "word": "patent",
+    "a": 1,
+    "b": 6,
+    "score": 0.903,
+    "first": "(LEGAL RIGHT) the official legal right to make or sell an invention for a particular number of years",
+    "second": "the legal right to be the only one who can make, use, or sell an invention for a particular number of years"
+  },
+  {
+    "word": "patent",
+    "a": 1,
+    "b": 8,
+    "score": 0.79,
+    "first": "(LEGAL RIGHT) the official legal right to make or sell an invention for a particular number of years",
+    "second": "the legal right to be the only person or company to make or sell a product for a particular number of years, or a document that gives you this right"
+  },
+  {
+    "word": "patent",
+    "a": 1,
+    "b": 11,
+    "score": 0.786,
+    "first": "(LEGAL RIGHT) the official legal right to make or sell an invention for a particular number of years",
+    "second": "to get the legal right to be the only person or company to make or sell a product for a particular number of years"
+  },
+  {
+    "word": "patent",
+    "a": 3,
+    "b": 5,
+    "score": 0.789,
+    "first": "to get the official legal right to make or sell an invention",
+    "second": "(LEGAL RIGHT) A patent invention is protected by law so that only particular people or companies have the right to make or sell it"
+  },
+  {
+    "word": "patent",
+    "a": 3,
+    "b": 6,
+    "score": 0.8,
+    "first": "to get the official legal right to make or sell an invention",
+    "second": "the legal right to be the only one who can make, use, or sell an invention for a particular number of years"
+  },
+  {
+    "word": "patent",
+    "a": 5,
+    "b": 6,
+    "score": 0.754,
+    "first": "(LEGAL RIGHT) A patent invention is protected by law so that only particular people or companies have the right to make or sell it",
+    "second": "the legal right to be the only one who can make, use, or sell an invention for a particular number of years"
+  },
+  {
+    "word": "patent",
+    "a": 6,
+    "b": 8,
+    "score": 0.812,
+    "first": "the legal right to be the only one who can make, use, or sell an invention for a particular number of years",
+    "second": "the legal right to be the only person or company to make or sell a product for a particular number of years, or a document that gives you this right"
+  },
+  {
+    "word": "patent",
+    "a": 6,
+    "b": 11,
+    "score": 0.817,
+    "first": "the legal right to be the only one who can make, use, or sell an invention for a particular number of years",
+    "second": "to get the legal right to be the only person or company to make or sell a product for a particular number of years"
+  },
+  {
+    "word": "patent",
+    "a": 8,
+    "b": 11,
+    "score": 0.948,
+    "first": "the legal right to be the only person or company to make or sell a product for a particular number of years, or a document that gives you this right",
+    "second": "to get the legal right to be the only person or company to make or sell a product for a particular number of years"
+  },
+  {
+    "word": "pathological",
+    "a": 1,
+    "b": 3,
+    "score": 0.935,
+    "first": "(NOT CONTROLLED) (of a person) unable to control part of their behaviour; unreasonable",
+    "second": "(of a person) unreasonable, or unable to control part of his or her behavior"
+  },
+  {
+    "word": "patronizing",
+    "a": 1,
+    "b": 2,
+    "score": 0.78,
+    "first": "speaking or behaving towards someone as if they are stupid or not important",
+    "second": "treating someone as if they are stupid or not important"
+  },
+  {
+    "word": "peddle",
+    "a": 2,
+    "b": 3,
+    "score": 0.772,
+    "first": "to sell things, esp. by taking them to different places",
+    "second": "to try to sell things, especially on the street, by phone, etc."
+  },
+  {
+    "word": "pedestrian",
+    "a": 1,
+    "b": 3,
+    "score": 0.967,
+    "first": "a person who is walking, especially in an area where vehicles go",
+    "second": "(WALKER) a person who is walking, esp. in an area where vehicles go"
+  },
+  {
+    "word": "pedestrian",
+    "a": 2,
+    "b": 4,
+    "score": 0.956,
+    "first": "not interesting; showing very little imagination",
+    "second": "(NOT INTERESTING) showing little imagination; not interesting"
+  },
+  {
+    "word": "pejorative",
+    "a": 1,
+    "b": 2,
+    "score": 0.824,
+    "first": "expressing disapproval, or suggesting that something is not good or is of no importance",
+    "second": "insulting, disapproving, or suggesting that something is not good or is of no importance"
+  },
+  {
+    "word": "penchant",
+    "a": 1,
+    "b": 2,
+    "score": 0.952,
+    "first": "a liking for, an enjoyment of, or a habit of doing something, especially something that other people might not like",
+    "second": "a liking for or a habit of doing something, esp. something that other people might not like"
+  },
+  {
+    "word": "per",
+    "a": 1,
+    "b": 3,
+    "score": 0.825,
+    "first": "used when expressing rates, prices, or measurements to mean \"for each\"",
+    "second": "used when talking about prices, rates, etc. to mean the amount for each one"
+  },
+  {
+    "word": "perennial",
+    "a": 1,
+    "b": 3,
+    "score": 0.992,
+    "first": "lasting a very long time, or happening repeatedly or all the time",
+    "second": "(TIME) lasting a long time, or happening repeatedly or all the time"
+  },
+  {
+    "word": "perennial",
+    "a": 2,
+    "b": 4,
+    "score": 0.948,
+    "first": "a plant that lives for several years",
+    "second": "(PLANT) a plant that lives for more than two years"
+  },
+  {
+    "word": "perfunctory",
+    "a": 1,
+    "b": 2,
+    "score": 0.875,
+    "first": "done quickly, without taking care or interest",
+    "second": "done quickly and without showing that you care or have much interest"
+  },
+  {
+    "word": "peripheral",
+    "a": 2,
+    "b": 4,
+    "score": 1.0,
+    "first": "a piece of equipment, such as a printer, that can be connected to a computer",
+    "second": "a piece of equipment, such as a printer, that can be connected to a computer"
+  },
+  {
+    "word": "peripheral",
+    "a": 2,
+    "b": 6,
+    "score": 0.951,
+    "first": "a piece of equipment, such as a printer, that can be connected to a computer",
+    "second": "used to describe a piece of equipment, such as a printer, that can be connected to a computer"
+  },
+  {
+    "word": "peripheral",
+    "a": 2,
+    "b": 7,
+    "score": 1.0,
+    "first": "a piece of equipment, such as a printer, that can be connected to a computer",
+    "second": "a piece of equipment, such as a printer, that can be connected to a computer"
+  },
+  {
+    "word": "peripheral",
+    "a": 4,
+    "b": 6,
+    "score": 0.951,
+    "first": "a piece of equipment, such as a printer, that can be connected to a computer",
+    "second": "used to describe a piece of equipment, such as a printer, that can be connected to a computer"
+  },
+  {
+    "word": "peripheral",
+    "a": 4,
+    "b": 7,
+    "score": 1.0,
+    "first": "a piece of equipment, such as a printer, that can be connected to a computer",
+    "second": "a piece of equipment, such as a printer, that can be connected to a computer"
+  },
+  {
+    "word": "peripheral",
+    "a": 6,
+    "b": 7,
+    "score": 0.951,
+    "first": "used to describe a piece of equipment, such as a printer, that can be connected to a computer",
+    "second": "a piece of equipment, such as a printer, that can be connected to a computer"
+  },
+  {
+    "word": "permeate",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "to spread through something and be present in every part of it",
+    "second": "to spread through something and be present in every part of it"
+  },
+  {
+    "word": "pernicious",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "having a very harmful effect or influence",
+    "second": "having a very harmful effect or influence"
+  },
+  {
+    "word": "pious",
+    "a": 1,
+    "b": 3,
+    "score": 0.957,
+    "first": "(RELIGIOUS) strongly believing in religion, and living in a way that shows this belief",
+    "second": "strongly believing in God or a particular religion, and living in a way that shows this belief"
+  },
+  {
+    "word": "placate",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "to stop someone from feeling angry",
+    "second": "to stop someone from feeling angry"
+  },
+  {
+    "word": "plastic",
+    "a": 2,
+    "b": 8,
+    "score": 0.815,
+    "first": "(MONEY) credit cards or debit cards, rather than money in the form of notes, coins, or cheques",
+    "second": "credit cards or other bank cards that are used to pay for things rather than using cash"
+  },
+  {
+    "word": "plastic",
+    "a": 5,
+    "b": 7,
+    "score": 0.858,
+    "first": "(SOFT) soft enough to be changed into a new shape",
+    "second": "(SOFT) soft enough to be shaped into different forms"
+  },
+  {
+    "word": "plethora",
+    "a": 1,
+    "b": 2,
+    "score": 0.962,
+    "first": "a very large amount of something, especially a larger amount than you need, want, or can deal with",
+    "second": "a very large amount of something, esp. a larger amount than you need, want, or can deal with"
+  },
+  {
+    "word": "plucky",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "brave",
+    "second": "(BRAVERY) brave"
+  },
+  {
+    "word": "plummet",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "to fall very quickly and suddenly",
+    "second": "to fall very quickly and suddenly"
+  },
+  {
+    "word": "polemic",
+    "a": 1,
+    "b": 2,
+    "score": 0.812,
+    "first": "a piece of writing or a speech in which a person strongly attacks or defends a particular opinion, person, idea, or set of beliefs",
+    "second": "a piece of writing or a speech in which a person argues forcefully for or against someone or something"
+  },
+  {
+    "word": "ponderous",
+    "a": 1,
+    "b": 2,
+    "score": 0.846,
+    "first": "slow and awkward because of being very heavy or large: If a book, speech, or style of writing or speaking is ponderous, it is boring because it is too slow, long, or serious",
+    "second": "slow and awkward because of being very heavy or large, or (esp. of speech or writing) boring and difficult"
+  },
+  {
+    "word": "posthumous",
+    "a": 1,
+    "b": 2,
+    "score": 0.999,
+    "first": "happening after a person's death",
+    "second": "happening after a person’s death"
+  },
+  {
+    "word": "pre",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "before (a time or an event)",
+    "second": "before (a time or an event)"
+  },
+  {
+    "word": "preamble",
+    "a": 1,
+    "b": 2,
+    "score": 0.826,
+    "first": "an introduction to a speech or piece of writingsomething that happens before or leads to something else",
+    "second": "an introduction to a speech or piece of writing"
+  },
+  {
+    "word": "precipitate",
+    "a": 1,
+    "b": 6,
+    "score": 1.0,
+    "first": "(MAKE HAPPEN) to make something happen suddenly or sooner than expected",
+    "second": "(MAKE HAPPEN) to make something happen suddenly or sooner than expected"
+  },
+  {
+    "word": "precipitate",
+    "a": 3,
+    "b": 7,
+    "score": 0.788,
+    "first": "(CHEMISTRY) If a liquid precipitates, substances in it become solid and separate from the liquid",
+    "second": "(SEPARATE) to separate, or cause a substance to separate from a liquid as a solid"
+  },
+  {
+    "word": "precipitate",
+    "a": 3,
+    "b": 8,
+    "score": 0.763,
+    "first": "(CHEMISTRY) If a liquid precipitates, substances in it become solid and separate from the liquid",
+    "second": "(SEPARATE) a substance that separates from a liquid as a solid"
+  },
+  {
+    "word": "precipitate",
+    "a": 4,
+    "b": 8,
+    "score": 0.753,
+    "first": "a solid substance that is produced from a liquid during a chemical process",
+    "second": "(SEPARATE) a substance that separates from a liquid as a solid"
+  },
+  {
+    "word": "precipitate",
+    "a": 7,
+    "b": 8,
+    "score": 0.882,
+    "first": "(SEPARATE) to separate, or cause a substance to separate from a liquid as a solid",
+    "second": "(SEPARATE) a substance that separates from a liquid as a solid"
+  },
+  {
+    "word": "primacy",
+    "a": 1,
+    "b": 2,
+    "score": 0.928,
+    "first": "the state of being the most important thing",
+    "second": "the state of being important or most important"
+  },
+  {
+    "word": "prodigious",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "extremely great in ability, amount, or strength",
+    "second": "extremely great in ability, amount, or strength"
+  },
+  {
+    "word": "profound",
+    "a": 1,
+    "b": 3,
+    "score": 0.955,
+    "first": "(EXTREME) felt or experienced very strongly or in an extreme way",
+    "second": "(EXTREME) felt or experienced strongly; extreme"
+  },
+  {
+    "word": "profound",
+    "a": 2,
+    "b": 4,
+    "score": 1.0,
+    "first": "(SHOWING UNDERSTANDING) showing a clear and deep understanding of serious matters",
+    "second": "(SHOWING UNDERSTANDING) showing a clear and deep understanding of serious matters"
+  },
+  {
+    "word": "prohibitive",
+    "a": 1,
+    "b": 3,
+    "score": 0.761,
+    "first": "If the cost of something is prohibitive, it is too expensive for most people",
+    "second": "too expensive for most people"
+  },
+  {
+    "word": "proliferate",
+    "a": 1,
+    "b": 2,
+    "score": 0.87,
+    "first": "to increase a lot and suddenly in number",
+    "second": "to increase greatly in number or amount, usually quickly"
+  },
+  {
+    "word": "pronounced",
+    "a": 1,
+    "b": 2,
+    "score": 0.819,
+    "first": "very noticeable or certain",
+    "second": "easily noticeable; obvious"
+  },
+  {
+    "word": "propagate",
+    "a": 1,
+    "b": 4,
+    "score": 0.8,
+    "first": "(GROW) to produce a new plant using a parent plant: (of a plant or animal) to produce young plants or animals",
+    "second": "to produce a new plant from a parent plant, or of a plant or animal to reproduceTo propagate ideas, opinions, or customs is to spread them among people, or to spread them to other places."
+  },
+  {
+    "word": "prophetic",
+    "a": 1,
+    "b": 2,
+    "score": 0.816,
+    "first": "saying correctly what will happen in the future",
+    "second": "accurately saying what will happen"
+  },
+  {
+    "word": "propitious",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "likely to result in success, or showing signs of success",
+    "second": "likely to result in success, or showing signs of success"
+  },
+  {
+    "word": "propriety",
+    "a": 1,
+    "b": 2,
+    "score": 0.819,
+    "first": "correct moral behaviour or actions: the rules of polite social behaviour",
+    "second": "correct moral behavior or actions"
+  },
+  {
+    "word": "prudent",
+    "a": 1,
+    "b": 2,
+    "score": 0.761,
+    "first": "careful and avoiding risks",
+    "second": "showing good judgment in avoiding risks and uncertainties; careful"
+  },
+  {
+    "word": "prudent",
+    "a": 1,
+    "b": 3,
+    "score": 0.849,
+    "first": "careful and avoiding risks",
+    "second": "careful in the way that you make decisions or spend money so that you avoid unnecessary risks"
+  },
+  {
+    "word": "prudent",
+    "a": 2,
+    "b": 3,
+    "score": 0.751,
+    "first": "showing good judgment in avoiding risks and uncertainties; careful",
+    "second": "careful in the way that you make decisions or spend money so that you avoid unnecessary risks"
+  },
+  {
+    "word": "qualified",
+    "a": 1,
+    "b": 4,
+    "score": 0.864,
+    "first": "(TRAINED) having finished a training course, or having particular skills, etc.",
+    "second": "having successfully finished a course of study or training, or having particular skills"
+  },
+  {
+    "word": "quandary",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "a state of not being able to decide what to do about a situation in which you are involved",
+    "second": "a state of not being able to decide what to do about a situation in which you are involved"
+  },
+  {
+    "word": "reactant",
+    "a": 1,
+    "b": 2,
+    "score": 0.852,
+    "first": "a substance that is part of a chemical reaction",
+    "second": "a chemical substance that reacts with another"
+  },
+  {
+    "word": "reap",
+    "a": 1,
+    "b": 2,
+    "score": 0.81,
+    "first": "to cut and collect a grain crop: to get something, usually something good, as a result of your actions or other people's actions",
+    "second": "to obtain or receive something as a result of your own actions: If you reap a crop, you cut and collect it."
+  },
+  {
+    "word": "recant",
+    "a": 1,
+    "b": 2,
+    "score": 0.996,
+    "first": "to announce in public that your past beliefs or statements were wrong and that you no longer agree with them",
+    "second": "to announce in public that your past beliefs or statements were wrong or not true and that you no longer agree with them"
+  },
+  {
+    "word": "recluse",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "a person who lives alone and avoids going outside or talking to other people",
+    "second": "a person who lives alone and avoids going outside or talking to other people"
+  },
+  {
+    "word": "redress",
+    "a": 1,
+    "b": 4,
+    "score": 0.947,
+    "first": "to put right a wrong or give payment for a wrong that has been done",
+    "second": "to put right a wrong action, or give payment for something wrong that has been done"
+  },
+  {
+    "word": "redress",
+    "a": 2,
+    "b": 6,
+    "score": 0.879,
+    "first": "money that you have to pay to someone else because you have injured that person or treated them badly",
+    "second": "money or something else that someone receives because they have been injured or treated badly"
+  },
+  {
+    "word": "refute",
+    "a": 1,
+    "b": 2,
+    "score": 0.897,
+    "first": "to say or prove that a person, statement, opinion, etc. is wrong or false",
+    "second": "to prove a statement, opinion, or belief to be wrong or false"
+  },
+  {
+    "word": "rend",
+    "a": 1,
+    "b": 2,
+    "score": 0.975,
+    "first": "to tear or break something violently",
+    "second": "to break something violently; tear"
+  },
+  {
+    "word": "render",
+    "a": 4,
+    "b": 7,
+    "score": 0.99,
+    "first": "(CAUSE) to cause someone or something to be in a particular state",
+    "second": "to cause something or someone to be in a particular state"
+  },
+  {
+    "word": "reproach",
+    "a": 1,
+    "b": 2,
+    "score": 0.881,
+    "first": "to criticize someone, especially for not being successful or not doing what is expected",
+    "second": "something that you say or do to criticize someone, especially for not being successful or for not doing what is expected"
+  },
+  {
+    "word": "repudiate",
+    "a": 1,
+    "b": 2,
+    "score": 0.824,
+    "first": "to refuse to accept something or someone as true, good, or reasonable",
+    "second": "to refuse to accept or obey something or someone; reject"
+  },
+  {
+    "word": "rescind",
+    "a": 1,
+    "b": 2,
+    "score": 0.829,
+    "first": "to make a law, agreement, order, or decision no longer have any (legal) power",
+    "second": "to make a law, order, or decision no longer have any legal effect"
+  },
+  {
+    "word": "resolution",
+    "a": 3,
+    "b": 10,
+    "score": 0.79,
+    "first": "(SOLVING) the act of solving or ending a problem or difficulty",
+    "second": "the process of solving or ending a problem or disagreement"
+  },
+  {
+    "word": "resolve",
+    "a": 1,
+    "b": 5,
+    "score": 1.0,
+    "first": "(SOLVE) to solve or end a problem or difficulty",
+    "second": "(SOLVE) to solve or end a problem or difficulty"
+  },
+  {
+    "word": "resolve",
+    "a": 1,
+    "b": 8,
+    "score": 0.817,
+    "first": "(SOLVE) to solve or end a problem or difficulty",
+    "second": "to solve or end a problem or disagreement"
+  },
+  {
+    "word": "resolve",
+    "a": 2,
+    "b": 6,
+    "score": 0.803,
+    "first": "(DECIDE) to make a decision formally or with determination",
+    "second": "(DECIDE) to make a determined decision"
+  },
+  {
+    "word": "resolve",
+    "a": 2,
+    "b": 9,
+    "score": 1.0,
+    "first": "(DECIDE) to make a decision formally or with determination",
+    "second": "to make a decision formally or with determination"
+  },
+  {
+    "word": "resolve",
+    "a": 4,
+    "b": 7,
+    "score": 1.0,
+    "first": "strong determination",
+    "second": "(DECISION) strong determination"
+  },
+  {
+    "word": "resolve",
+    "a": 4,
+    "b": 10,
+    "score": 1.0,
+    "first": "strong determination",
+    "second": "strong determination"
+  },
+  {
+    "word": "resolve",
+    "a": 5,
+    "b": 8,
+    "score": 0.817,
+    "first": "(SOLVE) to solve or end a problem or difficulty",
+    "second": "to solve or end a problem or disagreement"
+  },
+  {
+    "word": "resolve",
+    "a": 6,
+    "b": 9,
+    "score": 0.803,
+    "first": "(DECIDE) to make a determined decision",
+    "second": "to make a decision formally or with determination"
+  },
+  {
+    "word": "resolve",
+    "a": 7,
+    "b": 10,
+    "score": 1.0,
+    "first": "(DECISION) strong determination",
+    "second": "strong determination"
+  },
+  {
+    "word": "restive",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "unwilling to be controlled or be patient",
+    "second": "unwilling to be controlled or be patient"
+  },
+  {
+    "word": "reticent",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "unwilling to speak about your thoughts or feelings",
+    "second": "unwilling to speak about your thoughts or feelings"
+  },
+  {
+    "word": "revamp",
+    "a": 1,
+    "b": 2,
+    "score": 0.908,
+    "first": "to change or arrange something again, in order to improve it",
+    "second": "the process of changing or arranging something again, in order to improve it"
+  },
+  {
+    "word": "revamp",
+    "a": 1,
+    "b": 3,
+    "score": 0.873,
+    "first": "to change or arrange something again, in order to improve it",
+    "second": "to change something, or to make or arrange something differently, in order to improve it"
+  },
+  {
+    "word": "revamp",
+    "a": 2,
+    "b": 3,
+    "score": 0.812,
+    "first": "the process of changing or arranging something again, in order to improve it",
+    "second": "to change something, or to make or arrange something differently, in order to improve it"
+  },
+  {
+    "word": "revamp",
+    "a": 4,
+    "b": 5,
+    "score": 0.884,
+    "first": "to change something to make it more modern and efficient",
+    "second": "the process of changing something to make it more modern and efficient"
+  },
+  {
+    "word": "rife",
+    "a": 1,
+    "b": 2,
+    "score": 0.898,
+    "first": "If something unpleasant is rife, it is very common or happens a lot: full of something unpleasant",
+    "second": "(of something unpleasant) very common or frequent: If a place is rife with something unpleasant, it is full of it"
+  },
+  {
+    "word": "rococo",
+    "a": 1,
+    "b": 2,
+    "score": 0.98,
+    "first": "relating to the very decorated and detailed style in buildings, art, and furniture that was popular in Europe in the 18th century",
+    "second": "a very decorated and detailed style in buildings, art, and furniture that was popular in Europe in the 18th century"
+  },
+  {
+    "word": "rue",
+    "a": 1,
+    "b": 3,
+    "score": 0.907,
+    "first": "to feel sorry about an event and wish it had not happened",
+    "second": "to feel sorry about an event and wish it had not happened; regret"
+  },
+  {
+    "word": "ruminate",
+    "a": 1,
+    "b": 3,
+    "score": 0.851,
+    "first": "(THINK) to think carefully and for a long period about something",
+    "second": "to think slowly and carefully"
+  },
+  {
+    "word": "sanction",
+    "a": 1,
+    "b": 8,
+    "score": 0.852,
+    "first": "(ORDER) an official order, such as the stopping of trade, that is taken against a country in order to make it obey international law: a strong action taken in order to make people obey a law or rule, or a punishment given when they do not obey",
+    "second": "an official order to stop or limit trade or communication with a country in order to make it obey international law"
+  },
+  {
+    "word": "sanction",
+    "a": 2,
+    "b": 5,
+    "score": 0.851,
+    "first": "(APPROVAL) approval or permission, especially formal or legal",
+    "second": "(APPROVAL) approval or permission"
+  },
+  {
+    "word": "sanction",
+    "a": 2,
+    "b": 10,
+    "score": 0.977,
+    "first": "(APPROVAL) approval or permission, especially formal or legal",
+    "second": "formal or legal approval or permission"
+  },
+  {
+    "word": "sanction",
+    "a": 3,
+    "b": 11,
+    "score": 1.0,
+    "first": "(ALLOW) to formally give permission for something",
+    "second": "to formally give permission for something"
+  },
+  {
+    "word": "sanction",
+    "a": 4,
+    "b": 12,
+    "score": 0.785,
+    "first": "(PUNISH) to punish someone for something, especially officially",
+    "second": "to punish someone for not obeying a law or rule"
+  },
+  {
+    "word": "sanction",
+    "a": 5,
+    "b": 10,
+    "score": 0.844,
+    "first": "(APPROVAL) approval or permission",
+    "second": "formal or legal approval or permission"
+  },
+  {
+    "word": "sanction",
+    "a": 9,
+    "b": 12,
+    "score": 0.919,
+    "first": "a punishment given when someone does not obey a rule or a law",
+    "second": "to punish someone for not obeying a law or rule"
+  },
+  {
+    "word": "sanguine",
+    "a": 1,
+    "b": 3,
+    "score": 0.873,
+    "first": "(CHEERFUL) (of someone or someone's character) positive and hoping for good things",
+    "second": "(of someone or someone's character) positive and hopeful"
+  },
+  {
+    "word": "sap",
+    "a": 1,
+    "b": 4,
+    "score": 0.755,
+    "first": "to make someone weaker or take away strength or an important quality from someone, especially over a long period of time",
+    "second": "(WEAKEN) to gradually weaken someone’s strength"
+  },
+  {
+    "word": "sap",
+    "a": 2,
+    "b": 5,
+    "score": 0.976,
+    "first": "(LIQUID) the liquid that carries food to all parts of a plant",
+    "second": "(LIQUID) the liquid within a plant that carries food to all parts of it"
+  },
+  {
+    "word": "savor",
+    "a": 1,
+    "b": 3,
+    "score": 0.948,
+    "first": "to enjoy food or an experience slowly, in order to enjoy it as much as possible",
+    "second": "to enjoy food or an experience slowly, in order to appreciate it as much as possible"
+  },
+  {
+    "word": "secrete",
+    "a": 1,
+    "b": 3,
+    "score": 0.819,
+    "first": "(PRODUCE) (of animals or plants or their cells) to produce and release a liquid",
+    "second": "to produce and release liquid, esp. from the cells or body"
+  },
+  {
+    "word": "secular",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "not having any connection with religion",
+    "second": "not having any connection with religion"
+  },
+  {
+    "word": "sedition",
+    "a": 1,
+    "b": 2,
+    "score": 0.862,
+    "first": "language or behaviour that is intended to persuade other people to oppose their government",
+    "second": "language or behavior intended to persuade other people to oppose their government and change it, sometimes by using violence"
+  },
+  {
+    "word": "semantic",
+    "a": 1,
+    "b": 2,
+    "score": 0.897,
+    "first": "connected with the meanings of words",
+    "second": "(of words and language) connected with meaning"
+  },
+  {
+    "word": "simultaneous",
+    "a": 1,
+    "b": 2,
+    "score": 0.843,
+    "first": "happening or being done at exactly the same time",
+    "second": "happening or existing at exactly the same time"
+  },
+  {
+    "word": "sinecure",
+    "a": 1,
+    "b": 2,
+    "score": 0.903,
+    "first": "a position which involves little work, but for which the person is paid",
+    "second": "a paid position that involves little or no work"
+  },
+  {
+    "word": "skeptic",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "a person who doubts the truth or value of an idea or belief",
+    "second": "a person who doubts the truth or value of an idea or belief"
+  },
+  {
+    "word": "skirt",
+    "a": 1,
+    "b": 6,
+    "score": 0.829,
+    "first": "(CLOTHING) a piece of clothing that hangs from the waist and covers some or all of the legs, usually worn by women and girls",
+    "second": "(CLOTHING) a piece of women’s clothing that hangs from the waist and does not have material between the legs, or the part of a dress below the waist"
+  },
+  {
+    "word": "skittish",
+    "a": 1,
+    "b": 2,
+    "score": 0.805,
+    "first": "(of people and animals) nervous or easily frightened: (of a person) not serious and likely to change their beliefs or opinions often",
+    "second": "(of people and animals) nervous and easily frightened"
+  },
+  {
+    "word": "slack",
+    "a": 1,
+    "b": 7,
+    "score": 1.0,
+    "first": "(NOT TIGHT) not tight; loose",
+    "second": "(NOT TIGHT) not tight; loose"
+  },
+  {
+    "word": "slack",
+    "a": 2,
+    "b": 8,
+    "score": 0.93,
+    "first": "(NOT ACTIVE) showing little activity; not busy or happening in a positive way",
+    "second": "(NOT ACTIVE) showing a lack of activity; not busy or happening in a positive way"
+  },
+  {
+    "word": "slake",
+    "a": 1,
+    "b": 2,
+    "score": 0.817,
+    "first": "to satisfy a feeling of being thirsty or of wanting something",
+    "second": "to satisfy a need to drink or a desire for something"
+  },
+  {
+    "word": "slew",
+    "a": 1,
+    "b": 5,
+    "score": 1.0,
+    "first": "a large amount or number",
+    "second": "(LARGE AMOUNT) a large amount or number"
+  },
+  {
+    "word": "slew",
+    "a": 3,
+    "b": 4,
+    "score": 1.0,
+    "first": "past simple of slay",
+    "second": "(KILL) past simple of slay"
+  },
+  {
+    "word": "slight",
+    "a": 1,
+    "b": 6,
+    "score": 0.941,
+    "first": "(SMALL IN AMOUNT) small in amount or degree: not at all",
+    "second": "(SMALL IN AMOUNT) small in amount or degree"
+  },
+  {
+    "word": "slight",
+    "a": 2,
+    "b": 7,
+    "score": 1.0,
+    "first": "(THIN) (of people) thin and delicate",
+    "second": "(THIN) (of people) thin and delicate"
+  },
+  {
+    "word": "slight",
+    "a": 4,
+    "b": 5,
+    "score": 0.757,
+    "first": "to insult someone by ignoring them or treating them as if they are not important",
+    "second": "an action that insults a person because someone fails to pay attention to them or to treat them with the respect that they deserve"
+  },
+  {
+    "word": "slight",
+    "a": 4,
+    "b": 8,
+    "score": 0.872,
+    "first": "to insult someone by ignoring them or treating them as if they are not important",
+    "second": "(INSULT) to insult someone by not paying attention or by treating the person as unimportant"
+  },
+  {
+    "word": "slight",
+    "a": 5,
+    "b": 8,
+    "score": 0.783,
+    "first": "an action that insults a person because someone fails to pay attention to them or to treat them with the respect that they deserve",
+    "second": "(INSULT) to insult someone by not paying attention or by treating the person as unimportant"
+  },
+  {
+    "word": "sound",
+    "a": 3,
+    "b": 13,
+    "score": 1.0,
+    "first": "(WATER PASSAGE) a passage of sea connecting two larger areas of sea, or an area of sea mostly surrounded by land",
+    "second": "(WATER PASSAGE) a passage of sea connecting two larger areas of sea, or an area of sea mostly surrounded by land"
+  },
+  {
+    "word": "spearhead",
+    "a": 1,
+    "b": 2,
+    "score": 0.783,
+    "first": "to lead something such as an attack or a course of action",
+    "second": "a person or group that leads something such as an attack or a course of action"
+  },
+  {
+    "word": "spearhead",
+    "a": 1,
+    "b": 3,
+    "score": 0.997,
+    "first": "to lead something such as an attack or a course of action",
+    "second": "to lead something such as a course of action or an attack"
+  },
+  {
+    "word": "spearhead",
+    "a": 2,
+    "b": 3,
+    "score": 0.784,
+    "first": "a person or group that leads something such as an attack or a course of action",
+    "second": "to lead something such as a course of action or an attack"
+  },
+  {
+    "word": "spearhead",
+    "a": 4,
+    "b": 5,
+    "score": 0.859,
+    "first": "a person or group that leads an organized activity or project",
+    "second": "to lead an organized activity or project"
+  },
+  {
+    "word": "specious",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "seeming to be right or true, but really wrong or false",
+    "second": "seeming to be right or true, but really wrong or false"
+  },
+  {
+    "word": "spectrum",
+    "a": 1,
+    "b": 4,
+    "score": 0.932,
+    "first": "(COLOURS) the set of colours into which a beam of light can be separated, or a range of waves, such as light waves or radio waves",
+    "second": "(COLORS) the set of colors into which a beam of light can be separatedSpectrum also means a range of waves such as light waves or radio waves."
+  },
+  {
+    "word": "speculate",
+    "a": 1,
+    "b": 5,
+    "score": 1.0,
+    "first": "(GUESS) to guess possible answers to a question when you do not have enough information to be certain",
+    "second": "to guess possible answers to a question when you do not have enough information to be certain"
+  },
+  {
+    "word": "speculate",
+    "a": 2,
+    "b": 4,
+    "score": 0.993,
+    "first": "(TRADE) to buy and sell in the hope that the value of what you buy will increase and that it can then be sold at a higher price in order to make a profit",
+    "second": "(TRADE) to buy and sell with the hope that the value of what you buy will increase and that it can then be sold at a higher price in order to make a profit"
+  },
+  {
+    "word": "speculate",
+    "a": 2,
+    "b": 6,
+    "score": 0.944,
+    "first": "(TRADE) to buy and sell in the hope that the value of what you buy will increase and that it can then be sold at a higher price in order to make a profit",
+    "second": "to buy something hoping that its value will increase and then sell at this higher price in order to make a profit"
+  },
+  {
+    "word": "speculate",
+    "a": 4,
+    "b": 6,
+    "score": 0.942,
+    "first": "(TRADE) to buy and sell with the hope that the value of what you buy will increase and that it can then be sold at a higher price in order to make a profit",
+    "second": "to buy something hoping that its value will increase and then sell at this higher price in order to make a profit"
+  },
+  {
+    "word": "sporadic",
+    "a": 1,
+    "b": 2,
+    "score": 0.768,
+    "first": "happening sometimes; not regular or continuous",
+    "second": "not happening or appearing in a pattern; not continuous or regular"
+  },
+  {
+    "word": "squalid",
+    "a": 1,
+    "b": 3,
+    "score": 0.825,
+    "first": "(DIRTY) (of places) extremely dirty and unpleasant, often because of lack of money",
+    "second": "extremely dirty, poor, and unpleasant"
+  },
+  {
+    "word": "squelch",
+    "a": 1,
+    "b": 3,
+    "score": 0.871,
+    "first": "(SOUND) to make a sucking sound like the one produced when you are walking on soft, wet ground",
+    "second": "a sucking sound like the one produced when you are walking on soft, wet ground"
+  },
+  {
+    "word": "standing",
+    "a": 1,
+    "b": 6,
+    "score": 0.863,
+    "first": "(REPUTATION) reputation, rank, or position in an area of activity, system, or organization",
+    "second": "(RANK) rank, position, or reputation in an area of activity, system, or organization: Standings are ranked lists of people or things"
+  },
+  {
+    "word": "standing",
+    "a": 1,
+    "b": 7,
+    "score": 0.858,
+    "first": "(REPUTATION) reputation, rank, or position in an area of activity, system, or organization",
+    "second": "the reputation or position that someone or something has in an area of activity or an organization"
+  },
+  {
+    "word": "standing",
+    "a": 2,
+    "b": 8,
+    "score": 1.0,
+    "first": "(TIME) the time for which something has existed",
+    "second": "the time for which something has existed"
+  },
+  {
+    "word": "standing",
+    "a": 3,
+    "b": 4,
+    "score": 0.803,
+    "first": "permanent, rather than formed or created when necessary",
+    "second": "(PERMANENT) permanent or always continuing to exist or happen"
+  },
+  {
+    "word": "standing",
+    "a": 3,
+    "b": 10,
+    "score": 0.998,
+    "first": "permanent, rather than formed or created when necessary",
+    "second": "permanent, rather than created or formed when necessary"
+  },
+  {
+    "word": "standing",
+    "a": 4,
+    "b": 10,
+    "score": 0.798,
+    "first": "(PERMANENT) permanent or always continuing to exist or happen",
+    "second": "permanent, rather than created or formed when necessary"
+  },
+  {
+    "word": "status",
+    "a": 2,
+    "b": 5,
+    "score": 0.809,
+    "first": "(RESPECT) the amount of respect, admiration, or importance given to a person, organization, or object",
+    "second": "(RESPECT) the position of respect and importance given to someone or something"
+  },
+  {
+    "word": "stigma",
+    "a": 2,
+    "b": 4,
+    "score": 0.752,
+    "first": "(FLOWER PART) the top of the central female part of a flower, where pollen is received",
+    "second": "(FLOWER) the part of the pistil (= female part) of a flower that receives the pollen (= powder produced by the male part)"
+  },
+  {
+    "word": "stint",
+    "a": 1,
+    "b": 3,
+    "score": 0.94,
+    "first": "a fixed or limited period of time spent doing a particular job or activity",
+    "second": "(PERIOD) a period of time spent doing a particular job or activity"
+  },
+  {
+    "word": "stint",
+    "a": 1,
+    "b": 5,
+    "score": 0.94,
+    "first": "a fixed or limited period of time spent doing a particular job or activity",
+    "second": "a period of time spent doing a particular job or activity"
+  },
+  {
+    "word": "stint",
+    "a": 2,
+    "b": 4,
+    "score": 0.925,
+    "first": "to provide, take, or use only a small amount of something",
+    "second": "(LIMIT) to give, take, or use only a small amount of something"
+  },
+  {
+    "word": "stint",
+    "a": 3,
+    "b": 5,
+    "score": 1.0,
+    "first": "(PERIOD) a period of time spent doing a particular job or activity",
+    "second": "a period of time spent doing a particular job or activity"
+  },
+  {
+    "word": "stipulate",
+    "a": 1,
+    "b": 2,
+    "score": 0.768,
+    "first": "to say exactly how something must be or must be done",
+    "second": "to state exactly what must be done"
+  },
+  {
+    "word": "stipulate",
+    "a": 1,
+    "b": 3,
+    "score": 0.938,
+    "first": "to say exactly how something must be or must be done",
+    "second": "to state exactly what something must be or how something must be done"
+  },
+  {
+    "word": "stipulate",
+    "a": 2,
+    "b": 3,
+    "score": 0.814,
+    "first": "to state exactly what must be done",
+    "second": "to state exactly what something must be or how something must be done"
+  },
+  {
+    "word": "stratagem",
+    "a": 1,
+    "b": 2,
+    "score": 0.763,
+    "first": "a carefully planned way of achieving or dealing with something, often involving a trick",
+    "second": "a plan or trick to achieve something"
+  },
+  {
+    "word": "stymie",
+    "a": 1,
+    "b": 2,
+    "score": 0.801,
+    "first": "to prevent something from happening or someone from achieving a purpose",
+    "second": "to prevent someone from achieving a goal or doing something that had been planned"
+  },
+  {
+    "word": "subjective",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "influenced by or based on personal beliefs or feelings, rather than based on facts",
+    "second": "influenced by or based on personal beliefs or feelings, rather than based on facts"
+  },
+  {
+    "word": "sublime",
+    "a": 1,
+    "b": 4,
+    "score": 0.859,
+    "first": "extremely good, beautiful, or enjoyable: very great",
+    "second": "(SATISFYING) extremely good, beautiful, or enjoyable, and therefore satisfying"
+  },
+  {
+    "word": "sublime",
+    "a": 3,
+    "b": 5,
+    "score": 0.973,
+    "first": "to change a solid directly into a gas without the solid first becoming a liquid, or to be changed in this way",
+    "second": "(CHANGE) to change a solid directly into a gas without the solid first becoming a liquid"
+  },
+  {
+    "word": "subpoena",
+    "a": 1,
+    "b": 2,
+    "score": 0.793,
+    "first": "to order someone to go to a law court to answer questions: to order that documents must be produced in a law court",
+    "second": "a legal document ordering someone to appear in a law court"
+  },
+  {
+    "word": "subpoena",
+    "a": 1,
+    "b": 3,
+    "score": 0.908,
+    "first": "to order someone to go to a law court to answer questions: to order that documents must be produced in a law court",
+    "second": "to order someone to go to a court of law to answer questions, or to order the appearance of documents in a court of law"
+  },
+  {
+    "word": "subpoena",
+    "a": 1,
+    "b": 4,
+    "score": 0.878,
+    "first": "to order someone to go to a law court to answer questions: to order that documents must be produced in a law court",
+    "second": "to order someone to go to a court of law to answer questions"
+  },
+  {
+    "word": "subpoena",
+    "a": 1,
+    "b": 5,
+    "score": 0.847,
+    "first": "to order someone to go to a law court to answer questions: to order that documents must be produced in a law court",
+    "second": "to order that documents must be produced in a court of law"
+  },
+  {
+    "word": "subpoena",
+    "a": 1,
+    "b": 6,
+    "score": 0.82,
+    "first": "to order someone to go to a law court to answer questions: to order that documents must be produced in a law court",
+    "second": "a legal document ordering someone to appear in a court of law or to produce documents"
+  },
+  {
+    "word": "subpoena",
+    "a": 2,
+    "b": 3,
+    "score": 0.829,
+    "first": "a legal document ordering someone to appear in a law court",
+    "second": "to order someone to go to a court of law to answer questions, or to order the appearance of documents in a court of law"
+  },
+  {
+    "word": "subpoena",
+    "a": 2,
+    "b": 6,
+    "score": 0.927,
+    "first": "a legal document ordering someone to appear in a law court",
+    "second": "a legal document ordering someone to appear in a court of law or to produce documents"
+  },
+  {
+    "word": "subpoena",
+    "a": 3,
+    "b": 4,
+    "score": 0.897,
+    "first": "to order someone to go to a court of law to answer questions, or to order the appearance of documents in a court of law",
+    "second": "to order someone to go to a court of law to answer questions"
+  },
+  {
+    "word": "subpoena",
+    "a": 3,
+    "b": 5,
+    "score": 0.758,
+    "first": "to order someone to go to a court of law to answer questions, or to order the appearance of documents in a court of law",
+    "second": "to order that documents must be produced in a court of law"
+  },
+  {
+    "word": "subpoena",
+    "a": 3,
+    "b": 6,
+    "score": 0.833,
+    "first": "to order someone to go to a court of law to answer questions, or to order the appearance of documents in a court of law",
+    "second": "a legal document ordering someone to appear in a court of law or to produce documents"
+  },
+  {
+    "word": "subpoena",
+    "a": 5,
+    "b": 6,
+    "score": 0.839,
+    "first": "to order that documents must be produced in a court of law",
+    "second": "a legal document ordering someone to appear in a court of law or to produce documents"
+  },
+  {
+    "word": "subpoena",
+    "a": 6,
+    "b": 7,
+    "score": 0.77,
+    "first": "a legal document ordering someone to appear in a court of law or to produce documents",
+    "second": "the power of a court, committee, etc. to order someone to appear and give evidence or documents to be produced"
+  },
+  {
+    "word": "subside",
+    "a": 2,
+    "b": 4,
+    "score": 0.884,
+    "first": "(LOWER LEVEL) If a building, land, or water subsides, it goes down to a lower level",
+    "second": "(GO DOWN) (of a building, area of land, or level of water) to go down to a lower level"
+  },
+  {
+    "word": "substantiate",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "to show something to be true, or to support a claim with facts",
+    "second": "to show something to be true, or to support a claim with facts"
+  },
+  {
+    "word": "supersede",
+    "a": 1,
+    "b": 2,
+    "score": 0.762,
+    "first": "to replace something, especially something older or more old-fashioned",
+    "second": "to replace something older, less effective, or less important or official"
+  },
+  {
+    "word": "surrogate",
+    "a": 1,
+    "b": 3,
+    "score": 0.783,
+    "first": "replacing someone else or used instead of something else",
+    "second": "someone or something that replaces or is used instead of someone or something else; a substitute for another"
+  },
+  {
+    "word": "syntax",
+    "a": 1,
+    "b": 2,
+    "score": 0.783,
+    "first": "the grammatical arrangement of words in a sentence: the structure of statements or elements in a computer language",
+    "second": "the grammatical arrangement of words in a sentence"
+  },
+  {
+    "word": "table",
+    "a": 2,
+    "b": 9,
+    "score": 0.788,
+    "first": "(INFORMATION) an arrangement of facts and numbers in rows or blocks, especially in printed material: a multiplication table a list of the information that is contained in a book",
+    "second": "an arrangement of facts or numbers in rows or columns, especially in printed material, on computer screens, etc."
+  },
+  {
+    "word": "table",
+    "a": 8,
+    "b": 14,
+    "score": 0.791,
+    "first": "(NOT DISCUSS) to leave something for discussion or consideration at a later time",
+    "second": "to leave a subject or idea to be discussed later"
+  },
+  {
+    "word": "tacit",
+    "a": 1,
+    "b": 2,
+    "score": 0.79,
+    "first": "understood without being expressed directly: not expressing or talking about something directly or openly",
+    "second": "understood without being expressed directly"
+  },
+  {
+    "word": "tangential",
+    "a": 2,
+    "b": 3,
+    "score": 0.868,
+    "first": "(INDIRECT) (of a subject or activity) different from or not directly connected with the one you are talking about or doing",
+    "second": "(of a subject or activity) different than the one you are talking about or doing"
+  },
+  {
+    "word": "tirade",
+    "a": 1,
+    "b": 2,
+    "score": 0.863,
+    "first": "a long, angry speech expressing strong disapproval",
+    "second": "an angry speech, often lasting a long time, that expresses strong disapproval"
+  },
+  {
+    "word": "toady",
+    "a": 1,
+    "b": 2,
+    "score": 0.819,
+    "first": "a person who praises and is artificially pleasant to people in authority, usually in order to get some advantage from them",
+    "second": "to praise and be artificially pleasant to people in authority, usually in order to get some advantage from them"
+  },
+  {
+    "word": "token",
+    "a": 1,
+    "b": 6,
+    "score": 0.869,
+    "first": "(SYMBOL) something that you do, or a thing that you give someone, that expresses your feelings or intentions, although it might have little practical effect",
+    "second": "(SYMBOL) something you give to someone or do for someone to express your feelings or intentions"
+  },
+  {
+    "word": "token",
+    "a": 1,
+    "b": 11,
+    "score": 0.774,
+    "first": "(SYMBOL) something that you do, or a thing that you give someone, that expresses your feelings or intentions, although it might have little practical effect",
+    "second": "an action that you take or a thing that you give that is a symbol of your feelings about something, even though it may not be very big or valuable"
+  },
+  {
+    "word": "token",
+    "a": 7,
+    "b": 9,
+    "score": 0.831,
+    "first": "(DISK) a round, metal or plastic disk which is used instead of money in some machines",
+    "second": "a round piece of metal or plastic that is used instead of money in some machines, for example, to get food or drink out of a vending machine, use a car park, etc"
+  },
+  {
+    "word": "tome",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "a large, heavy book",
+    "second": "a large, heavy book"
+  },
+  {
+    "word": "transgression",
+    "a": 1,
+    "b": 2,
+    "score": 0.819,
+    "first": "the act or process of breaking a law or moral rule, or an example of this",
+    "second": "an action that breaks a law or rule"
+  },
+  {
+    "word": "transitory",
+    "a": 1,
+    "b": 3,
+    "score": 0.914,
+    "first": "lasting for only a short time",
+    "second": "only lasting for a short period of time"
+  },
+  {
+    "word": "treacherous",
+    "a": 1,
+    "b": 3,
+    "score": 0.85,
+    "first": "(DANGEROUS) If the ground or sea is treacherous, it is extremely dangerous, especially because of bad weather conditions",
+    "second": "(DANGEROUS) (of the ground or the sea) extremely dangerous, esp. because of bad weather conditions"
+  },
+  {
+    "word": "turgid",
+    "a": 1,
+    "b": 4,
+    "score": 0.872,
+    "first": "(TOO SERIOUS) (of speech, writing, style, etc.) boring and too serious about its subject matter",
+    "second": "(TOO SERIOUS) (of speech or writing) too serious and very boring"
+  },
+  {
+    "word": "unprecedented",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "never having happened or existed in the past",
+    "second": "never having happened or existed in the past"
+  },
+  {
+    "word": "vacillate",
+    "a": 1,
+    "b": 4,
+    "score": 0.896,
+    "first": "to be uncertain what to do, or to change often between two opinions",
+    "second": "to be uncertain about what to do or to keep changing your opinion about something"
+  },
+  {
+    "word": "venerate",
+    "a": 1,
+    "b": 2,
+    "score": 0.936,
+    "first": "to honour or very much respect a person or thing",
+    "second": "to honor or have great respect for a person or thing"
+  },
+  {
+    "word": "vex",
+    "a": 1,
+    "b": 2,
+    "score": 0.81,
+    "first": "to cause difficulty to someone, or to cause someone to feel angry, annoyed, or upset",
+    "second": "to cause someone to feel annoyance or trouble"
+  },
+  {
+    "word": "viable",
+    "a": 1,
+    "b": 2,
+    "score": 0.799,
+    "first": "able to work as intended or able to succeed: able to continue to exist as or develop into a living being",
+    "second": "able to exist, perform as intended, or succeed"
+  },
+  {
+    "word": "vintage",
+    "a": 1,
+    "b": 5,
+    "score": 0.751,
+    "first": "(FROM THE PAST) produced in the past, and typical of the period in which it was made: used to describe clothing, jewellery, etc. that is not new, especially when it is a good example of a style from the past",
+    "second": "(OLD CLOTHES) clothing, jewellery, etc. that is not new, especially when it is a good example of a style from the past"
+  },
+  {
+    "word": "vintage",
+    "a": 2,
+    "b": 7,
+    "score": 0.81,
+    "first": "of high quality and lasting value, or showing the best and most typical characteristics of a particular type of thing",
+    "second": "(HIGH QUALITY) (esp. of something old) of high quality and lasting value, or showing the best characteristics typical of the person who created it"
+  },
+  {
+    "word": "vintage",
+    "a": 3,
+    "b": 9,
+    "score": 0.876,
+    "first": "(WINE) Vintage wine is of high quality and was made in a particular year and can be kept for several years in order to improve it",
+    "second": "(WINE) (of wine) of high quality that was made in a particular year, and that can be kept for several years in order to improve it"
+  },
+  {
+    "word": "vintage",
+    "a": 4,
+    "b": 6,
+    "score": 0.873,
+    "first": "(AGE) the wine made in a particular year, or a particular year in which wine has been made: a group of things that were produced, or a group of people who were active, during the same particular period",
+    "second": "(WINE) the wine made in a particular year, or a particular year in which wine was made"
+  },
+  {
+    "word": "vociferous",
+    "a": 1,
+    "b": 2,
+    "score": 0.786,
+    "first": "Vociferous people express their opinions and complaints loudly and repeatedly in speech, and vociferous demands, etc. are made repeatedly and loudly",
+    "second": "repeatedly and loudly expressing your opinions and complaints, or (of demands, complaints, etc.) expressed in this way"
+  },
+  {
+    "word": "volatile",
+    "a": 2,
+    "b": 3,
+    "score": 0.832,
+    "first": "(OF SUBSTANCE) A volatile liquid or solid substance will change easily into a gas",
+    "second": "likely to change suddenly and unexpectedly, or suddenly violent or angry: If a substance, esp. a liquid, is volatile, it will change easily into a gas"
+  },
+  {
+    "word": "wan",
+    "a": 1,
+    "b": 3,
+    "score": 0.824,
+    "first": "(of a person's face) more pale than usual and tired-looking",
+    "second": "(of a person’s face or expression) pale, tired, or weak"
+  },
+  {
+    "word": "wan",
+    "a": 2,
+    "b": 4,
+    "score": 0.924,
+    "first": "abbreviation for Wide Area Network: a computer network that connects separate machines over a wide area, for example in different countries, using telecommunication systems",
+    "second": "abbreviation for Wide Area Network: a system for connecting computers in different areas of a country or the world"
+  },
+  {
+    "word": "whereas",
+    "a": 1,
+    "b": 2,
+    "score": 1.0,
+    "first": "compared with the fact that; but",
+    "second": "compared with the fact that; but"
+  },
+  {
+    "word": "wily",
+    "a": 1,
+    "b": 2,
+    "score": 0.882,
+    "first": "(of a person) intelligent, having a very good understanding of situations, possibilities, and people, and often willing to use tricks to achieve an aim",
+    "second": "quick to think of things, having a very good understanding of situations and possibilities, and often willing to use tricks to achieve an aim"
+  },
+  {
+    "word": "yoke",
+    "a": 5,
+    "b": 7,
+    "score": 0.754,
+    "first": "(ANIMALS) to put a yoke on animals, especially cattle, so that they are fastened together and to a connected vehicle or load",
+    "second": "(esp. in the past) a wooden bar fastened over the necks of two animals, esp. cattle, and connected to a vehicle or load that they are pullingfig. Yoke can also refer to something that unfairly limits freedom"
+  },
+  {
+    "word": "zeal",
+    "a": 1,
+    "b": 2,
+    "score": 0.814,
+    "first": "great enthusiasm or eagerness",
+    "second": "great enthusiasm or interest"
+  },
+  {
+    "word": "zenith",
+    "a": 2,
+    "b": 3,
+    "score": 0.902,
+    "first": "(MOST SUCCESSFUL POINT) the best or most successful point or time",
+    "second": "the best, highest, or most successful point or time"
+  }
+]

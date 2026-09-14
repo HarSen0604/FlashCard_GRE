@@ -1,0 +1,315 @@
+abridge|3|The editor abridged the novel for younger readers.
+abyss|1|They peered into the dark abyss below the cliff.
+advocate|1|She advocates equal access to education.
+advocate|2|As an advocate for workers, he defended their rights.
+aerie|1|The eagle returned to its aerie high on the cliff.
+aggrandize|1|The ruler used grand monuments to aggrandize himself.
+aggregate|4|We aggregate the results from all five surveys.
+aggregate|8|The report tracks a monetary aggregate to measure the money supply.
+aggregate|13|The company aggregates several services into one package.
+antedate|1|These ruins antedate the modern city by centuries.
+apostate|1|After abandoning the party's beliefs, he was called an apostate.
+apostle|2|She became an apostle of peaceful political change.
+appropriate|5|He appropriated public funds for his own use.
+articulate|4|These two bones articulate at the elbow.
+artifact|1|The museum displayed an ancient clay artifact.
+ascetic|3|He led an ascetic life, avoiding luxury and comfort.
+autonomous|1|The autonomous robot navigated without human control.
+balk|2|The pitcher committed a balk by stopping his throw midway.
+balk|3|A heavy balk of timber supported the roof.
+balloon|6|They chose a balloon loan with a large final repayment.
+balloon|7|The final balloon payment was larger than the earlier installments.
+balloon|8|The project's costs ballooned within a month.
+base|4|The runner reached the last base and scored.
+base|5|The charity depends on a broad base of donors.
+base|7|Our decimal counting system uses base ten.
+base|8|The base reacted with the acid to form a salt.
+base|9|Jealousy drove him to a base act of betrayal.
+base|10|The company plans to base its operations in Chennai.
+base|13|Adenine is a base found in DNA.
+base|15|In two cubed, two is the base.
+base|17|The word do is the base of redo.
+base|22|Mutual trust gave their partnership a firm base.
+base|23|The index uses last year's prices as its base.
+baying|1|The hounds were baying at the moon.
+baying|2|We heard wolves baying deep in the forest.
+bent|1|She bent the wire into a circle.
+bent|4|The novel uses bent as an offensive slur for a gay man.
+bolster|2|She placed a bolster beneath her knees.
+bolster|4|A long bolster lay across the bed.
+boor|1|The boor interrupted every speaker and insulted the host.
+buffer|4|Trees buffer the houses against strong winds.
+buffer|5|The video paused while its buffer filled with data.
+buttress|1|A stone buttress supported the old church wall.
+canard|1|The claim was a canard invented to damage her reputation.
+cardinal|2|Three is a cardinal number; third is an ordinal number.
+cardinal|3|A bright red cardinal landed on the branch.
+catalyst|2|Her question became the catalyst for a lively debate.
+censure|3|The committee issued a formal censure of his conduct.
+clamor|1|The crowd's clamor drowned out the announcement.
+clinch|3|The referee separated the boxers from their clinch.
+coalesce|1|Several small groups coalesced into one movement.
+cogent|1|Her cogent argument persuaded even her strongest critics.
+concede|5|He reluctantly conceded that the evidence was convincing.
+concede|6|The employer conceded the workers' demand for a break.
+concede|7|After losing the final round, she conceded defeat.
+console|5|He tried to console his disappointed friend.
+console|6|The pilot checked the controls on the console.
+consolidate|5|The accountant consolidated the subsidiaries' financial results.
+consolidate|6|We consolidated the parcels into a single shipment.
+contrary|5|The evidence supports the contrary conclusion.
+counterpoint|1|The two melodies formed an intricate counterpoint.
+covert|2|The fox hid in a dense covert near the field.
+credulous|1|The credulous buyer accepted every unlikely promise.
+cupidity|1|Cupidity led the official to demand more bribes.
+curmudgeon|1|The old curmudgeon complained about every visitor.
+default|3|English is the default language unless you choose another.
+default|4|His failure to repay the loan constituted a default.
+default|15|The app defaults to the last folder you opened.
+demagogue|1|The demagogue won support by stirring fear and anger.
+derivative|6|Happiness is a derivative of the word happy.
+diffuse|5|A diffuse cloud of dust spread across the valley.
+din|3|The manufacturer followed the relevant DIN standard.
+dirge|1|A mournful dirge played at the funeral.
+dispatch|8|The goods are ready for dispatch tomorrow.
+distaff|2|She wound the flax around a distaff before spinning it.
+distill|1|The summary distills a long report into its main ideas.
+divine|7|She divined his intentions from his guarded answers.
+document|6|Save the document before closing the program.
+dovetail|1|The drawer's corners were joined with dovetails.
+dyspeptic|1|His dyspeptic comments spoiled the cheerful conversation.
+e|1|The word tree ends with the letter e.
+e|4|The compass pointed E, toward the rising sun.
+e|5|The report used E as an abbreviation for ecstasy.
+e|2|The musician played an E on the piano.
+eclipse|5|During the eclipse, the moon blocked the sun.
+eclipse|8|Her later discoveries eclipsed her earlier achievements.
+edify|1|The lecture sought to edify its audience, not merely entertain.
+effigy|2|The display included a lifelike effigy of the ruler.
+encomium|1|Her retirement speech was an encomium to her mentor.
+enervate|1|The intense heat enervated the hikers.
+entitlement|5|The program provides an entitlement to eligible retirees.
+epicure|1|The epicure traveled far to taste the region's finest food.
+erstwhile|1|His erstwhile ally became his fiercest opponent.
+fathom|1|The boat anchored in water six fathoms deep.
+fawn|1|A young fawn followed the doe through the grass.
+fawn|2|She chose a coat in a soft fawn color.
+fidelity|3|His fidelity to his friends never wavered.
+figurative|2|Her figurative paintings show recognizable people and places.
+flag|3|A cracked flag made the stone path uneven.
+flag|4|A yellow flag bloomed beside the pond.
+flag|7|Her energy began to flag after hours of work.
+flag|8|The official flagged the player for breaking the rules.
+flag|17|The athletes proudly flew the flag for their country.
+fledgling|1|The fledgling fluttered from the nest to a nearby branch.
+ford|1|They crossed the stream at a shallow ford.
+ford|2|The hikers forded the river before sunset.
+forfeit|4|After he broke the agreement, his deposit was forfeit.
+forfeit|7|By signing, she forfeited her right to appeal.
+forfeit|8|The lost deposit was the forfeit for canceling late.
+fringe|6|The lake was fringed with tall reeds.
+fringe|7|The movement remained on the fringe of national politics.
+fringe|9|Palm trees fringe the sandy beach.
+glacial|1|They examined rocks left by glacial ice.
+graft|8|An investigation uncovered graft among city officials.
+graft|9|Years of hard graft finally made the business successful.
+grandstand|1|The spectators cheered from the crowded grandstand.
+grating|1|The machine made a harsh, grating noise.
+grating|2|Leaves had blocked the metal grating over the drain.
+grouse|1|A grouse flew out of the heather.
+grouse|2|Her main grouse was the lack of reliable transport.
+grouse|6|The restaurant served roasted grouse.
+hallmark|2|The silver ring bore an official hallmark.
+hallmark|3|The assay office hallmarked the silver bowl.
+hallmark|6|The hallmark identified the maker and the metal's purity.
+hand|4|The surgeon has remarkably steady hands.
+hand|5|Could you give me a hand with this box?
+hand|6|The farm hired an extra hand for the harvest.
+hand|7|She had a hand in designing the new policy.
+hand|8|The audience gave the singer a warm hand.
+hand|9|The note was written in her familiar hand.
+hand|10|The horse stood sixteen hands high.
+hand|11|Please hand me the book beside you.
+hand|20|Careful planning and good results go hand in hand.
+hand|21|The repairs are already in hand.
+hand|22|She stitched the entire quilt by hand.
+hand|23|I finally got my hands on the missing report.
+hand|26|The decision is in the committee's hands.
+hand|27|Keep a notebook to hand during the meeting.
+hand|28|The final decision is out of my hands.
+hand|29|He put his hand in his pocket to help the charity.
+hand|30|Let us focus on the task at hand.
+harrow|1|The farmer pulled a harrow across the rough soil.
+hearken|1|Hearken to the warning before it is too late.
+hedge|3|The phrase somewhat likely acts as a hedge.
+hedge|8|The company bought a hedge against currency losses.
+hedge|9|The firm hedged its exposure to changing prices.
+hedge|10|She hedged her bets by applying to several colleges.
+husband|2|They husbanded their food supplies during the long journey.
+husband|3|Her husband joined her at the celebration.
+impassive|1|His face remained impassive when he heard the verdict.
+impermeable|2|The impermeable layer kept water from seeping through.
+impious|1|The elders condemned his impious mockery of their rituals.
+implicit|4|She had implicit trust in her friend's honesty.
+incorporate|4|They incorporated the business before seeking investors.
+inform|4|Years of fieldwork informed her conclusions.
+inform|5|The guide informed visitors about the building's history.
+inordinate|2|The simple task took an inordinate amount of time.
+insular|1|The insular community resisted ideas from outside.
+interregnum|1|A council governed during the interregnum between rulers.
+keen|4|The mourners keened beside the grave.
+keen|5|She felt keen disappointment at the result.
+keen|6|His keen eye detected the tiny flaw.
+keen|8|There was keen competition for the scholarship.
+keen|9|The shop attracted customers with keen prices.
+keen|10|She is keen to learn a new language.
+knell|1|The factory's closure sounded the death knell for the town's industry.
+levy|5|The council levied a tax on vacant properties.
+liberal|8|The party proposed liberal reforms to expand public services.
+liberal|10|That is a liberal interpretation of the instructions.
+liberal|11|As a liberal, she supported expanded public services.
+liberal|13|He supported liberal policies promoting personal freedom.
+liberal|14|The government adopted liberal economic policies to reduce state control.
+licentious|1|The novel depicts an aristocrat's licentious affairs.
+lionize|1|The press lionized the young scientist after her discovery.
+lissome|1|The lissome dancer moved gracefully across the stage.
+log|1|He placed another log on the fire.
+log|11|The pilot logged a thousand hours in the air.
+log|12|The captain recorded the incident in the ship's log.
+loquacious|1|Our loquacious guide talked throughout the journey.
+loquacious|2|The loquacious guest always had another story to tell.
+lumber|2|Workers stacked the lumber beside the building site.
+lumber|3|The carpenter cut the lumber to the required lengths.
+lumber|5|The sawmill supplied lumber for the new houses.
+maelstrom|2|The boat was drawn toward a swirling maelstrom.
+mar|3|The receipt was dated 12 Mar.
+martinet|1|The martinet punished even the smallest breach of the rules.
+maudlin|1|After several drinks, he grew maudlin about his lost youth.
+misanthrope|1|The misanthrope avoided visitors and distrusted everyone.
+modest|6|She chose modest clothing for the formal ceremony.
+modish|1|The shop displayed modish clothes in its window.
+molt|1|The bird molts its old feathers each year.
+monastic|2|The visitors observed the community's monastic routine.
+myopic|2|The myopic student could not read the distant board.
+neologism|1|The new technology introduced a neologism into everyday speech.
+net|4|The clever campaign netted the charity several new donors.
+net|5|The striker netted the winning goal.
+net|6|After expenses, the net profit was much smaller.
+net|11|She netted the tennis ball instead of clearing the barrier.
+net|12|The sale netted him a small profit after costs.
+net|15|We cast our net wide when looking for candidates.
+net|20|The country is a net exporter of wheat.
+nominal|3|The nominal phrase functions as the sentence's subject.
+nominal|7|He was the nominal leader, but his deputy held the power.
+nominal|8|Nominal wages rose, but inflation erased the gain.
+objective|4|In the phrase saw him, him is in the objective case.
+occult|2|The old book explored the occult and its rituals.
+occult|3|The story revolves around mysterious occult powers.
+offset|6|The refund provided an offset against the new charge.
+offset|7|The company purchased a carbon offset for its emissions.
+optimal|2|The experiment requires optimal growing conditions.
+ossify|2|The cartilage gradually ossified into bone.
+palatial|1|They lived in a palatial house with enormous halls.
+parley|1|The opposing leaders agreed to a parley to discuss peace.
+partisan|2|The partisan fought against the occupying army.
+patent|2|Her patent leather shoes shone under the lights.
+patent|5|The patent device could not be copied without permission.
+patent|9|The product went off patent after its protection expired.
+patent|10|The packaging was marked patent pending.
+pathogenic|1|The sample contained pathogenic bacteria.
+pedant|1|The pedant corrected a trivial punctuation error during the debate.
+penitent|2|The penitent confessed and asked for forgiveness.
+penury|1|After losing everything, he lived in penury.
+per|4|We arranged the seats as per your instructions.
+philistine|2|The excavation uncovered pottery from an ancient Philistine settlement.
+philistine|3|He dismissed the painting as worthless and was called a philistine.
+pith|1|She removed the bitter white pith from the orange.
+plastic|6|The container was molded from recycled plastic.
+plummet|4|The sudden plummet in demand surprised the company.
+plutocracy|2|The country's plutocracy controlled its major industries.
+potentate|1|The powerful potentate ruled without a parliament.
+precipitate|2|The collapse precipitated the rocks into the valley.
+precipitate|8|A white precipitate formed when the liquids were mixed.
+profuse|2|She offered profuse thanks for their help.
+proxy|2|He appointed his sister as his proxy for the vote.
+proxy|5|The absent shareholder voted by proxy.
+proxy|6|The researchers used attendance as a proxy for engagement.
+pulchritude|1|The poet praised the statue's extraordinary pulchritude.
+rarefied|1|The climbers struggled in the mountain's rarefied air.
+recalcitrant|1|The recalcitrant student refused to follow any instructions.
+recapitulate|1|Before concluding, she recapitulated the main arguments.
+render|3|The builders rendered the wall with a layer of plaster.
+render|8|The volunteers rendered valuable assistance.
+render|9|The accountant rendered a detailed statement of expenses.
+render|10|The court rendered its judgment on Friday.
+render|11|The software rendered a lifelike image of the building.
+repertory|3|The company presented three plays in repertory.
+resolution|7|The dispute ended with a peaceful resolution.
+resolution|8|She made a resolution to read every day.
+resolution|9|The council passed a resolution supporting the proposal.
+resolution|11|The higher resolution made the image much clearer.
+rhetoric|2|Her skillful rhetoric persuaded the undecided audience.
+rue|1|He came to rue his hasty decision.
+ruminate|2|The cows ruminated quietly after feeding.
+sanction|3|The board sanctioned the proposed expansion.
+sap|6|He felt like a sap for believing the obvious trick.
+saturate|3|The label lists the amount of saturates in the food.
+scurvy|1|Sailors without fresh food sometimes developed scurvy.
+skirt|2|A metal skirt protected the machine's lower parts.
+skirt|7|The path skirts the edge of the lake.
+slack|5|Coal slack covered the floor near the furnace.
+slack|12|Slack supervision allowed the errors to go unnoticed.
+slack|14|The schedule has enough slack to absorb a short delay.
+slack|15|Her colleagues took up the slack while she was away.
+slew|3|In the legend, the hero slew the dragon.
+sound|5|The guard sounded the alarm.
+sound|6|The crew sounded the water before anchoring.
+sound|7|Despite its age, the bridge remains structurally sound.
+sound|8|Her advice was based on sound judgment.
+sound|9|The child was sound asleep.
+sound|10|The team suffered a sound defeat.
+sound|20|The course gave her a sound understanding of the subject.
+standing|9|He remains a member in good standing.
+status|3|She updated her status to announce her new job.
+status|7|Please check the current status of the application.
+steeped|1|The old town is steeped in history.
+stigma|2|Pollen landed on the flower's stigma.
+stigma|4|The stigma receives pollen during pollination.
+strut|2|A steel strut supported the roof.
+strut|4|The engineer replaced the damaged wing strut.
+sublime|3|Dry ice sublimes directly into gas.
+subpoena|7|The committee used its subpoena power to obtain the records.
+succeeding|1|Her careful planning is succeeding at last.
+sybarite|1|The sybarite filled his days with luxurious meals and leisure.
+symbiosis|1|The two organizations developed a productive symbiosis.
+symbiosis|2|The fungus and alga live in symbiosis.
+table|5|The volunteers tabled outside the library to share information.
+table|10|Both sides agreed to return to the negotiating table.
+table|11|The rejected proposal is now off the table.
+table|12|Several possible solutions remain on the table.
+tangential|1|The force acted in a tangential direction along the curve.
+temperance|1|She practiced temperance by avoiding excess in food and drink.
+temperance|2|Temperance helped him resist another glass of wine.
+terrestrial|2|Unlike fish, most ants are terrestrial animals.
+terrestrial|3|The antenna receives terrestrial television broadcasts.
+timorous|1|The timorous child hesitated to enter the crowded room.
+token|5|The company made a token gesture but changed nothing substantial.
+torpor|1|The afternoon heat left everyone in a state of torpor.
+torrid|4|The novel follows a brief, torrid romance.
+turgid|3|The plant's cells became turgid after absorbing water.
+underscore|1|The editor underscored the key sentence.
+underscore|2|Use an underscore between the words in the file name.
+unseemly|1|Their loud argument was unseemly at such a solemn event.
+usury|1|The lender was condemned for usury after charging exorbitant interest.
+vernal|1|Fresh flowers marked the return of vernal warmth.
+vintage|5|The boutique sells carefully restored vintage clothing.
+vintage|8|She bought a vintage desk that was still in excellent condition.
+virtual|5|They attended a virtual meeting from their homes.
+volatile|4|The volatile market changed sharply from one day to the next.
+wanton|2|The old novel uses wanton to judge a woman's sexual behavior.
+whitewash|1|They mixed whitewash to brighten the cottage walls.
+whitewash|5|The champions whitewashed their opponents without conceding a point.
+whitewash|6|They whitewashed the walls before the festival.
+xenophobia|1|The campaign challenged xenophobia and hostility toward newcomers.
+yoke|1|A wooden yoke linked the two oxen pulling the cart.
+yoke|2|The shirt's yoke fitted neatly across the shoulders.
