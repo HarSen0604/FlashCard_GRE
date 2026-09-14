@@ -1,11 +1,141 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Wordwell · GRE Flashcards</title><link rel="icon" href="data:,"><link rel="stylesheet" href="/static/style.css"><script defer src="/static/app.js"></script></head>
-<body><header class="topbar"><a class="brand" href="/" aria-label="Wordwell home"><span class="brand-icon">W</span>wordwell<span class="edition">GRE STUDY</span></a><a class="backup" href="/api/backup">Back up progress ↗</a></header>
-<main><div class="intro"><div><p class="eyebrow">A LITTLE EVERY DAY</p><h1>Make the words yours.</h1><p class="subtitle">Learn with intention. Remember for longer.</p></div><div class="local"><span></span> Saved on this laptop</div></div>
-<section class="metrics" aria-label="Study statistics"><div><strong id="metric-new">—</strong><span>Words to discover</span></div><div><strong id="metric-learned">—</strong><span>Ready for revision</span></div><div><strong id="metric-due">—</strong><span>Reviews due now</span></div><div><strong id="metric-attempts">—</strong><span>Revision attempts</span></div></section>
-<nav class="tabs" aria-label="Study modes"><button id="tab-learn" class="selected" aria-current="page">Learn new words</button><button id="tab-library">Already gone through <span id="library-count">0</span></button></nav>
-<div id="notice" role="status" aria-live="polite" hidden></div>
-<section id="learn-view"><div id="start-panel" class="start-panel"><div><p class="eyebrow">YOUR NEXT CHAPTER</p><h2>How many words today?</h2><p>A random selection, one focused batch.<br>Three consecutive recalls build a strong start.</p></div><form id="start-form"><label for="count">New words in this batch</label><div class="input-row"><input id="count" type="number" min="1" step="1" value="10" required><button class="primary" type="submit">Start learning <span>→</span></button></div><p id="available-note" class="muted"></p></form></div><div id="resume-panel" class="start-panel" hidden><div><p class="eyebrow">PICK UP WHERE YOU LEFT OFF</p><h2 id="resume-title">Your batch is waiting.</h2><p>Each word stays here until the whole batch is ready.</p></div><button id="resume" class="primary">Resume learning →</button></div></section>
-<section id="library-view" hidden><div class="library-heading"><div><h2>Keep them familiar.</h2><p>Due words come first. You can also revisit any learned word.</p></div><button id="review-all" class="primary">Review all words / resume →</button><button id="review-due" class="primary">Review due words →</button></div><div class="library-controls"><label class="search-label">Find a word<input type="search" id="search" placeholder="Search learned words…"></label><label>Show<select id="filter"><option value="all">All learned words</option><option value="due">Due now</option><option value="again">I do not remember</option><option value="good">Needs revision</option><option value="easy">Easy to remember</option></select></label></div><div id="library-list"></div></section>
-<section id="study" hidden><div class="study-top"><button id="exit-study" class="text-button">← Back to overview</button><span id="study-mode"></span><button id="undo" class="text-button">Undo last rating</button></div><div class="progress-label"><span id="progress-text"></span><span id="streak-text"></span></div><div class="progress-track"><div id="progress-bar"></div></div><div id="study-content"><article class="flashcard" id="card" aria-label="Flashcard"><div class="hole" aria-hidden="true"></div><div id="front"><p id="card-type" class="eyebrow"></p><h2 id="word"></h2><p id="pronunciation"></p><div id="forms"></div><p class="recall-prompt">Recall the meanings in your own words.</p></div><div id="back" hidden><div class="back-heading"><span id="back-word"></span><span>MEANING & CONTEXT</span></div><div id="meanings"></div><div class="word-relations"><div><p class="eyebrow">SYNONYMS</p><p id="synonyms"></p></div><div><p class="eyebrow">ANTONYMS</p><p id="antonyms"></p></div></div><details id="original-details"><summary>View original source text</summary><div id="original-text"></div></details></div></article><div id="flip-controls"><button id="flip" class="primary">Reveal answer <kbd>Space</kbd></button></div><div id="rating-controls" hidden><p class="rating-question">How well did you recall it?</p><div class="ratings"><button data-rating="again" class="rating again"><span><kbd>1</kbd> I do not remember</span><small>Repeat sooner · reset streak</small></button><button data-rating="good" class="rating good"><span><kbd>2</kbd> Remembered, needs revision</span><small>Successful recall · repeat later</small></button><button data-rating="easy" class="rating easy"><span><kbd>3</kbd> Easy to remember</span><small>Successful recall · ready at 3</small></button></div><p class="muted rating-tip">Recognizing the answer after flipping is different from recalling it.</p></div></div><div id="intermission" class="intermission" hidden></div></section>
-<footer><span>Small sessions. Lasting knowledge.</span><details><summary>How your study plan works</summary><p>New words need three consecutive successful recalls, ending with Easy. Forgetting resets the streak. Words repeat with other cards between them; when only one remains, a 30-second gap replaces the intervening card. The whole batch moves into revision together.</p><p>Revision uses FSRS at a 90% target retention. Early reviews also update the schedule. Initial learning and revision attempts are counted separately. Keyboard: Space to reveal; 1, 2, 3 to rate; U to undo.</p><p id="learning-count"></p></details></footer></main></body></html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wordwell · GRE Flashcards</title>
+    <link rel="icon" type="image/svg+xml" href="/static/gre_logo.svg" aria-label="GRE FlashCard logo">
+    <link rel="stylesheet" href="/static/style.css">
+    <script defer src="/static/app.js"></script>
+</head>
+
+<body>
+    <header class="topbar"><a class="brand" href="/" aria-label="Wordwell home"><span
+                class="brand-icon">W</span>wordwell<span class="edition">GRE STUDY</span></a><a class="backup"
+            href="/api/backup">Back up progress ↗</a></header>
+    <main>
+        <div class="intro">
+            <div>
+                <p class="eyebrow">A LITTLE EVERY DAY</p>
+                <h1>Make the words yours.</h1>
+                <p class="subtitle">Learn with intention. Remember for longer.</p>
+            </div>
+            <div class="local"><span></span> Saved on this laptop</div>
+        </div>
+        <section class="metrics" aria-label="Study statistics">
+            <div><strong id="metric-new">—</strong><span>Words to discover</span></div>
+            <div><strong id="metric-learned">—</strong><span>Ready for revision</span></div>
+            <div><strong id="metric-due">—</strong><span>Reviews due now</span></div>
+            <div><strong id="metric-attempts">—</strong><span>Revision attempts</span></div>
+        </section>
+        <nav class="tabs" aria-label="Study modes"><button id="tab-learn" class="selected" aria-current="page">Learn new
+                words</button><button id="tab-library">Already gone through <span id="library-count">0</span></button>
+        </nav>
+        <div id="notice" role="status" aria-live="polite" hidden></div>
+        <section id="learn-view">
+            <div id="start-panel" class="start-panel">
+                <div>
+                    <p class="eyebrow">YOUR NEXT CHAPTER</p>
+                    <h2>How many words today?</h2>
+                    <p>A random selection, one focused batch.<br>Three consecutive recalls build a strong start.</p>
+                </div>
+                <form id="start-form"><label for="count">New words in this batch</label>
+                    <div class="input-row"><input id="count" type="number" min="1" step="1" value="10" required><button
+                            class="primary" type="submit">Start learning <span>→</span></button></div>
+                    <p id="available-note" class="muted"></p>
+                </form>
+            </div>
+            <div id="resume-panel" class="start-panel" hidden>
+                <div>
+                    <p class="eyebrow">PICK UP WHERE YOU LEFT OFF</p>
+                    <h2 id="resume-title">Your batch is waiting.</h2>
+                    <p>Each word stays here until the whole batch is ready.</p>
+                </div><button id="resume" class="primary">Resume learning →</button>
+            </div>
+        </section>
+        <section id="library-view" hidden>
+            <div class="library-heading">
+                <div>
+                    <h2>Keep them familiar.</h2>
+                    <p>Due words come first. You can also revisit any learned word.</p>
+                </div><button id="review-all" class="primary">Review all words / resume →</button><button
+                    id="review-due" class="primary">Review due words →</button>
+            </div>
+            <div class="library-controls"><label class="search-label">Find a word<input type="search" id="search"
+                        placeholder="Search learned words…"></label><label>Show<select id="filter">
+                        <option value="all">All learned words</option>
+                        <option value="due">Due now</option>
+                        <option value="again">I do not remember</option>
+                        <option value="good">Needs revision</option>
+                        <option value="easy">Easy to remember</option>
+                    </select></label></div>
+            <div id="library-list"></div>
+        </section>
+        <section id="study" hidden>
+            <div class="study-top"><button id="exit-study" class="text-button">← Back to overview</button><span
+                    id="study-mode"></span><button id="undo" class="text-button">Undo last rating</button></div>
+            <div class="progress-label"><span id="progress-text"></span><span id="streak-text"></span></div>
+            <div class="progress-track">
+                <div id="progress-bar"></div>
+            </div>
+            <div id="study-content">
+                <article class="flashcard" id="card" aria-label="Flashcard">
+                    <div class="hole" aria-hidden="true"></div>
+                    <div id="front">
+                        <p id="card-type" class="eyebrow"></p>
+                        <h2 id="word"></h2>
+                        <p id="pronunciation"></p>
+                        <div id="forms"></div>
+                        <p class="recall-prompt">Recall the meanings in your own words.</p>
+                    </div>
+                    <div id="back" hidden>
+                        <div class="back-heading"><span id="back-word"></span><span>MEANING & CONTEXT</span></div>
+                        <div id="meanings"></div>
+                        <div class="word-relations">
+                            <div>
+                                <p class="eyebrow">SYNONYMS</p>
+                                <p id="synonyms"></p>
+                            </div>
+                            <div>
+                                <p class="eyebrow">ANTONYMS</p>
+                                <p id="antonyms"></p>
+                            </div>
+                        </div>
+                        <details id="original-details">
+                            <summary>View original source text</summary>
+                            <div id="original-text"></div>
+                        </details>
+                    </div>
+                </article>
+                <div id="flip-controls"><button id="flip" class="primary">Reveal answer <kbd>Space</kbd></button></div>
+                <div id="rating-controls" hidden>
+                    <p class="rating-question">How well did you recall it?</p>
+                    <div class="ratings"><button data-rating="again" class="rating again"><span><kbd>1</kbd> I do not
+                                remember</span><small>Repeat sooner · reset streak</small></button><button
+                            data-rating="good" class="rating good"><span><kbd>2</kbd> Remembered, needs
+                                revision</span><small>Successful recall · repeat later</small></button><button
+                            data-rating="easy" class="rating easy"><span><kbd>3</kbd> Easy to
+                                remember</span><small>Successful recall · ready at 3</small></button></div>
+                    <p class="muted rating-tip">Recognizing the answer after flipping is different from recalling it.
+                    </p>
+                </div>
+            </div>
+            <div id="intermission" class="intermission" hidden></div>
+        </section>
+        <footer><span>Small sessions. Lasting knowledge.</span>
+            <details>
+                <summary>How your study plan works</summary>
+                <p>New words need three consecutive successful recalls, ending with Easy. Forgetting resets the streak.
+                    Words repeat with other cards between them; when only one remains, a 30-second gap replaces the
+                    intervening card. The whole batch moves into revision together.</p>
+                <p>Revision uses FSRS at a 90% target retention. Early reviews also update the schedule. Initial
+                    learning and revision attempts are counted separately. Keyboard: Space to reveal; 1, 2, 3 to rate; U
+                    to undo.</p>
+                <p id="learning-count"></p>
+            </details>
+        </footer>
+    </main>
+</body>
+
+</html>
