@@ -4,7 +4,7 @@ The tests run in isolated temporary databases. The delivered database contains t
 
 ## Backend and content checks
 
-`.venv/bin/python -m pytest tests -q`: **46 passed in 1.34s** on 2026-09-20.
+`.venv/bin/python -m pytest tests -q`: **48 passed in 1.46s** on 2026-09-21.
 
 Covered:
 
@@ -18,6 +18,7 @@ Covered:
 - Revision during an active batch without changing initial-learning progress.
 - FSRS due dates, forgotten-word relearning, early reviews, and separate learning/revision counts.
 - Rating requires reveal; duplicate and concurrent submissions count only once; stale tokens are rejected.
+- Local access requires both a loopback peer and local hostname. Tailscale Serve access requires a loopback proxy, `.ts.net` hostname, and authenticated Tailscale identity; missing/spoofed identities, direct LAN requests, and optional-login mismatches are rejected.
 - Undo restores state, including whole-batch graduation and revision schedules/history.
 - No new words after exhaustion; library search and confidence/due filters.
 - SQLite backup integrity and inclusion of progress.
@@ -29,7 +30,7 @@ Covered:
 
 ## Browser checks
 
-`.venv/bin/python tests/browser_check.py`: **passed** on 2026-09-20 using the installed Google Chrome. It launches a temporary local Flask server and headless browser.
+`.venv/bin/python tests/browser_check.py`: **passed** on 2026-09-21 using the installed Google Chrome. It launches a temporary local Flask server and headless browser.
 
 The real user journey covers batch creation, persisted teaching after refresh/resume, primary meaning and single highlighted example, teaching continuation without ratings, recall with hint show/hide, full reveal without the hint, complete back content, per-card and reload hint reset, original-source inspection, rating, undo, completing three words through three recall rounds, graduation, early revision, and filtering learned words.
 

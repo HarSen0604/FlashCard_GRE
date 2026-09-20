@@ -196,8 +196,25 @@ def test_stale_token_and_security(env):
     assert post(c,'flip',{'token':'bad'}).status_code==409
     assert c.post('/api/start',json={'count':1}).status_code==403
     assert c.get('/api/status',headers={'Host':'evil.example'}).status_code==403
+    assert c.get('/api/status',headers={'Host':'localhost'},environ_base={'REMOTE_ADDR':'192.168.1.8'}).status_code==403
     assert post(c,'rate',{'token':p['token'],'rating':'bad'}).status_code==400
     assert next_card(c)['token']==p['token']
+
+def test_authenticated_tailscale_serve_proxy(env):
+    _,c,_=env
+    proxy={'Host':'wordwell.example-tailnet.ts.net','Tailscale-User-Login':'student@example.com'}
+    loopback={'REMOTE_ADDR':'127.0.0.1'}
+    assert c.get('/api/status',headers=proxy,environ_base=loopback).status_code==200
+    assert c.post('/api/start',json={'count':1},headers={**proxy,'X-FlashCard':'1'},environ_base=loopback).status_code==200
+    assert c.get('/api/status',headers={'Host':proxy['Host']},environ_base=loopback).status_code==403
+    assert c.get('/api/status',headers=proxy,environ_base={'REMOTE_ADDR':'100.64.0.2'}).status_code==403
+    assert c.get('/api/status',headers={**proxy,'Host':'evil.example'},environ_base=loopback).status_code==403
+
+def test_tailscale_login_allowlist(env):
+    app,c,_=env;app.config['TAILSCALE_LOGIN']='owner@example.com'
+    base={'Host':'wordwell.example-tailnet.ts.net'};loopback={'REMOTE_ADDR':'::1'}
+    assert c.get('/api/status',headers={**base,'Tailscale-User-Login':'OWNER@example.com'},environ_base=loopback).status_code==200
+    assert c.get('/api/status',headers={**base,'Tailscale-User-Login':'other@example.com'},environ_base=loopback).status_code==403
 
 def test_backup_valid_and_contains_progress(env,tmp_path):
     _,c,t=env;start(c);rate(c,next_recall(c,t))

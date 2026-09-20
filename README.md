@@ -11,7 +11,27 @@ cd FlashCard_GRE
 .venv/bin/python app.py
 ```
 
-Open **http://127.0.0.1:5055** in your browser. Stop with Ctrl+C. If the port is occupied, use `.venv/bin/python app.py --port 5057` and open that port instead. You do not need to activate the virtual environment when using these commands. The app listens only on the local laptop; no account, credentials, API key, or internet connection is needed for study.
+Open **http://127.0.0.1:5055** in your browser. Stop with Ctrl+C. If the port is occupied, use `.venv/bin/python app.py --port 5057` and open that port instead. You do not need to activate the virtual environment when using these commands. The app listens only on the local laptop; no account, credentials, API key, or internet connection is needed for local study.
+
+## Private phone access with Tailscale
+
+Wordwell can remain bound to localhost while [Tailscale Serve](https://tailscale.com/docs/features/tailscale-serve) provides private HTTPS access to authenticated devices in your tailnet. Install and sign in to Tailscale on this Mac and the phone, start Wordwell normally, then run:
+
+```sh
+tailscale serve --bg 5055
+tailscale serve status
+```
+
+Open the reported `https://…ts.net` URL on the phone while Tailscale is connected. The laptop must remain powered on, awake, connected, and running Wordwell. To stop sharing Wordwell, run `tailscale serve 5055 off` (or `tailscale serve reset` to remove all Serve configuration).
+
+Tailscale Serve removes spoofed identity headers and supplies the authenticated `Tailscale-User-Login` header to the localhost backend. Wordwell accepts a `.ts.net` hostname only when that header arrives from a loopback proxy. For an extra account-level restriction, set the login used on the phone before starting Wordwell:
+
+```sh
+export WORDWELL_TAILSCALE_LOGIN='you@example.com'
+.venv/bin/python app.py
+```
+
+Do not use Tailscale Funnel or router port forwarding for this application. Funnel is public internet exposure; Wordwell is designed for one user and does not have a separate password screen.
 
 For a fresh installation on another computer (Python 3.10+), clone this repository, then create the environment:
 
@@ -90,7 +110,7 @@ To deliberately reset all study progress while preserving content, stop the app 
 
 ## Implementation and tests
 
-`app.py` contains the routes and transaction-based learning/review logic; `schema.sql` defines source records, cards, batches, members, schedules, events, the current presentation, and one-step undo. Active batch members store whether the current word has received its teaching exposure; existing in-progress databases add this flag without replacing cards, events, schedules, or progress. Presentation tokens and reveal checks prevent duplicate or stale teaching/rating actions. A unique index permits only one active batch. All mutations require an application-specific header and the local hostname. Study history is stored on the server, not in browser localStorage.
+`app.py` contains the routes and transaction-based learning/review logic; `schema.sql` defines source records, cards, batches, members, schedules, events, the current presentation, and one-step undo. Active batch members store whether the current word has received its teaching exposure; existing in-progress databases add this flag without replacing cards, events, schedules, or progress. Presentation tokens and reveal checks prevent duplicate or stale teaching/rating actions. A unique index permits only one active batch. All mutations require an application-specific header. Requests must come directly from loopback with a local hostname or through the loopback Tailscale Serve proxy with an authenticated identity and `.ts.net` hostname. Study history is stored on the server, not in browser localStorage.
 
 The browser UI lives in `templates/index.html`, `static/style.css`, and `static/app.js`. It loads no external fonts, scripts, or services.
 

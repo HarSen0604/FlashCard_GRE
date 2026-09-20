@@ -17,7 +17,8 @@ def connect(path):
 
 def create_app(database=None,clock=None):
     app=Flask(__name__)
-    app.config.update(DATABASE=str(database or ROOT/'data/flashcards.sqlite3'),MAX_CONTENT_LENGTH=16384)
+    app.config.update(DATABASE=str(database or ROOT/'data/flashcards.sqlite3'),MAX_CONTENT_LENGTH=16384,
+        TAILSCALE_LOGIN=os.environ.get('WORDWELL_TAILSCALE_LOGIN','').strip().casefold())
     now=clock or time.time
     scheduler=Scheduler(desired_retention=.9,learning_steps=(),relearning_steps=(timedelta(minutes=10),),enable_fuzzing=False)
     Path(app.config['DATABASE']).parent.mkdir(parents=True,exist_ok=True)
@@ -54,7 +55,15 @@ def create_app(database=None,clock=None):
     def fail(msg,code=400):return jsonify(error=msg),code
     @app.before_request
     def local_only():
-        if request.host.split(':')[0] not in ('127.0.0.1','localhost','[::1]'):return fail('Use the local application address.',403)
+        host=request.host
+        hostname=(host[1:host.find(']')] if host.startswith('[') and ']' in host else host.partition(':')[0]).rstrip('.').casefold()
+        remote=request.remote_addr or ''
+        from_loopback=remote in ('127.0.0.1','::1')
+        local_request=from_loopback and hostname in ('127.0.0.1','localhost','::1')
+        login=request.headers.get('Tailscale-User-Login','').strip().casefold()
+        expected=app.config['TAILSCALE_LOGIN']
+        tailscale_request=from_loopback and hostname.endswith('.ts.net') and bool(login) and (not expected or secrets.compare_digest(login,expected))
+        if not (local_request or tailscale_request):return fail('Use the local application address or authenticated Tailscale URL.',403)
         if request.method=='POST':
             if request.headers.get('X-FlashCard')!='1':return fail('Invalid application request.',403)
             if not isinstance(request.get_json(silent=True),dict):return fail('Expected a JSON object.')
