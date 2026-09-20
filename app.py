@@ -23,7 +23,14 @@ def create_app(database=None,clock=None):
     Path(app.config['DATABASE']).parent.mkdir(parents=True,exist_ok=True)
     if database is None and not Path(app.config['DATABASE']).exists():
         with sqlite3.connect(ROOT/'data/seed.sqlite3') as source,sqlite3.connect(app.config['DATABASE']) as target:source.backup(target)
-    with connect(app.config['DATABASE']) as db:db.executescript((ROOT/'schema.sql').read_text())
+    with connect(app.config['DATABASE']) as db:
+        db.executescript((ROOT/'schema.sql').read_text())
+        # Existing installations predate explicit teaching presentations. Preserve
+        # successful active-batch recalls while treating unseen/forgotten words as
+        # needing another teaching exposure.
+        if 'introduced' not in {r['name'] for r in db.execute('PRAGMA table_info(members)')}:
+            db.execute('ALTER TABLE members ADD COLUMN introduced INTEGER NOT NULL DEFAULT 0 CHECK(introduced IN (0,1))')
+            db.execute('UPDATE members SET introduced=1 WHERE streak>0 OR ready=1')
     def state(db):
         active=db.execute('SELECT * FROM batches WHERE completed_at IS NULL').fetchone()
         total=db.execute('SELECT count(*) FROM cards').fetchone()[0]
@@ -38,10 +45,11 @@ def create_app(database=None,clock=None):
     def payload(db,p):
         card=dict(db.execute('SELECT * FROM cards WHERE id=?',(p['card_id'],)).fetchone())
         card['content']=json.loads(card['content'])
-        member=db.execute('SELECT streak,ready FROM members WHERE card_id=?',(p['card_id'],)).fetchone()
+        member=db.execute('SELECT streak,ready,introduced FROM members WHERE card_id=?',(p['card_id'],)).fetchone()
         schedule=db.execute('SELECT due FROM schedules WHERE card_id=?',(p['card_id'],)).fetchone()
         queue=dict(db.execute('SELECT count(*) total,coalesce(sum(completed),0) completed FROM review_queue').fetchone())
-        return dict(due=schedule['due'] if schedule else None,review_queue=queue,card=card,token=p['token'],revealed=bool(p['revealed']),mode=p['mode'],streak=member['streak'] if member else 0,status=state(db))
+        presentation='teach' if p['mode']=='learn' and member and not member['introduced'] else 'recall'
+        return dict(due=schedule['due'] if schedule else None,review_queue=queue,card=card,token=p['token'],revealed=bool(p['revealed']),mode=p['mode'],presentation=presentation,streak=member['streak'] if member else 0,status=state(db))
     def snapshot(db):return json.dumps({t:[dict(r) for r in db.execute('SELECT * FROM '+t)] for t in PROGRESS})
     def fail(msg,code=400):return jsonify(error=msg),code
     @app.before_request
@@ -129,6 +137,23 @@ def create_app(database=None,clock=None):
             result=db.execute('UPDATE presentation SET revealed=1 WHERE token=?',(data.get('token'),))
             if result.rowcount!=1:return fail('This card changed in another tab. Reload the study session.',409)
         return jsonify(ok=True)
+    @app.post('/api/introduced')
+    def introduced():
+        data=request.get_json(silent=True) or {};token=data.get('token')
+        with connect(app.config['DATABASE']) as db:
+            db.execute('BEGIN IMMEDIATE')
+            p=db.execute('SELECT * FROM presentation WHERE token=?',(token,)).fetchone()
+            if not p:return fail('This card changed in another tab. Reload the study session.',409)
+            if p['mode']!='learn':return fail('Only new words use a teaching presentation.',409)
+            if not p['revealed']:return fail('Continue to the full answer before starting recall practice.',409)
+            m=db.execute('SELECT * FROM members WHERE card_id=?',(p['card_id'],)).fetchone()
+            if not m or m['introduced']:return fail('This word is already ready for recall practice.',409)
+            batch=db.execute('SELECT * FROM batches WHERE id=?',(m['batch_id'],)).fetchone()
+            turn=batch['turn']+1;timestamp=now()
+            db.execute('UPDATE members SET introduced=1,due_turn=? WHERE card_id=?',(turn+1,p['card_id']))
+            db.execute('UPDATE batches SET turn=?,last_card=?,last_at=? WHERE id=?',(turn,p['card_id'],timestamp,batch['id']))
+            db.execute('DELETE FROM presentation')
+            return jsonify(status=state(db))
     @app.post('/api/rate')
     def rate():
         data=request.get_json(silent=True) or {};rating=data.get('rating');token=data.get('token')
@@ -142,11 +167,12 @@ def create_app(database=None,clock=None):
             before=snapshot(db);timestamp=now();dt=datetime.fromtimestamp(timestamp,timezone.utc);early=0;log=None;graduated=False
             if p['mode']=='learn':
                 m=db.execute('SELECT * FROM members WHERE card_id=?',(p['card_id'],)).fetchone()
+                if not m['introduced']:return fail('Complete the teaching presentation before rating recall.',409)
                 streak=0 if rating=='again' else min(3,m['streak']+1)
                 ready=int(streak>=3 and rating=='easy')
                 batch=db.execute('SELECT * FROM batches WHERE id=?',(m['batch_id'],)).fetchone()
                 turn=batch['turn']+1
-                db.execute('UPDATE members SET streak=?,ready=?,due_turn=? WHERE card_id=?',(streak,ready,turn+{'again':1,'good':3,'easy':5}[rating],p['card_id']))
+                db.execute('UPDATE members SET streak=?,ready=?,due_turn=?,introduced=? WHERE card_id=?',(streak,ready,turn+{'again':1,'good':3,'easy':5}[rating],int(rating!='again'),p['card_id']))
                 db.execute('UPDATE batches SET turn=?,last_card=?,last_at=? WHERE id=?',(turn,p['card_id'],timestamp,batch['id']))
                 if db.execute('SELECT count(*) FROM members WHERE batch_id=? AND ready=0',(batch['id'],)).fetchone()[0]==0:
                     for member in db.execute('SELECT card_id FROM members WHERE batch_id=?',(batch['id'],)).fetchall():

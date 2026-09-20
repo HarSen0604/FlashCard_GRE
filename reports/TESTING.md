@@ -4,11 +4,13 @@ The tests run in isolated temporary databases. The delivered database contains t
 
 ## Backend and content checks
 
-`python -m pytest tests -q`: **41 passed**.
+`.venv/bin/python -m pytest tests -q`: **46 passed in 1.34s** on 2026-09-20.
 
 Covered:
 
 - Random sampling without duplicates; input validation including zero, negative, fractional, non-numeric, excessively large, and malformed requests.
+- First encounters use a persisted teaching presentation that cannot be rated, does not create an event, and survives restart; existing active batches migrate without losing positive streak state.
+- Later learning cards and all revision cards use recall presentations. Forgetting returns an active word to teaching, while undo restores the prior recall presentation.
 - One active batch; batch persistence across application restart and multiple days.
 - Three consecutive successes, reset on forgetting, and a final Easy response required for readiness.
 - Intervening cards and the server-enforced 30-second fallback for a singleton/last word.
@@ -27,21 +29,16 @@ Covered:
 
 ## Browser checks
 
-`python tests/browser_check.py` launches a temporary local Flask server and headless Google Chrome.
+`.venv/bin/python tests/browser_check.py`: **passed** on 2026-09-20 using the installed Google Chrome. It launches a temporary local Flask server and headless browser.
 
-The real user journey covers batch creation, refresh/resume, reveal, original-source inspection, rating, undo, completing three words through three rounds, graduation, early revision, and filtering learned words.
+The real user journey covers batch creation, persisted teaching after refresh/resume, primary meaning and single highlighted example, teaching continuation without ratings, recall with hint show/hide, full reveal without the hint, complete back content, per-card and reload hint reset, original-source inspection, rating, undo, completing three words through three recall rounds, graduation, early revision, and filtering learned words.
 
 Every one of the 995 cards is rendered on both sides at 1440×1000, 1280×800, 768×1024, and 390×844. Checks detect horizontal card/page overflow and card text below 16 CSS pixels. Desktop/laptop fronts also check that the reveal button is within the viewport. Long backs are intentionally scrollable. Reports include scroll counts, JavaScript errors, and external network requests.
 
-Representative desktop, laptop, and narrow-screen screenshots are saved alongside the JSON results. These are inspected visually in addition to the geometry checks.
+Representative desktop, laptop, and narrow-screen screenshots are saved alongside the JSON results. The teaching front, recall back, scrollable mobile back, and laptop back were visually inspected in this run.
 
 ## Scope
 
 This verifies behavior and layout in the installed Google Chrome on macOS. It is not an exhaustive guarantee for every browser, operating system, or future database edit. Semantic grouping includes model-assisted and editorial review; automated coverage confirms that source definitions remain represented, rather than certifying dictionary accuracy by a numerical similarity score. The original archive remains available for comparison.
 
-## Continuous revision update — 2026-09-14
-
-- 43 automated tests pass, including earliest-due ordering across overdue/future cards, one review per pass, restart/resume, undo restoring queue position and due date, empty libraries, and mode switching.
-- Real Chrome journey verifies review-all, automatic advancement, reload/resume, undo, completion, and immediate confirmation matching the newly stored due timestamp.
-- All 995 card fronts/backs pass layout checks at 1440×1000, 1280×800, 768×1024, and 390×844. Laptop layout reserves space for the schedule confirmation.
-- No JavaScript errors or external requests. Tests use temporary databases initialized from the clean seed; existing personal study progress is not reset or edited.
+The Chrome report recorded no JavaScript errors or external network requests. Both test commands used isolated temporary databases; the personal runtime database was not opened, reset, or edited.

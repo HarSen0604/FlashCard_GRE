@@ -24,12 +24,29 @@ def rate(c,p,r='easy'):
     assert post(c,'flip',{'token':p['token']}).status_code==200
     return post(c,'rate',{'token':p['token'],'rating':r})
 
+def introduce(c,p):
+    assert p['presentation']=='teach'
+    assert post(c,'flip',{'token':p['token']}).status_code==200
+    return post(c,'introduced',{'token':p['token']})
+
+def next_recall(c,tick):
+    for _ in range(100):
+        p=next_card(c)
+        if p.get('wait_seconds'):
+            tick[0]+=31;continue
+        if p['presentation']=='teach':
+            assert introduce(c,p).status_code==200;tick[0]+=1;continue
+        return p
+    raise AssertionError('No recall presentation became available')
+
 def graduate(c,tick,n=3):
     start(c,n);seen=[]
-    for _ in range(n*5+5):
+    for _ in range(n*10+10):
         p=next_card(c)
         if p.get('wait_seconds'):tick[0]+=31;continue
         if p.get('done'):break
+        if p['presentation']=='teach':
+            assert introduce(c,p).status_code==200;tick[0]+=1;continue
         seen.append(p['card']['id']);assert rate(c,p).status_code==200
         tick[0]+=1
     assert c.get('/api/status').json['learned']==n
@@ -48,14 +65,61 @@ def test_invalid_size(env,n):
     assert c.get('/api/status').json['batch'] is None
 
 def test_flip_and_duplicate_submission(env):
-    _,c,_=env;start(c);p=next_card(c)
+    _,c,t=env;start(c);teaching=next_card(c)
+    assert teaching['presentation']=='teach'
+    assert post(c,'introduced',{'token':teaching['token']}).status_code==409
+    assert post(c,'rate',{'token':teaching['token'],'rating':'easy'}).status_code==409
+    assert post(c,'flip',{'token':teaching['token']}).status_code==200
+    assert post(c,'rate',{'token':teaching['token'],'rating':'easy'}).status_code==409
+    assert post(c,'introduced',{'token':teaching['token']}).status_code==200
+    p=next_recall(c,t)
     assert post(c,'rate',{'token':p['token'],'rating':'easy'}).status_code==409
     assert rate(c,p).status_code==200
     assert post(c,'rate',{'token':p['token'],'rating':'easy'}).status_code==409
     assert c.get('/api/status').json['learning_attempts']==1
 
+def test_teaching_exposure_is_persisted_but_not_counted_as_recall(env):
+    app,c,t=env;start(c,1);p=next_card(c)
+    assert p['presentation']=='teach' and p['streak']==0
+    assert introduce(c,p).status_code==200
+    assert post(c,'introduced',{'token':p['token']}).status_code==409
+    status=c.get('/api/status').json
+    assert status['learning_attempts']==0 and status['batch']['turn']==1
+    with connect(app.config['DATABASE']) as db:
+        member=db.execute('SELECT introduced,streak FROM members').fetchone()
+        assert tuple(member)==(1,0)
+        assert db.execute('SELECT count(*) FROM events').fetchone()[0]==0
+    t[0]+=31
+    fresh=create_app(app.config['DATABASE'],lambda:t[0]).test_client()
+    assert next_card(fresh)['presentation']=='recall'
+
+def test_forgetting_returns_to_teaching_and_undo_restores_recall(env):
+    _,c,t=env;start(c,1);p=next_recall(c,t)
+    assert rate(c,p,'again').status_code==200
+    undone=post(c,'undo').json
+    assert undone['presentation']=='recall' and undone['streak']==0
+    assert rate(c,undone,'again').status_code==200;t[0]+=31
+    teaching=next_card(c)
+    assert teaching['presentation']=='teach' and teaching['streak']==0
+
+def test_existing_batch_schema_migration_preserves_recall_state(tmp_path):
+    path=tmp_path/'legacy.sqlite3'
+    schema=(Path(__file__).resolve().parents[1]/'schema.sql').read_text()
+    schema=schema.replace(', introduced INTEGER NOT NULL DEFAULT 0 CHECK(introduced IN (0,1))','')
+    content=json.dumps({'meanings':[{'text':'test','example':'A test.'}],'synonyms':[],'antonyms':[],'forms':{},'original_ids':[]})
+    with sqlite3.connect(path) as db:
+        db.executescript(schema)
+        db.executemany('INSERT INTO cards VALUES(?,?,?,?,?)',[(1,'known','NOUN','/test/',content),(2,'forgotten','NOUN','/test/',content)])
+        db.execute('INSERT INTO batches(id,created_at) VALUES(1,1)')
+        db.executemany('INSERT INTO members(batch_id,card_id,streak,due_turn,position) VALUES(1,?,?,?,?)',[(1,2,0,0),(2,0,1,1)])
+    app=create_app(path,lambda:1800000000.0);c=app.test_client()
+    with connect(path) as db:
+        rows=db.execute('SELECT card_id,introduced FROM members ORDER BY card_id').fetchall()
+        assert [tuple(r) for r in rows]==[(1,1),(2,0)]
+    assert next_card(c)['presentation']=='recall'
+
 def test_session_survives_restart(env):
-    app,c,t=env;start(c);p=next_card(c);rate(c,p,'good')
+    app,c,t=env;start(c);p=next_recall(c,t);rate(c,p,'good')
     new_app=create_app(app.config['DATABASE'],lambda:t[0]);new_c=new_app.test_client()
     assert new_c.get('/api/status').json['batch']['size']==3
     assert new_c.get('/api/status').json['learning_attempts']==1
@@ -63,11 +127,14 @@ def test_session_survives_restart(env):
 
 def test_singleton_cooldown_and_reset(env):
     _,c,t=env;start(c,1)
+    p=next_card(c);assert p['presentation']=='teach';introduce(c,p)
+    assert next_card(c)['wait_seconds']>=30;t[0]+=31
     for i in range(2):
         p=next_card(c);assert p['streak']==i;rate(c,p,'good')
         assert next_card(c)['wait_seconds']>=30;t[0]+=31
     p=next_card(c);assert p['streak']==2;rate(c,p,'again');t[0]+=31
-    p=next_card(c);assert p['streak']==0
+    p=next_card(c);assert p['streak']==0 and p['presentation']=='teach';introduce(c,p);t[0]+=31
+    p=next_card(c);assert p['presentation']=='recall'
     for _ in range(3):rate(c,p,'good');t[0]+=31;p=next_card(c)
     assert p['streak']==3 and p['status']['learned']==0
     rate(c,p,'easy');assert c.get('/api/status').json['learned']==1
@@ -84,8 +151,13 @@ def test_interleaved_three_recalls_and_atomic_graduation(env):
 def test_ready_member_stays_out_of_library_until_all_ready(env):
     app,c,t=env;start(c,2)
     first=next_card(c)['card']['id']
-    for _ in range(6):
-        p=next_card(c);rate(c,p,'easy' if p['card']['id']==first else 'again');t[0]+=1
+    for _ in range(20):
+        p=next_card(c)
+        if p.get('wait_seconds'):t[0]+=31;continue
+        if p['presentation']=='teach':introduce(c,p)
+        else:rate(c,p,'easy' if p['card']['id']==first else 'again')
+        t[0]+=1
+        if c.get('/api/status').json['batch']['ready']==1:break
     s=c.get('/api/status').json;assert s['batch']['ready']==1 and s['learned']==0
     assert c.get('/api/library').json==[]
     assert post(c,'next',{'mode':'review','card_id':first}).status_code==409
@@ -128,7 +200,7 @@ def test_stale_token_and_security(env):
     assert next_card(c)['token']==p['token']
 
 def test_backup_valid_and_contains_progress(env,tmp_path):
-    _,c,_=env;start(c);rate(c,next_card(c))
+    _,c,t=env;start(c);rate(c,next_recall(c,t))
     response=c.get('/api/backup');assert response.status_code==200
     path=tmp_path/'backup.sqlite3';path.write_bytes(response.data)
     with sqlite3.connect(path) as db:
@@ -153,15 +225,16 @@ def test_huge_batch_request_is_rejected_cleanly(env):
     assert post(c,'start',{'count':10**100}).status_code==400
 
 def test_batch_continues_across_days(env):
-    app,c,t=env;start(c,2);p=next_card(c);rate(c,p,'good');t[0]+=86400*3
+    app,c,t=env;start(c,2);p=next_recall(c,t);rate(c,p,'good');t[0]+=86400*3
+    before=c.get('/api/status').json['batch']
     fresh=create_app(app.config['DATABASE'],lambda:t[0]).test_client()
-    assert fresh.get('/api/status').json['batch']['turn']==1
+    assert fresh.get('/api/status').json['batch']['turn']==before['turn']
     assert fresh.get('/api/status').json['learned']==0
     assert next_card(fresh)['card']['id']!=p['card']['id']
 
 def test_concurrent_duplicate_rating_counts_once(env):
     from concurrent.futures import ThreadPoolExecutor
-    app,c,t=env;start(c);p=next_card(c);post(c,'flip',{'token':p['token']})
+    app,c,t=env;start(c);p=next_recall(c,t);post(c,'flip',{'token':p['token']})
     def send():
         with app.test_client() as client:return post(client,'rate',{'token':p['token'],'rating':'easy'}).status_code
     with ThreadPoolExecutor(max_workers=2) as pool:results=list(pool.map(lambda _:send(),range(2)))

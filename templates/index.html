@@ -87,7 +87,22 @@
                         <h2 id="word"></h2>
                         <p id="pronunciation"></p>
                         <div id="forms"></div>
-                        <p class="recall-prompt">Recall the meanings in your own words.</p>
+                        <div id="teaching-content" class="front-content" hidden>
+                            <section id="plain-meaning-section" class="front-section">
+                                <p class="eyebrow">PLAIN MEANING</p>
+                                <p id="plain-meaning" class="plain-meaning"></p>
+                            </section>
+                            <section id="teaching-context-section" class="front-section context-section">
+                                <p class="eyebrow">IN CONTEXT</p>
+                                <div id="teaching-context"></div>
+                            </section>
+                        </div>
+                        <div id="recall-content" class="front-content" hidden>
+                            <p class="recall-prompt">What does this word mean?</p>
+                            <button id="hint-toggle" class="hint-button" type="button" aria-expanded="false"
+                                aria-controls="hint-context">Show contextual hint</button>
+                            <div id="hint-context" class="context-section" hidden></div>
+                        </div>
                     </div>
                     <div id="back" hidden>
                         <div class="back-heading"><span id="back-word"></span><span>MEANING & CONTEXT</span></div>
@@ -120,15 +135,21 @@
                     <p class="muted rating-tip">Recognizing the answer after flipping is different from recalling it.
                     </p>
                 </div>
+                <div id="teaching-controls" class="teaching-controls" hidden>
+                    <p class="muted">This was a teaching exposure, so it does not count as a successful recall.</p>
+                    <button id="continue-learning" class="primary" type="button">Continue learning →</button>
+                </div>
             </div>
             <div id="intermission" class="intermission" hidden></div>
         </section>
         <footer><span>Small sessions. Lasting knowledge.</span>
             <details>
                 <summary>How your study plan works</summary>
-                <p>New words need three consecutive successful recalls, ending with Easy. Forgetting resets the streak.
-                    Words repeat with other cards between them; when only one remains, a 30-second gap replaces the
-                    intervening card. The whole batch moves into revision together.</p>
+                <p>A new or forgotten word is taught with one meaning and example before recall begins; this exposure
+                    does not count toward its streak. Recall cards offer an optional context hint. New words still need
+                    three consecutive successful recalls, ending with Easy. Forgetting resets the streak. Words repeat
+                    with other cards between them; when only one remains, a 30-second gap replaces the intervening
+                    card. The whole batch moves into revision together.</p>
                 <p>Revision uses FSRS at a 90% target retention. Early reviews also update the schedule. Initial
                     learning and revision attempts are counted separately. Keyboard: Space to reveal; 1, 2, 3 to rate; U
                     to undo.</p>

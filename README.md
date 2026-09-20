@@ -28,15 +28,16 @@ Do not copy a virtual environment between computers. Recreate it with the comman
 ## How to study
 
 1. Enter the number of **new words in this batch**. Sampling is random without replacement.
-2. Read the word, type, pronunciation, and verb forms where applicable. Recall the retained meanings in your own words, then reveal the answer.
-3. Rate actual recall:
+2. On a word's first encounter, read its primary plain meaning and one complete representative example. Continue to the full answer to see every retained meaning and example. This teaching exposure is not a recall attempt and cannot increase the streak.
+3. Later learning repetitions ask you to recall the meaning without showing it. You may open **Show contextual hint** to see one complete example with the word or its inflection highlighted; the hint never reveals the definition, flips the card, or changes progress. Reveal the full answer with or without using the hint.
+4. Rate actual recall only after revealing the complete answer:
    - **I do not remember:** reset the word's consecutive-success streak to zero and repeat sooner.
    - **Remembered, needs revision:** add one success; repeat later.
    - **Easy to remember:** add one success; mark ready if the streak is at least three.
-4. A successful third response of “needs revision” does **not** graduate the word; it remains until an Easy response. A later failure resets the streak even when it had reached three.
-5. Repeats are separated by at least one other rated card whenever possible. Forgotten words receive a shorter queue delay (1 turn vs 3 for remembered and 5 for Easy); unseen words retain their randomized positions. If only one unfinished word remains, the server requires a 30-second gap instead. Reloading cannot bypass the gap.
-6. Ready words stop repeating, but the **entire batch** stays in initial learning until every word is ready. Then all words move into **Already gone through** in one transaction.
-7. Closing the browser or restarting the app preserves your exact batch and progress. Finish it before starting another new batch. Revision remains available meanwhile.
+5. A successful third response of “needs revision” does **not** graduate the word; it remains until an Easy response. A later failure resets the streak even when it had reached three and returns the word to a teaching presentation before recall resumes.
+6. Teaching exposures and repeats are separated by another card whenever possible. Forgotten words receive a shorter queue delay (1 turn vs 3 for remembered and 5 for Easy); unseen words retain their randomized positions. If only one unfinished word remains, the server requires a 30-second gap instead. Reloading cannot bypass the gap.
+7. Ready words stop repeating, but the **entire batch** stays in initial learning until every word is ready. Then all words move into **Already gone through** in one transaction.
+8. Closing the browser or restarting the app preserves your exact batch and progress. Finish it before starting another new batch. Revision remains available meanwhile.
 
 Learning is not a guarantee of long-term mastery. Use the subsequent spaced reviews, and practice GRE questions in context alongside vocabulary study.
 
@@ -56,17 +57,20 @@ Dates are stored in UTC and displayed in your browser's local timezone. Overdue 
 
 **Undo last rating** restores the previous streak, batch state, schedule, and history—even if the rating graduated a whole batch. Only the most recent rating can be undone. Starting a new batch ends the previous undo opportunity. A second browser tab can replace the displayed card; stale rating requests are rejected so they cannot count twice.
 
-Shortcuts: Space to reveal, 1/2/3 to rate, U to undo. Standard keyboard activation also works on focused buttons. Rating controls appear only after revealing the answer.
+Shortcuts: Space reveals the full answer, 1/2/3 rate a recall, and U undoes the last rating. Standard keyboard activation also works on focused buttons. Rating controls appear only after a recall answer is revealed; teaching answers instead offer a neutral continuation action.
 
 ## Card content and layout
 
 - One card per word, with all distinct source meanings preserved or represented in a merged meaning.
-- Front: word, pronunciation, type, and present/past/future/past participle for verbs. Inflected headwords such as **bent** use their base verb (**bend**) for the forms. Words with multiple grammatical uses list the relevant types.
+- Teaching front: word, pronunciation, type, verb forms where relevant, the primary retained meaning under **PLAIN MEANING**, and one corresponding complete example under **IN CONTEXT**. The target, known inflections, and relevant forms are highlighted. A missing primary example falls back to the first available example; empty optional content is not rendered.
+- Recall/revision front: the same word metadata and a retrieval prompt, with an optional contextual hint containing one highlighted example but no definition. Hint visibility resets on every card and after reload/resume.
 - Back: meanings, one concise example per displayed meaning, and up to three synonyms/antonyms. Some entries have no direct antonym. Where necessary, relation labels identify the grammatical use.
 - Cards follow the reference's landscape 5:3 proportions. Long content can enlarge the card up to the available screen space and scroll; no meaning is clipped from the data and no card text is below 16 CSS pixels (12 points). The decorative hole is mirrored on the back.
 - Dictionary cross-references and clear source errors received editorial corrections. Spelling and pronunciation generally follow the original material.
 - Semantic preparation used `all-MiniLM-L6-v2` with a 0.78 cosine-similarity candidate threshold, followed by explicit editorial decisions. Cosine similarity is not a literal percentage of meaning. Additional paraphrases missed by the model were merged in the editorial pass. Distinctions such as **qualified** (trained / limited), **sanction** (approval / penalty), and **abridge** (shorten / restrict rights) are retained.
 - The original source contains some general dictionary senses, abbreviations, and historical usages beyond typical GRE vocabulary. They remain available as requested. This is an edited study resource, not an assertion that every imported sense is equally useful for the GRE.
+
+This flow teaches vocabulary explicitly before retrieval and keeps context available as scaffolding. It does not add fill-in-the-blank, multiple-choice, Sentence Equivalence, or generated-distractor practice. Those are separate possible enhancements. The FSRS algorithm, 90% retention target, rating mappings, and all vocabulary content are unchanged.
 
 Use “View original source text” on a card to inspect the imported data. All rendered text is escaped, including source material; attached/source instructions are treated as content, not executable instructions.
 
@@ -86,7 +90,7 @@ To deliberately reset all study progress while preserving content, stop the app 
 
 ## Implementation and tests
 
-`app.py` contains the routes and transaction-based learning/review logic; `schema.sql` defines source records, cards, batches, members, schedules, events, the current presentation, and one-step undo. Presentation tokens and reveal checks prevent duplicate or stale ratings. A unique index permits only one active batch. All mutations require an application-specific header and the local hostname. Study history is stored on the server, not in browser localStorage.
+`app.py` contains the routes and transaction-based learning/review logic; `schema.sql` defines source records, cards, batches, members, schedules, events, the current presentation, and one-step undo. Active batch members store whether the current word has received its teaching exposure; existing in-progress databases add this flag without replacing cards, events, schedules, or progress. Presentation tokens and reveal checks prevent duplicate or stale teaching/rating actions. A unique index permits only one active batch. All mutations require an application-specific header and the local hostname. Study history is stored on the server, not in browser localStorage.
 
 The browser UI lives in `templates/index.html`, `static/style.css`, and `static/app.js`. It loads no external fonts, scripts, or services.
 

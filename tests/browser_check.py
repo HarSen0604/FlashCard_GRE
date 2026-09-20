@@ -25,16 +25,45 @@ def run():
                 page.screenshot(path=str(ROOT/'reports/home-desktop.png'),full_page=True)
                 page.locator('#count').fill('3');page.get_by_role('button',name='Start learning').click();page.locator('#word').wait_for(state='visible')
                 first=page.locator('#word').inner_text();page.reload();page.get_by_role('button',name='Resume learning').click();page.locator('#word').wait_for(state='visible');assert page.locator('#word').inner_text()==first
+                assert page.evaluate('current.presentation')=='teach'
+                assert page.locator('#plain-meaning').inner_text().strip()
+                assert page.locator('#teaching-context .example').count()==1
+                assert page.evaluate("() => {const s=representative(current.card.content);return !hasHighlightableExample(s.example,current.card,current.card.content)||!!document.querySelector('#teaching-context strong')}")
+                assert page.locator('#rating-controls').is_hidden()
                 page.screenshot(path=str(ROOT/'reports/card-front-desktop.png'),full_page=True)
-                # Real user journey: flip, inspect archive, rate, undo, finish entire batch.
-                page.locator('#flip').click();page.locator('#back').wait_for(state='visible');page.locator('#original-details summary').click();page.wait_for_function("() => document.querySelector('#original-text').textContent.length > 0");page.locator('#original-details summary').click()
-                page.locator('[data-rating=good]').click();page.locator('#front').wait_for(state='visible');page.locator('#undo').click();page.wait_for_function('() => !busy');page.locator('#front').wait_for(state='visible');assert page.locator('#word').inner_text()==first
+                # Teaching exposures are interleaved but never counted as recalls.
+                while page.evaluate('current.presentation')=='teach':
+                    page.locator('#flip').click();page.locator('#back').wait_for(state='visible')
+                    assert page.locator('#rating-controls').is_hidden()
+                    page.locator('#continue-learning').click();page.wait_for_function('() => !busy')
+                assert page.locator('#plain-meaning-section').is_hidden()
+                assert page.locator('#hint-context').is_hidden()
+                assert page.locator('#hint-toggle').get_attribute('aria-expanded')=='false'
+                page.locator('#hint-toggle').click();assert page.locator('#front').is_visible()
+                assert page.locator('#hint-context').is_visible() and page.locator('#hint-context .example').count()==1
+                assert page.locator('#plain-meaning-section').is_hidden()
+                page.screenshot(path=str(ROOT/'reports/card-hint-desktop.png'),full_page=True)
+                page.locator('#hint-toggle').click();assert page.locator('#hint-context').is_hidden()
+                # Full answer remains complete; rating and undo apply to recall only.
+                recall_word=page.locator('#word').inner_text();expected_senses=page.evaluate('current.card.content.meanings.length')
+                page.locator('#flip').click();page.locator('#back').wait_for(state='visible');assert page.locator('#meanings .sense').count()==expected_senses
+                page.locator('#original-details summary').click();page.wait_for_function("() => document.querySelector('#original-text').textContent.length > 0");page.locator('#original-details summary').click()
+                page.locator('[data-rating=good]').click();page.locator('#front').wait_for(state='visible');assert page.locator('#hint-context').is_hidden()
+                page.locator('#undo').click();page.wait_for_function('() => !busy');page.locator('#front').wait_for(state='visible');assert page.locator('#word').inner_text()==recall_word
                 assert page.locator('#streak-text').inner_text()=='0 / 3 consecutive recalls'
+                page.locator('#hint-toggle').click();assert page.locator('#hint-context').is_visible()
+                page.reload();page.get_by_role('button',name='Resume learning').click();page.locator('#word').wait_for(state='visible')
+                assert page.locator('#word').inner_text()==recall_word and page.locator('#hint-context').is_hidden()
                 seen=[]
-                for i in range(9):
-                    page.locator('#front').wait_for(state='visible');seen.append(page.locator('#word').inner_text());page.locator('#flip').click();page.locator('#back').wait_for(state='visible')
-                    if i==0:page.screenshot(path=str(ROOT/'reports/card-back-desktop.png'),full_page=True)
-                    page.locator('[data-rating=easy]').click()
+                while page.request.get(f'http://127.0.0.1:{port}/api/status').json()['learned']<3:
+                    page.locator('#front').wait_for(state='visible')
+                    page.locator('#flip').click();page.locator('#back').wait_for(state='visible')
+                    if page.evaluate('current.presentation')=='teach':page.locator('#continue-learning').click()
+                    else:
+                        seen.append(page.locator('#word').inner_text())
+                        if len(seen)==1:page.screenshot(path=str(ROOT/'reports/card-back-desktop.png'),full_page=True)
+                        page.locator('[data-rating=easy]').click()
+                    page.wait_for_function('() => !busy')
                 page.get_by_role('heading',name='Your batch is ready for revision.').wait_for();assert all(a!=b for a,b in zip(seen,seen[1:]))
                 assert page.request.get(f'http://127.0.0.1:{port}/api/status').json()['learned']==3
                 page.locator('#tab-library').click();page.wait_for_function("() => document.querySelectorAll('.library-row').length===3")
@@ -72,25 +101,39 @@ def run():
                         const problems=[];let scrollCards=0;
                         const s={total:995,new:992,learned:3,due:0,learning_attempts:9,revision_attempts:1,batch:{size:3,ready:0},undo:false};
                         for(const card of cards){
-                            renderCard({card,token:'layout-test',mode:'learn',streak:0,status:s});
-                            for(const flipped of [false,true]){
+                            for(const presentation of ['teach','recall']){
+                              renderCard({card,token:'layout-test',mode:'learn',presentation,streak:0,status:s});
+                              if(presentation==='recall')setHint(true);
+                              const sample=representative(card.content);
+                              const hasKnownForm=hasHighlightableExample(sample.example,card,card.content);
+                              if(presentation==='teach'){
+                                if(!document.querySelector('#plain-meaning').textContent.trim())problems.push([card.word,'missing teaching meaning']);
+                                if(document.querySelectorAll('#teaching-context .example').length!==1)problems.push([card.word,'teaching example count']);
+                                if(hasKnownForm&&!document.querySelector('#teaching-context strong'))problems.push([card.word,'teaching example not highlighted']);
+                              }else{
+                                if(!document.querySelector('#plain-meaning-section').closest('#teaching-content').hidden)problems.push([card.word,'meaning exposed during recall']);
+                                if(document.querySelectorAll('#hint-context .example').length!==1)problems.push([card.word,'hint example count']);
+                                if(hasKnownForm&&!document.querySelector('#hint-context strong'))problems.push([card.word,'hint example not highlighted']);
+                              }
+                              for(const flipped of [false,true]){
                                 setFlipped(flipped);
                                 const root=document.querySelector('#card');
-                                if(!flipped && window.innerWidth>=801 && window.innerHeight>=800 && document.querySelector('#flip').getBoundingClientRect().bottom>window.innerHeight)problems.push([card.word,'reveal below fold']);
+                                if(!flipped && window.innerWidth>=801 && window.innerHeight>=800 && document.querySelector('#flip').getBoundingClientRect().bottom>window.innerHeight)problems.push([card.word,'reveal below fold',root.getBoundingClientRect().top,root.getBoundingClientRect().height,document.querySelector('#flip').getBoundingClientRect().bottom,getComputedStyle(root).maxHeight]);
                                 if(root.scrollWidth>root.clientWidth+1)problems.push([card.word,flipped,'horizontal card overflow']);
                                 if(document.documentElement.scrollWidth>window.innerWidth+1)problems.push([card.word,flipped,'page overflow']);
                                 for(const n of root.querySelectorAll('*')){
                                     if(n.getClientRects().length && n.textContent.trim() && parseFloat(getComputedStyle(n).fontSize)<16)problems.push([card.word,'small font']);
                                 }
                                 if(flipped&&root.scrollHeight>root.clientHeight+1)scrollCards++;
+                              }
                             }
                         }
                         return {problems,scrollCards,cards:cards.length};
                     }''',cards)
-                    checks.append({'viewport':[width,height],**result});assert not result['problems'],result['problems'][:10]
+                    checks.append({'viewport':[width,height],**result});assert not result['problems'],([width,height],result['problems'][:10])
                 # Longest card + mobile screenshots and bottom-content reachability.
                 longest=max(cards,key=lambda c:len(c['content']['meanings']))
-                page.evaluate("c => renderCard({card:c,token:'layout',mode:'learn',streak:0,status:{total:995,new:992,learned:3,due:0,learning_attempts:9,revision_attempts:1,batch:{size:3,ready:0},undo:false}})",longest)
+                page.evaluate("c => renderCard({card:c,token:'layout',mode:'learn',presentation:'recall',streak:0,status:{total:995,new:992,learned:3,due:0,learning_attempts:9,revision_attempts:1,batch:{size:3,ready:0},undo:false}})",longest)
                 page.evaluate('() => setFlipped(true)');page.screenshot(path=str(ROOT/'reports/long-card-mobile.png'),full_page=True)
                 page.locator('#card').evaluate('(n)=>n.scrollTop=n.scrollHeight')
                 assert page.locator('#original-details summary').is_visible()
