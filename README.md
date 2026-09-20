@@ -22,7 +22,9 @@ tailscale serve --bg 5055
 tailscale serve status
 ```
 
-Open the reported `https://…ts.net` URL on the phone while Tailscale is connected. The laptop must remain powered on, awake, connected, and running Wordwell. To stop sharing Wordwell, run `tailscale serve 5055 off` (or `tailscale serve reset` to remove all Serve configuration).
+Open the reported `https://…ts.net` URL on the phone while Tailscale is connected. The laptop must remain powered on, awake, connected, and running Wordwell. To stop sharing Wordwell, run `tailscale serve reset`; this removes Serve configuration without disconnecting Tailscale itself.
+
+On macOS, the same commands are available as double-clickable files next to `run.command`: start Wordwell first with `run.command`, then use `start-tailscale.command` in a separate Terminal window. Use `stop-tailscale.command` when finished; it clears Serve configuration and leaves Tailscale connected.
 
 Tailscale Serve removes spoofed identity headers and supplies the authenticated `Tailscale-User-Login` header to the localhost backend. Wordwell accepts a `.ts.net` hostname only when that header arrives from a loopback proxy. For an extra account-level restriction, set the login used on the phone before starting Wordwell:
 
